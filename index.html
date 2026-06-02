@@ -202,30 +202,43 @@
   <div class="wrap">
     <div class="section__head center reveal">
       <p class="eyebrow center">Group</p>
-      <h2>大阪放送グループ</h2>
-      <p class="lead center">大阪放送株式会社を中核に、放送・既存事業を擁する企業グループです。</p>
+      <h2>大阪放送と、その関係企業</h2>
     </div>
-    <div class="group__chart reveal" data-d="1">
-      <div class="org-parent">
-        <div class="org-node org-node--parent">
-          <span class="role">Parent</span>
-          <span class="name">大阪放送株式会社</span>
-          <span class="desc">親会社・グループ中核</span>
+
+    <div class="grouping reveal" data-d="1">
+      <!-- グループ企業 -->
+      <div class="grouping__col">
+        <div class="grouping__head">
+          <span class="grouping__en">Group Companies</span>
+          <h3 class="grouping__ttl">グループ企業</h3>
         </div>
+        <ul class="grouping__list grouping__list--group">
+          <li class="gcard"><span class="gcard__name">OSAKA HOSO PTE. LTD.</span></li>
+          <li class="gcard"><span class="gcard__name">MARUICHI PTE. LTD.</span></li>
+          <li class="gcard"><span class="gcard__name">株式会社ToGEAR MSC</span></li>
+          <li class="gcard"><span class="gcard__name">サンクチュアリ株式会社</span></li>
+        </ul>
       </div>
-      <div class="org-trunk"></div>
-      <div class="org-branch"><span class="down l"></span><span class="down r"></span></div>
-      <div class="org-children">
-        <div class="org-node org-node--obc">
-          <span class="role">Broadcasting</span>
-          <img class="org-logo" src="assets/obc-logo.jpg" alt="ラジオ大阪 OBC">
-          <span class="name" style="font-size:16px">株式会社ラジオ大阪（OBC）</span>
+
+      <!-- 区切り -->
+      <div class="grouping__rule" aria-hidden="true"></div>
+
+      <!-- 出資先 -->
+      <div class="grouping__col grouping__col--invest">
+        <div class="grouping__head">
+          <span class="grouping__en">Investments</span>
+          <h3 class="grouping__ttl">出資先</h3>
         </div>
-        <div class="org-node org-node--legacy">
-          <span class="role">Legacy</span>
-          <span class="name">既存事業</span>
-          <span class="desc">鉄鋼流通〈マルイチスチールセンター〉<br>不動産賃貸〈SHIFT調布〉</span>
-        </div>
+        <ul class="grouping__list grouping__list--invest">
+          <li class="gcard gcard--obc">
+            <img class="gcard__logo" src="assets/obc-logo.jpg" alt="ラジオ大阪 OBC">
+            <span class="gcard__name">株式会社ラジオ大阪（OBC）</span>
+            <a class="gcard__link" href="https://www.obc1314.co.jp/" target="_blank" rel="noopener">OBC公式サイト</a>
+          </li>
+          <li class="gcard gcard--invest">
+            <span class="gcard__name">ひろのぶと株式会社</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
