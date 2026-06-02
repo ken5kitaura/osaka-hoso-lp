@@ -15,11 +15,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="story.css">
-<style>
-  /* minimal language switch — to be polished later */
-  .nav-lang { margin-left:.6em; padding:.2em .7em; border:1px solid currentColor; border-radius:999px; font-size:.78em; letter-spacing:.06em; opacity:.85; }
-  .nav-lang:hover { opacity:1; }
-</style>
 </head>
 <body>
 
@@ -38,7 +33,29 @@
       <a href="story.html" aria-current="page">STORY</a>
       <a href="index.html#company">会社概要</a>
       <a href="index.html#contact" class="nav-cta">CONTACT</a>
-      <a href="/en/story.html" class="nav-lang" hreflang="en" lang="en">EN</a>
+      <span class="nav-lang">
+        <span class="lng is-active" lang="ja" aria-current="true">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#fff"/>
+            <circle cx="20" cy="20" r="8" fill="#BC002D"/>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(0,0,0,.14)"/>
+          </svg>JP
+        </span>
+        <span class="lng__sep" aria-hidden="true"></span>
+        <a class="lng" href="/en/story.html" hreflang="en" lang="en">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <defs><clipPath id="ukJP"><circle cx="20" cy="20" r="19"/></clipPath></defs>
+            <g clip-path="url(#ukJP)">
+              <rect width="40" height="40" fill="#012169"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#C8102E" stroke-width="3"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#fff" stroke-width="13"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#C8102E" stroke-width="7"/>
+            </g>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+          </svg>EN
+        </a>
+      </span>
     </nav>
   </div>
 </header>
