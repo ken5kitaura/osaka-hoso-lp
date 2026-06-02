@@ -1,0 +1,80 @@
+/* ============================================================
+   大阪放送株式会社 — STORY（旧サイト本文の移植・聖域）
+   本文は改変せず、トーンのみ新サイトに統一
+   ============================================================ */
+
+.story-page{ padding-top:0; padding-bottom:var(--section-y); overflow-x:clip; }
+
+/* hero — 全幅の鋼材バンド（墨紺スクリム＋白の明朝） */
+.story-hero{ position:relative; width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
+  margin-bottom:clamp(50px,7vw,86px); overflow:hidden; isolation:isolate;
+  min-height:clamp(420px,64vh,640px); display:flex; align-items:center; justify-content:center;
+  padding:calc(var(--header-h) + clamp(40px,7vw,80px)) clamp(22px,5vw,60px) clamp(50px,8vw,90px); }
+.story-hero__bg{ position:absolute; inset:0; z-index:-1; }
+.story-hero__bg img{ width:100%; height:100%; object-fit:cover; object-position:center 42%; filter:none; }
+.story-hero__scrim{ position:absolute; inset:0; background:
+  linear-gradient(180deg, rgba(22,34,52,.18) 0%, rgba(22,34,52,.08) 38%, rgba(22,34,52,.34) 100%),
+  radial-gradient(78% 60% at 50% 52%, rgba(15,23,36,.5), rgba(15,23,36,0) 72%); }
+.story-hero__inner{ text-align:center; max-width:40em; }
+.story-hero__inner .eyebrow{ color:#e7c79a; text-shadow:0 1px 10px rgba(11,18,30,.85); }
+.story-hero__inner .eyebrow::before,
+.story-hero__inner .eyebrow::after{ background:#d9b988; }
+.story-hero h1{ font-family:var(--serif); font-size:clamp(28px,4.6vw,52px); line-height:1.55; color:#fff;
+  letter-spacing:.05em; margin-top:.5em; text-wrap:balance; text-shadow:0 2px 16px rgba(11,18,30,.9), 0 1px 3px rgba(11,18,30,.75); }
+
+/* 本文の読みやすい1段組 */
+.story-article{ max-width:42em; margin-inline:auto; }
+.story-article > p{ font-size:clamp(15px,1.6vw,16.5px); line-height:2.25; color:var(--text);
+  margin-bottom:1.7em; text-wrap:pretty; }
+.story-article .intro{ font-size:clamp(15px,1.6vw,16.5px); line-height:2.25; }
+.story-article .ext{ color:var(--orange); border-bottom:1px solid rgba(200,90,30,.4); word-break:break-all; }
+.story-article .ext:hover{ color:var(--orange-d); }
+
+/* セクション見出し（明朝） */
+.story-h2{ font-family:var(--serif); font-size:clamp(22px,3vw,34px); color:var(--ink); letter-spacing:.06em;
+  margin:clamp(56px,8vw,96px) 0 1em; padding-bottom:.5em; border-bottom:1px solid var(--line); }
+.story-h3{ font-family:var(--serif); font-size:clamp(20px,2.6vw,28px); color:var(--ink); letter-spacing:.05em;
+  line-height:1.6; margin:clamp(48px,6vw,76px) 0 1.4em; text-wrap:balance; }
+/* 評伝の小見出し（柱） */
+.story-lead-ttl{ display:flex; align-items:center; gap:1em; margin:clamp(42px,5vw,64px) 0 1.5em;
+  font-family:var(--serif); font-size:clamp(18px,2.1vw,23px); color:var(--ink); letter-spacing:.08em; }
+.story-lead-ttl::before{ content:""; width:30px; height:2px; background:var(--orange); flex:none; }
+
+/* 沿革テーブル */
+.story-table{ width:100%; border-collapse:collapse; margin:clamp(28px,3.5vw,44px) 0; font-size:15px; }
+.story-table th, .story-table td{ text-align:left; padding:1.05em 1.2em; border-bottom:1px solid var(--line);
+  vertical-align:top; line-height:1.8; font-weight:400; }
+.story-table th{ white-space:nowrap; font-family:var(--serif); color:var(--ink); width:34%;
+  border-right:1px solid var(--line); letter-spacing:.02em; }
+.story-table tr:first-child th, .story-table tr:first-child td{ border-top:1px solid var(--line); }
+.story-table td{ color:var(--text); }
+
+/* 歴史写真＝セピア（資料）＋通し番号キャプション */
+.story-fig{ margin:clamp(40px,5vw,64px) 0; }
+.story-fig .ph{ min-height:clamp(260px,42vw,460px); }
+.story-fig figcaption{ font-family:var(--mono); font-size:11px; letter-spacing:.16em; color:var(--text-mut);
+  margin-top:.9em; text-align:right; }
+.story-fig--todo .ph{ display:flex; align-items:center; justify-content:center; }
+
+/* 引用ブロック（談話・回想） */
+.story-quote{ border-left:2px solid var(--gold); padding:.2em 0 .2em 1.4em; margin:0 0 1.7em;
+  color:var(--text); font-size:clamp(15px,1.6vw,16.5px); line-height:2.2; }
+
+/* 箇条書き（人物評の総合） */
+.story-olist{ margin:1.6em 0; padding-left:1.4em; display:grid; gap:1.2em; }
+.story-olist li{ font-size:clamp(15px,1.6vw,16.5px); line-height:2.15; color:var(--text); padding-left:.4em; }
+.story-olist li::marker{ color:var(--orange); font-family:var(--serif); }
+.story-list{ list-style:none; margin:1.6em 0; padding:0; display:grid; gap:1.2em; }
+.story-list li{ position:relative; padding-left:1.6em; font-size:clamp(15px,1.6vw,16.5px); line-height:2.15; color:var(--text); }
+.story-list li::before{ content:"▽"; position:absolute; left:0; top:.1em; color:var(--gold); font-size:.85em; }
+
+/* 引用元 */
+.story-source{ font-family:var(--serif); color:var(--text-mut); font-size:14px; text-align:right; margin-top:.6em; }
+
+/* 戻る */
+.story-back{ text-align:center; margin-top:clamp(56px,8vw,100px); }
+
+@media (max-width:560px){
+  .story-table th{ width:42%; }
+  .story-table th, .story-table td{ padding:.85em .9em; }
+}

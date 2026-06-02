@@ -1,0 +1,217 @@
+/* ============================================================
+   大阪放送株式会社 — 事業ページ（AI経理BPO）
+   page-specific components ／ styles.css の体系を継承
+   ============================================================ */
+
+/* hero variant: 現在＝カラー（grayscaleをかけない） */
+.hero__img.color{ filter:contrast(1.03) brightness(.96) saturate(1.02); object-position:center 42%; }
+.hero__sublink{ display:inline-flex; align-items:center; gap:.5em; margin-top:1.6em;
+  font-size:13.5px; letter-spacing:.1em; color:var(--on-ink-mut); transition:color .3s; }
+.hero__sublink:hover{ color:var(--gold); }
+.hero__sublink .ar{ transition:transform .4s; }
+.hero__sublink:hover .ar{ transform:translateY(3px); }
+.hero__claim{ margin-top:1.2em; font-family:var(--serif); font-size:clamp(15px,1.7vw,19px); color:var(--gold);
+  letter-spacing:.04em; line-height:1.85; max-width:34em; }
+
+/* セクション内の補助 todo 注記 */
+.todo-note{ font-family:var(--mono); font-size:11px; color:var(--text-mut);
+  border:1px dashed var(--line); padding:.7em 1em; border-radius:2px; line-height:1.7; margin-top:1.6em; max-width:46em; }
+.section--ink .todo-note{ color:var(--on-ink-mut); border-color:var(--line-ink); }
+
+/* ---------- ② 課題への共感：痛みのチェックリスト ---------- */
+.pain{ max-width:var(--wrap); }
+.pain__lead{ font-size:clamp(16px,1.8vw,19px); line-height:2.2; max-width:34em; margin-bottom:clamp(34px,4vw,52px); }
+.pain__lead .q{ display:block; font-family:var(--serif); color:var(--ink); font-size:clamp(19px,2.2vw,26px);
+  line-height:1.7; margin-top:1em; letter-spacing:.03em; }
+.painlist{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:1px;
+  background:var(--line); border:1px solid var(--line); border-radius:3px; overflow:hidden; max-width:920px; }
+.painlist li{ background:var(--paper); padding:1.5em clamp(1.2em,2.2vw,2em); display:flex; align-items:flex-start; gap:1em;
+  font-size:15.5px; line-height:1.85; color:var(--text); }
+.painlist .ck{ flex:none; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--orange);
+  display:flex; align-items:center; justify-content:center; margin-top:.15em; }
+.painlist .ck svg{ width:13px; height:13px; color:var(--orange); }
+.painlist li:last-child:nth-child(odd){ grid-column:1 / -1; }
+
+/* ---------- ③ Before/After（紙の上・解放を見せる） ---------- */
+.cmp{ display:grid; grid-template-columns:1fr auto 1fr; gap:clamp(16px,2.5vw,36px); align-items:stretch;
+  margin-top:clamp(34px,4vw,52px); }
+.cmp__col{ border:1px solid var(--line); border-radius:3px; padding:clamp(26px,3vw,40px); background:var(--paper); }
+.cmp__col--before{ background:#efece4; }
+.cmp__col--after{ border-top:2px solid var(--orange); box-shadow:0 24px 50px -34px rgba(27,42,65,.4); }
+.cmp__tag{ font-family:var(--eyebrow); letter-spacing:.3em; text-transform:uppercase; font-size:13px; margin-bottom:1.3em; display:block; }
+.cmp__col--before .cmp__tag{ color:var(--text-mut); }
+.cmp__col--after  .cmp__tag{ color:var(--orange); }
+.cmp__list{ list-style:none; margin:0; padding:0; display:grid; gap:1em; }
+.cmp__list li{ font-size:15px; line-height:1.8; padding-left:1.5em; position:relative; }
+.cmp__col--before li{ color:var(--text-mut); }
+.cmp__col--before li::before{ content:"×"; position:absolute; left:0; color:#a99; font-size:14px; top:.05em; }
+.cmp__col--after li{ color:var(--text); }
+.cmp__col--after li::before{ content:""; position:absolute; left:0; top:.62em; width:9px; height:9px;
+  border-right:1.5px solid var(--orange); border-bottom:1.5px solid var(--orange); transform:rotate(45deg); }
+.cmp__mid{ display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:30px; }
+.cmp__close{ text-align:center; font-family:var(--serif); font-size:clamp(20px,2.6vw,30px); color:var(--ink);
+  letter-spacing:.05em; margin-top:clamp(40px,5vw,60px); }
+
+/* ---------- ④ 3役の掛け算（独自定義の囲み） ---------- */
+.roles{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(18px,2.2vw,30px); margin-top:clamp(34px,4vw,52px); }
+.role{ background:var(--paper); border:1px solid var(--line); border-top:2px solid var(--gold); padding:clamp(28px,2.6vw,40px);
+  display:flex; flex-direction:column; gap:14px; transition:transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s, border-color .5s; }
+.role:hover{ transform:translateY(-6px); box-shadow:0 26px 50px -32px rgba(27,42,65,.4); border-top-color:var(--orange); }
+.role__no{ font-family:var(--eyebrow); font-size:34px; line-height:1; color:var(--orange); font-weight:600; }
+.role h3{ font-size:clamp(19px,2vw,23px); letter-spacing:.04em; }
+.role p{ font-size:14.5px; line-height:2; color:var(--text-mut); }
+.def{ margin-top:clamp(40px,5vw,60px); border:1px solid var(--gold); border-left:3px solid var(--orange);
+  background:linear-gradient(160deg, rgba(176,141,87,.07), rgba(176,141,87,0)); padding:clamp(30px,4vw,50px);
+  border-radius:3px; max-width:60em; position:relative; }
+.def__tag{ position:absolute; top:-1px; left:clamp(28px,3vw,44px); transform:translateY(-50%);
+  background:var(--paper); color:var(--orange); font-family:var(--eyebrow); letter-spacing:.3em;
+  text-transform:uppercase; font-size:12px; padding:0 1em; }
+.def__term{ font-family:var(--serif); font-size:clamp(22px,2.6vw,30px); color:var(--ink); letter-spacing:.04em; margin-bottom:.7em; }
+.def p{ font-size:clamp(15px,1.6vw,17px); line-height:2.1; color:var(--text); max-width:42em; }
+.def p strong{ color:var(--orange); font-weight:600; }
+
+/* ---------- ⑤ サービス内容（線画アイコン＋一文） ---------- */
+.svc{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line);
+  border:1px solid var(--line); border-radius:3px; overflow:hidden; margin-top:clamp(34px,4vw,52px); }
+.svc__item{ background:var(--paper); padding:clamp(26px,2.6vw,38px); display:grid; grid-template-columns:auto 1fr; gap:1.3em;
+  transition:background .4s; }
+.svc__item:hover{ background:#fff; }
+.svc__ic{ width:44px; height:44px; border:1px solid var(--gold); border-radius:50%; display:flex; align-items:center;
+  justify-content:center; color:var(--orange); flex:none; }
+.svc__ic svg{ width:22px; height:22px; }
+.svc__item h3{ font-size:clamp(17px,1.8vw,20px); letter-spacing:.04em; margin-bottom:.5em; }
+.svc__item p{ font-size:14px; line-height:1.95; color:var(--text-mut); }
+.svc__item .opt{ font-family:var(--eyebrow); letter-spacing:.2em; text-transform:uppercase; font-size:11px; color:var(--gold); margin-left:.6em; }
+.svc__proof{ margin-top:clamp(30px,3.5vw,46px); text-align:center; font-family:var(--serif);
+  font-size:clamp(16px,1.8vw,20px); color:var(--ink); letter-spacing:.03em; line-height:1.9; max-width:36em; margin-inline:auto; }
+
+/* ⑤ 一気通貫の上り階段（入口→整える→出口） */
+.stair{ display:grid; gap:clamp(6px,1vw,12px); margin-top:clamp(34px,4vw,52px); }
+.stair__step{ position:relative; border:1px solid var(--line); border-left:3px solid var(--gold);
+  background:var(--paper); border-radius:3px; padding:clamp(24px,3vw,40px);
+  display:grid; grid-template-columns:minmax(180px,230px) 1fr; gap:clamp(20px,3vw,46px); align-items:start; }
+.stair__step-n{ font-family:var(--eyebrow); letter-spacing:.22em; text-transform:uppercase; font-size:13px; color:var(--orange); display:block; margin-bottom:.7em; }
+.stair__ttl{ font-family:var(--serif); font-size:clamp(18px,2vw,23px); color:var(--ink); letter-spacing:.04em; line-height:1.5; }
+.stair__sub{ display:block; margin-top:.6em; font-family:var(--eyebrow); letter-spacing:.18em; text-transform:uppercase; font-size:11px; color:var(--text-mut); }
+.stair__items{ list-style:none; margin:0; padding:0; display:grid; gap:1.2em; }
+.stair__items li{ display:grid; grid-template-columns:auto 1fr; gap:1.1em; align-items:start; }
+.stair__ic{ width:40px; height:40px; border:1px solid var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--orange); flex:none; }
+.stair__ic svg{ width:20px; height:20px; }
+.stair__items b{ display:block; font-family:var(--serif); font-weight:600; color:var(--ink); font-size:15.5px; letter-spacing:.02em; margin-bottom:.25em; }
+.stair__items p{ font-size:13.5px; line-height:1.85; color:var(--text-mut); }
+.stair__items .opt{ font-family:var(--eyebrow); letter-spacing:.2em; text-transform:uppercase; font-size:10.5px; color:var(--gold); margin-left:.5em; }
+.stair__rise{ display:flex; justify-content:center; align-items:center; color:var(--gold); font-size:18px; line-height:1; height:18px; }
+.stair__step--2{ border-left-color:#bd7236; }
+.stair__step--out{ border-left:3px solid var(--orange); border-top:2px solid var(--orange);
+  background:linear-gradient(155deg, rgba(200,90,30,.055), rgba(200,90,30,0));
+  box-shadow:0 28px 56px -34px rgba(27,42,65,.45); }
+.stair__step--out .stair__ttl{ font-size:clamp(20px,2.3vw,28px); }
+.stair__step--out .stair__ic{ border-color:var(--orange); }
+.stair__tag{ display:inline-block; margin-top:.9em; font-family:var(--eyebrow); letter-spacing:.18em; text-transform:uppercase;
+  font-size:11px; color:#fff; background:var(--orange); padding:.4em .85em; border-radius:2px; }
+/* 段階を貫く一文 */
+.thread{ margin-top:clamp(34px,4vw,50px); border:1px solid var(--gold); border-left:3px solid var(--orange);
+  background:linear-gradient(160deg, rgba(176,141,87,.07), rgba(176,141,87,0)); border-radius:3px; padding:clamp(28px,3.4vw,46px); }
+.thread p{ font-family:var(--serif); font-size:clamp(16px,1.9vw,21px); line-height:1.95; color:var(--ink); letter-spacing:.03em; max-width:46em; }
+.thread strong{ color:var(--orange); font-weight:600; }
+
+/* mid CTA band */
+.midcta{ text-align:center; margin-top:clamp(40px,5vw,60px); }
+
+/* ---------- ⑥ 導入の流れ（4ステップ） ---------- */
+.flow{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(14px,1.6vw,22px); margin-top:clamp(34px,4vw,52px);
+  counter-reset:step; }
+.step{ position:relative; padding:clamp(26px,2.2vw,34px) clamp(22px,2vw,28px); border:1px solid var(--line);
+  border-top:2px solid var(--gold); background:var(--paper); border-radius:3px; }
+.step__n{ font-family:var(--eyebrow); font-size:14px; letter-spacing:.24em; text-transform:uppercase; color:var(--orange); display:block; margin-bottom:1em; }
+.step h3{ font-size:clamp(17px,1.8vw,20px); letter-spacing:.04em; margin-bottom:.6em; }
+.step p{ font-size:13.5px; line-height:1.9; color:var(--text-mut); }
+.step:not(:last-child)::after{ content:"→"; position:absolute; top:50%; right:calc(clamp(14px,1.6vw,22px) / -2);
+  transform:translate(50%,-50%); color:var(--gold); font-size:18px; z-index:2; background:var(--paper-2); padding:.2em 0; }
+.flow__close{ text-align:center; font-family:var(--serif); font-size:clamp(16px,1.9vw,21px); color:var(--ink);
+  letter-spacing:.04em; margin-top:clamp(34px,4vw,50px); }
+
+/* ---------- ⑦ 料金 ---------- */
+.price{ max-width:760px; margin-inline:auto; }
+.price__anchor{ text-align:center; font-size:clamp(16px,1.8vw,19px); line-height:2.15; color:var(--text); max-width:32em; margin:0 auto clamp(34px,4vw,48px); }
+.price__anchor .big{ display:block; font-family:var(--serif); color:var(--ink); font-size:clamp(22px,3vw,34px);
+  letter-spacing:.03em; margin:.5em 0; }
+.price__card{ border:1px solid var(--line); border-radius:3px; background:var(--paper); padding:clamp(34px,4vw,52px); text-align:center; }
+.price__from{ font-family:var(--eyebrow); letter-spacing:.24em; text-transform:uppercase; font-size:13px; color:var(--text-mut); }
+.price__amt{ font-family:var(--serif); color:var(--ink); letter-spacing:.02em; margin:.3em 0 .5em; line-height:1.2; }
+.price__amt .num{ font-size:clamp(46px,7vw,76px); color:var(--orange); }
+.price__amt .unit{ font-size:clamp(18px,2vw,24px); }
+.price__note{ font-size:14px; color:var(--text-mut); line-height:1.9; max-width:30em; margin:0 auto; }
+.subsidy{ margin-top:clamp(28px,3vw,40px); border:1px solid var(--orange); border-radius:3px;
+  background:linear-gradient(165deg, rgba(200,90,30,.06), rgba(200,90,30,0)); padding:clamp(28px,3vw,40px); }
+.subsidy__tag{ display:inline-flex; align-items:center; gap:.6em; font-family:var(--eyebrow); letter-spacing:.24em;
+  text-transform:uppercase; font-size:12px; color:var(--orange); margin-bottom:1em; }
+.subsidy__tag::before{ content:""; width:26px; height:1px; background:var(--orange); }
+.subsidy h3{ font-size:clamp(18px,2vw,23px); color:var(--ink); letter-spacing:.04em; margin-bottom:.6em; }
+.subsidy p{ font-size:14.5px; line-height:2; color:var(--text); max-width:40em; }
+.price__close{ text-align:center; margin-top:clamp(30px,3.5vw,44px); font-family:var(--serif);
+  font-size:clamp(16px,1.8vw,20px); color:var(--ink); letter-spacing:.03em; }
+
+/* ---------- ⑧ なぜ大阪放送なのか（ink） ---------- */
+.why{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(22px,3vw,44px); margin-top:clamp(34px,4vw,52px); align-items:start; }
+.why__item{ }
+.why__no{ font-family:var(--eyebrow); letter-spacing:.24em; text-transform:uppercase; font-size:13px; color:var(--gold);
+  display:flex; align-items:center; gap:.7em; margin-bottom:1.1em; }
+.why__no::before{ content:""; width:24px; height:1px; background:var(--gold); }
+.why__item h3{ color:#fff; font-size:clamp(19px,2.2vw,24px); letter-spacing:.05em; margin-bottom:.6em; }
+.why__item p{ color:var(--on-ink); font-size:14.5px; line-height:2.05; opacity:.94; }
+.why__photo{ margin-top:clamp(40px,5vw,60px); }
+.why__photo .ph{ min-height:clamp(240px,34vw,420px); }
+.why__link{ text-align:center; margin-top:clamp(34px,4vw,48px); }
+.why__link a{ font-size:14px; color:var(--on-ink-mut); border-bottom:1px solid var(--line-ink); padding-bottom:3px;
+  letter-spacing:.06em; transition:.4s; }
+.why__link a:hover{ color:var(--gold); border-color:var(--gold); }
+
+/* ---------- ⑨ FAQ（アコーディオン） ---------- */
+.faq{ max-width:820px; margin-inline:auto; border-top:1px solid var(--line); }
+.faq__item{ border-bottom:1px solid var(--line); }
+.faq__q{ width:100%; text-align:left; background:none; border:0; cursor:pointer; padding:clamp(20px,2.2vw,28px) 0;
+  display:flex; align-items:flex-start; gap:1em; font-family:var(--serif); font-size:clamp(16px,1.8vw,20px);
+  color:var(--ink); letter-spacing:.03em; line-height:1.6; }
+.faq__q .qmark{ font-family:var(--eyebrow); color:var(--orange); font-size:.95em; flex:none; }
+.faq__q .ico{ margin-left:auto; flex:none; width:22px; height:22px; position:relative; margin-top:.35em; transition:transform .4s; }
+.faq__q .ico::before,.faq__q .ico::after{ content:""; position:absolute; background:var(--orange); transition:.4s; }
+.faq__q .ico::before{ left:0; right:0; top:50%; height:1.5px; transform:translateY(-50%); }
+.faq__q .ico::after{ top:0; bottom:0; left:50%; width:1.5px; transform:translateX(-50%); }
+.faq__item.open .faq__q .ico::after{ transform:translateX(-50%) scaleY(0); }
+.faq__a{ overflow:hidden; max-height:0; transition:max-height .45s cubic-bezier(.2,.7,.2,1); }
+.faq__a-inner{ padding:0 0 clamp(22px,2.4vw,30px) calc(1em + .7em); }
+.faq__a p{ font-size:14.5px; line-height:2.05; color:var(--text); max-width:44em; }
+.faq__a .todo{ font-family:var(--mono); font-size:11px; color:var(--text-mut); }
+
+/* ---------- 追従：電話/相談 ---------- */
+.callfab{ position:fixed; right:clamp(14px,2vw,26px); bottom:clamp(14px,2vw,26px); z-index:90;
+  display:inline-flex; align-items:center; gap:.7em; background:var(--orange); color:#fff;
+  font-family:var(--sans); font-weight:500; font-size:14px; letter-spacing:.06em; padding:.95em 1.5em;
+  border-radius:100px; box-shadow:0 16px 36px -12px rgba(200,90,30,.7); transition:.4s; opacity:0; transform:translateY(14px);
+  pointer-events:none; }
+.callfab.show{ opacity:1; transform:none; pointer-events:auto; }
+.callfab:hover{ background:var(--orange-d); transform:translateY(-2px); }
+.callfab svg{ width:17px; height:17px; }
+.callfab .todo{ font-family:var(--mono); font-size:10px; opacity:.85; }
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  .roles{ grid-template-columns:1fr; max-width:520px; margin-inline:auto; }
+  .flow{ grid-template-columns:1fr 1fr; gap:26px; }
+  .step:nth-child(2)::after{ display:none; }
+  .why{ grid-template-columns:1fr; gap:30px; max-width:560px; margin-inline:auto; }
+}
+@media (max-width:780px){
+  .painlist{ grid-template-columns:1fr; }
+  .cmp{ grid-template-columns:1fr; gap:10px; }
+  .cmp__mid{ transform:rotate(90deg); margin:4px auto; }
+  .svc{ grid-template-columns:1fr; }
+  .stair__step{ grid-template-columns:1fr; gap:1.4em; }
+}
+@media (max-width:560px){
+  .flow{ grid-template-columns:1fr; }
+  .step::after{ display:none !important; }
+  .callfab span.label{ display:none; }
+  .callfab{ padding:1em; }
+}
