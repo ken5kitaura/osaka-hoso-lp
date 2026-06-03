@@ -459,7 +459,9 @@
 input.sim__select[type="number"]{ -moz-appearance:textfield; }
 
 /* ===== サブページ共通 タブナビ ===== */
-.tabnav{ background:var(--paper-2,#f3efe6); border-bottom:1px solid var(--line); }
+.tabnav{ background:var(--paper-2,#f3efe6); border-bottom:1px solid var(--line);
+  margin-top:var(--header-h); position:relative; z-index:90; }   /* fixedヘッダーの裏に潜って透ける問題の解消 */
+.tabnav + .hero{ padding-top:0; }                                  /* タブ直後のヒーローはheader分の重複paddingを削除 */
 .tabnav__wrap{ display:flex; gap:0; max-width:var(--wrap); margin:0 auto; padding:0 clamp(20px,4vw,40px); }
 .tabnav__item{
   flex:1 1 0; text-align:center; padding:1.05em 1em;
