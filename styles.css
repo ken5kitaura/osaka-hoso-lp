@@ -631,41 +631,25 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .rep__links a .ic{ width:15px; height:15px; color:var(--gold); transition:color .3s; }
 .rep__links a:hover .ic{ color:var(--orange); }
 
-/* ===== 事業ドロップダウン（デスクトップ 1201px〜） ===== */
-@media (min-width:1201px){
-  .nav__group{ position:relative; display:inline-flex; align-items:center; }
-  .nav__sub{
-    position:absolute; top:100%; left:50%;
-    transform:translateX(-50%) translateY(8px);
-    display:flex; flex-direction:column; min-width:232px;
-    background:var(--paper); border:1px solid var(--line); border-top:2px solid var(--orange);
-    border-radius:3px; box-shadow:0 24px 48px -28px rgba(27,42,65,.5);
-    padding:8px; z-index:200;
-    opacity:0; visibility:hidden; pointer-events:none;
-    transition:opacity .24s ease, transform .24s ease;
-  }
-  .nav__group:hover .nav__sub,
-  .nav__group:focus-within .nav__sub{
-    opacity:1; visibility:visible; pointer-events:auto;
-    transform:translateX(-50%) translateY(4px);
-  }
-  .nav__sub a{ padding:.7em .9em; white-space:nowrap; border-radius:2px;
-    font-size:13.5px; letter-spacing:.04em; color:var(--ink); }
-  .nav__sub a:hover{ background:var(--paper-2); color:var(--orange); }
-  .nav__sub a.is-current{ color:var(--orange); }
-  .nav__arrow{ font-size:9px; margin-left:.35em; display:inline-block; transition:transform .24s; }
-  .nav__group:hover .nav__arrow{ transform:rotate(180deg); }
-  /* 詰まり防止：ナビの間隔を少しだけ詰める */
-  .nav{ gap:clamp(12px,1.4vw,22px); }
+/* ===== 事業ドロップダウン：全幅で「ホバー/フォーカス時だけ開くカード」。絶対こぼさない ===== */
+.nav__group{ position:relative; display:inline-flex; align-items:center; }
+.nav__sub{
+  position:absolute !important;
+  top:100%; left:0;
+  display:flex; flex-direction:column; min-width:222px;
+  background:var(--paper); border:1px solid var(--line); border-top:2px solid var(--orange);
+  border-radius:3px; box-shadow:0 24px 48px -28px rgba(27,42,65,.5);
+  padding:8px; z-index:300;
+  opacity:0 !important; visibility:hidden !important; pointer-events:none !important;
+  transform:translateY(6px); transition:opacity .2s ease, transform .2s ease;
 }
-
-/* ===== 事業ドロップダウン（モバイル 〜1200px：パネル内では入れ子表示） ===== */
-@media (max-width:1200px){
-  .nav__group{ display:flex; flex-direction:column; }
-  .nav__sub{
-    position:static; transform:none; opacity:1; visibility:visible; pointer-events:auto;
-    display:flex; flex-direction:column;
-    background:none; border:0; box-shadow:none; padding:0 0 0 1em; margin-top:.2em;
-  }
-  .nav__arrow{ display:none; }
+.nav__group:hover > .nav__sub,
+.nav__group:focus-within > .nav__sub{
+  opacity:1 !important; visibility:visible !important; pointer-events:auto !important;
+  transform:translateY(2px);
 }
+.nav__sub a{ padding:.65em .9em; white-space:nowrap; border-radius:2px; font-size:13.5px; color:var(--ink); letter-spacing:.04em; }
+.nav__sub a:hover{ background:var(--paper-2); color:var(--orange); }
+.nav__sub a.is-current{ color:var(--orange); }
+.nav__arrow{ font-size:9px; margin-left:.3em; display:inline-block; transition:transform .2s; }
+.nav__group:hover .nav__arrow{ transform:rotate(180deg); }
