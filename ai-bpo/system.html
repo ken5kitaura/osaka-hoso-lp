@@ -50,7 +50,15 @@
     <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" id="nav">
       <a href="../index.html#about">私たちについて</a>
-      <a href="../ai-bpo.html" aria-current="page">事業</a>
+      <div class="nav__group">
+        <a href="/ai-bpo" class="nav__top" aria-current="page">事業 <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/ai-bpo" role="menuitem">事業の全体像</a>
+          <a href="/ai-bpo/system" role="menuitem" aria-current="page" class="is-current">AI経理システム導入</a>
+          <a href="/ai-bpo/training" role="menuitem">AI活用研修</a>
+          <a href="/ai-bpo/bpo" role="menuitem">月額BPO運用</a>
+        </div>
+      </div>
       <a href="../index.html#proof">実証（OBC）</a>
       <a href="../index.html#history">沿革</a>
       <a href="../story.html">STORY</a>
@@ -82,6 +90,15 @@
     </nav>
   </div>
 </header>
+
+<!-- ============================ サブページ共通タブ ============================ -->
+<nav class="tabnav" aria-label="事業ページ切替">
+  <div class="tabnav__wrap">
+      <a href="/ai-bpo/system" class="tabnav__item is-current" aria-current="page">AI経理システム導入</a>
+      <a href="/ai-bpo/training" class="tabnav__item">AI活用研修</a>
+      <a href="/ai-bpo/bpo" class="tabnav__item">月額BPO運用</a>
+  </div>
+</nav>
 
 <!-- HERO -->
 <section class="hero hero--biz" id="top">
@@ -335,12 +352,55 @@
 </section>
 
 <!-- CTA -->
+
+<!-- ============================ 他の事業を見る ============================ -->
+<section class="section section--paper2" id="related-products">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <p class="eyebrow center">Our Business</p>
+      <h2>大阪放送のAI事業</h2>
+    </div>
+    <div class="prods prods--nav">
+      <div class="prod prod--nav prod--current reveal" data-d="1">
+        <div class="prod__head">
+          <span class="prod__no">01</span>
+          <span class="prod__badge"><span class="prod__badge-lbl">対象補助金</span>デジタル化・AI導入補助金</span>
+        </div>
+        <span class="prod__corr">仕組みを入れ替える</span>
+        <h3 class="prod__title">AI経理システム導入</h3>
+        <p class="prod__lede">人に依存した経理を、入力から経営数字まで仕組みごと入れ替える。</p>
+        <span class="prod__here">いまご覧のページ</span>
+      </div>
+      <a class="prod prod--nav reveal" data-d="2" href="/ai-bpo/training">
+        <div class="prod__head">
+          <span class="prod__no">02</span>
+          <span class="prod__badge"><span class="prod__badge-lbl">対象助成金</span>人材開発支援助成金</span>
+        </div>
+        <span class="prod__corr">人がAIを使えるようにする</span>
+        <h3 class="prod__title">AI活用研修</h3>
+        <p class="prod__lede">社員がAIを武器にする、実践型研修。</p>
+        <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
+      </a>
+      <a class="prod prod--nav reveal" data-d="3" href="/ai-bpo/bpo">
+        <div class="prod__head">
+          <span class="prod__no">03</span>
+          <span class="prod__badge prod__badge--plain"><span class="prod__badge-lbl">ご契約形態</span>月額・継続支援</span>
+        </div>
+        <span class="prod__corr">回し続ける</span>
+        <h3 class="prod__title">月額BPO運用</h3>
+        <p class="prod__lede">入れ替えた経理を、運用ごと任せる。</p>
+        <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="section contact" id="contact">
   <div class="wrap">
     <div class="contact__grid">
       <div class="contact__intro reveal">
         <p class="eyebrow on-ink">Contact</p>
-        <h2>まずは、3分の<br>無料診断から。</h2>
+        <h2>まずは、その経理の悩みを<br>聞かせてください。</h2>
         <p class="contact__lead">売り込みはしません。いまの経理のお困りごとを伺い、何ができるかを一緒に考えます。相談は無料です。</p>
         <p class="contact__alt">※ご相談だけでも歓迎です。しつこい営業はいたしません。</p>
       </div>

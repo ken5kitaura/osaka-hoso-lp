@@ -49,7 +49,15 @@
     <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" id="nav">
       <a href="../index.html#about">私たちについて</a>
-      <a href="../ai-bpo.html" aria-current="page">事業</a>
+      <div class="nav__group">
+        <a href="/ai-bpo" class="nav__top" aria-current="page">事業 <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/ai-bpo" role="menuitem">事業の全体像</a>
+          <a href="/ai-bpo/system" role="menuitem">AI経理システム導入</a>
+          <a href="/ai-bpo/training" role="menuitem" aria-current="page" class="is-current">AI活用研修</a>
+          <a href="/ai-bpo/bpo" role="menuitem">月額BPO運用</a>
+        </div>
+      </div>
       <a href="../index.html#proof">実証（OBC）</a>
       <a href="../index.html#history">沿革</a>
       <a href="../story.html">STORY</a>
@@ -82,7 +90,16 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ============================ サブページ共通タブ ============================ -->
+<nav class="tabnav" aria-label="事業ページ切替">
+  <div class="tabnav__wrap">
+      <a href="/ai-bpo/system" class="tabnav__item">AI経理システム導入</a>
+      <a href="/ai-bpo/training" class="tabnav__item is-current" aria-current="page">AI活用研修</a>
+      <a href="/ai-bpo/bpo" class="tabnav__item">月額BPO運用</a>
+  </div>
+</nav>
+
+<!-- ============================ ① HERO ============================ -->
 <section class="hero hero--biz" id="top">
   <div class="hero__bg">
     <img class="hero__img color" src="../assets/biz-2.jpg" alt="ノートPCを操作する手元。AIを現場で使いこなす">
@@ -90,75 +107,185 @@
   </div>
   <div class="wrap">
     <div class="hero__inner">
-      <p class="crumb reveal"><a href="../ai-bpo.html">事業</a><span class="sep">/</span><span class="cur">AI活用研修</span></p>
+      <p class="crumb reveal"><a href="/ai-bpo">事業</a><span class="sep">/</span><span class="cur">AI活用研修</span></p>
       <p class="eyebrow reveal">AI Skills Training</p>
       <h1 class="reveal" data-d="1">「入れたのに使われないAI」を、<br>現場の武器に変える。</h1>
-      <p class="hero__sub reveal" data-d="2">ツールを入れても、社員が使いこなせなければ意味がない。ChatGPT・Claude・Geminiを、実際の業務で使える状態にする実践型研修です。AI開発の最前線にいる講師が、本当に役立つ使い方だけを伝えます。</p>
+      <p class="hero__sub reveal" data-d="2">ツールを入れても、社員が使いこなせなければ意味がない。ChatGPT・Claude・Geminiを、実際の業務で“効く”状態にする実践型研修。<strong>ラジオ大阪をAI化した実行者が、現場で本当に使える方法だけを教えます。</strong></p>
       <div class="hero__cta reveal" data-d="3">
-        <a href="#sim" class="btn btn--orange">無料診断（3分）<span class="arr">→</span></a>
-        <a href="#contact" class="btn btn--ghost-light">無料相談する</a>
+        <a href="#contact" class="btn btn--orange">無料で相談する<span class="arr">→</span></a>
+        <a href="#curriculum" class="btn btn--ghost-light">カリキュラムを見る<span class="arr">↓</span></a>
       </div>
     </div>
   </div>
   <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
 </section>
 
-<!-- 研修テーマ -->
-<section class="section" id="themes">
+<!-- ============================ ② Before ============================ -->
+<section class="section" id="before">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Programs</p>
-      <h2>研修テーマ。</h2>
-      <div class="h-rule"></div>
-    </div>
-    <p class="biz__lead reveal" data-d="1">組織の課題とフェーズに合わせて選べます。</p>
-    <div class="themes reveal" data-d="1">
-      <div class="theme theme--wide"><h3>生成AI活用 基礎研修<span class="tag">全社員向け・一番人気</span></h3><p>AIで何ができるかを正しく理解し、自社業務での活用イメージを明確にします。</p></div>
-      <div class="theme"><h3>製造業×AI実装研修</h3><p>品質管理・生産計画・検査工程でのAI活用を実践的に。</p></div>
-      <div class="theme"><h3>経営者・管理職向け AI戦略研修</h3><p>AI投資判断と、推進体制の構築を学びます。</p></div>
-      <div class="theme"><h3>AIエージェント活用研修</h3><p>業務自動化の最前線を、実践で身につけます。</p></div>
-      <div class="theme"><h3>Copilot活用研修</h3><p>Microsoft 365にAIを組み込み、日常業務を効率化します。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 何をやるか -->
-<section class="section" id="what">
-  <div class="wrap">
-    <div class="section__head reveal">
-      <p class="eyebrow">What we do</p>
-      <h2>座学で、終わらせない。</h2>
-      <div class="h-rule"></div>
-    </div>
-    <p class="biz__lead reveal" data-d="1">2日間・計11時間の<strong>実践型プログラム。</strong>研修中に手を動かし、自社の業務にそのまま落とし込みます。受講後に“自走できる”状態を目指します。</p>
-    <div class="pipe reveal" data-d="1">
-      <div class="pipe__row"><span class="pipe__k">01<b>使い分ける</b></span><p>ChatGPT・Claude・Gemini、<b>それぞれの得意を理解して最適に選ぶ</b>。3大AIの違いを、実務目線で。</p></div>
-      <div class="pipe__row"><span class="pipe__k">02<b>業務に落とす</b></span><p>議事録・書類作成などの自動化を、<b>研修中に実際に組み立てる</b>。持ち帰ってすぐ使える形に。</p></div>
-      <div class="pipe__row"><span class="pipe__k">03<b>成果物を持ち帰る</b></span><p>自社のAI活用計画を研修内で作成。<b>受講後に自走できる状態</b>を目指します。</p></div>
-      <div class="pipe__row"><span class="pipe__k">形式<b>対面／オンライン</b></span><p>対面・オンラインのどちらでも受講できます。人数や体制に合わせて選べます。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- どう変わるか -->
-<section class="section section--paper2" id="change">
-  <div class="wrap">
-    <div class="section__head reveal">
-      <p class="eyebrow">After</p>
-      <h2>どう変わるか。</h2>
+      <p class="eyebrow">Before</p>
+      <h2>研修前の、よくある課題。</h2>
       <div class="h-rule"></div>
     </div>
     <ul class="painlist reveal" data-d="1">
-      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>「AIを導入したが現場で使われていない」が解消する</li>
-      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>社員一人ひとりが、日常業務でAIを使える状態になる</li>
-      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>議事録・資料作成などの作業時間が大きく減る</li>
-      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>「どのAIを使えばいいか分からない」がなくなる</li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>AIツールを導入したが、社内で使われていない</li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>ChatGPTを使っている社員もいるが、業務に落とし込めていない</li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>AI研修を受けたが、座学だけで実践につながらなかった</li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>どのAIツールを使えばいいか、誰も判断できない</li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>「AI、やらなきゃ」という焦りだけがある</li>
     </ul>
   </div>
 </section>
 
-<!-- 補助金 + シミュレーターB -->
-<section class="section" id="sim">
+<!-- ============================ ③ After（カード形式） ============================ -->
+<section class="section section--paper2" id="after">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">After</p>
+      <h2>研修後に、起きる変化。</h2>
+      <div class="h-rule"></div>
+    </div>
+    <div class="acards reveal" data-d="1">
+      <div class="acard">
+        <h3>3大AIを使い分けられる</h3>
+        <p>ChatGPT・Claude・Gemini、それぞれの得意を理解して業務に応じて選べる状態に。</p>
+      </div>
+      <div class="acard">
+        <h3>翌日から業務で使える</h3>
+        <p>議事録・書類作成・データ整理——研修中に自社の業務で実際に組み立てるから、翌日からすぐ使えます。</p>
+      </div>
+      <div class="acard">
+        <h3>持ち帰れる成果物</h3>
+        <p>自社のAI活用計画書とAI利用ガイドラインを研修中に作成。社内展開にそのまま使えます。</p>
+      </div>
+      <div class="acard">
+        <h3>助成金で最大75%OFF</h3>
+        <p>人材開発支援助成金で、中小企業は費用の最大75%以上が助成。申請サポートも込み。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ④ Why us（大幅拡充） ============================ -->
+<section class="section section--ink" id="why">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <p class="eyebrow center on-ink">Why us</p>
+      <h2>研修屋では、ありません。<br>古い放送局を、自分たちでAI化した実行者です。</h2>
+    </div>
+    <p class="lead center reveal" data-d="1" style="color:var(--on-ink);max-width:46em;margin-inline:auto">私たちは、出資先の〈ラジオ大阪（OBC）〉に自ら入り込み、紙の伝票も承認印も全廃。月2,500〜3,000件の仕訳をAIで自動処理し、AIアナウンサー〈弁天おび氏〉や番組AI要約「Dailyラジオ大阪」まで——放送局を丸ごとAI化しました。<br><br>「AIで何ができるか」を、教科書で学んだのではありません。自分たちの手で実際にやり切った。だから、現場で本当に効く使い方だけをお伝えできます。</p>
+    <div class="whygrid reveal" data-d="1">
+      <figure>
+        <div class="ph has-photo" data-tone="color"><img src="../assets/studio-mixer.jpg" alt="ラジオ大阪（OBC）の放送卓。AI化を実証した現場"><span class="ph__corner">現在</span></div>
+        <figcaption>自社出資先・ラジオ大阪（OBC）。ここで、すべてを実証した。</figcaption>
+      </figure>
+      <figure>
+        <div class="ph has-photo" data-tone="color"><img src="../assets/biz-1.jpg" alt="ラジオ大阪で稼働中のAI経理ダッシュボード（イメージ）"><span class="ph__corner">現在</span></div>
+        <figcaption>ラジオ大阪で稼働中のAI経理システム（イメージ）。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ⑤ Programs ============================ -->
+<section class="section" id="programs">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Programs</p>
+      <h2>研修テーマ一覧。</h2>
+      <div class="h-rule"></div>
+    </div>
+    <p class="biz__lead reveal" data-d="1">組織の課題とフェーズに合わせて選べます。</p>
+    <div class="themes reveal" data-d="1">
+      <div class="theme theme--wide theme--featured">
+        <h3>生成AI活用 基礎研修<span class="tag">一番人気 / 全社員向け</span></h3>
+        <p>AIで何ができるかを正しく理解し、自社業務での活用イメージを明確にする研修。ChatGPT・Claude・Geminiの3大AIを横断的に学び、座学で終わらせず、研修中に自社業務へのAI活用を実際に組み立てます。</p>
+        <p class="programs__meta">全4回（2日間）｜計11時間｜対面 or オンライン</p>
+      </div>
+      <div class="theme"><h3>製造業×AI実装研修</h3><p>品質管理・生産計画・検査工程でのAI活用。製造業に特化した実践型。</p></div>
+      <div class="theme"><h3>経営者・管理職向け AI戦略研修</h3><p>AI投資判断と推進体制の構築。「自社にAIをどう入れるか」を経営目線で。</p></div>
+      <div class="theme"><h3>AIエージェント活用研修</h3><p>業務の自動化を、AIエージェントで実現。DX推進担当向け。</p></div>
+      <div class="theme"><h3>Copilot活用研修</h3><p>Microsoft 365にAIを組み込み、日常のWordやExcel作業を効率化。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ⑥ Curriculum ============================ -->
+<section class="section section--paper2" id="curriculum">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Curriculum</p>
+      <h2>カリキュラム<span style="display:block;font-size:.45em;color:var(--text-mut);letter-spacing:.04em;margin-top:.6em;font-family:var(--sans)">生成AI活用 基礎研修</span></h2>
+      <div class="h-rule"></div>
+    </div>
+    <p class="curri__meta reveal" data-d="1">対面プラン: 2日間・計11時間　／　オンラインプラン: 全6回・計11時間</p>
+    <div class="curri reveal" data-d="1">
+      <div class="curri__day">
+        <h3>Day 1（5.5時間）</h3>
+        <div class="curri__slot">
+          <span class="curri__time">午前 3h ／ レクチャー</span>
+          <ul>
+            <li>最新のAI動向と、3大AI（ChatGPT・Claude・Gemini）の特性</li>
+            <li>ラジオ大阪でのAI活用 実事例デモンストレーション</li>
+            <li>AIに適切な指示を出す「プロンプト設計」の基本</li>
+          </ul>
+        </div>
+        <div class="curri__slot">
+          <span class="curri__time">午後 2.5h ／ ワークショップ 1</span>
+          <ul>
+            <li>「自社の業務で、どこにAIが効くか」テーブルディスカッション</li>
+            <li>講師がテーブルごとにフォローアップ</li>
+            <li>アイデア発表</li>
+          </ul>
+        </div>
+      </div>
+      <div class="curri__day">
+        <h3>Day 2（5.5時間）</h3>
+        <div class="curri__slot">
+          <span class="curri__time">午前 3h ／ テーマ別深掘り</span>
+          <ul>
+            <li>ChatGPT / Claude / Gemini の業務別使い分け戦略</li>
+            <li>プロンプト設計の実践（自社の業務を題材に）</li>
+            <li>AI利用ガイドライン策定ワーク</li>
+          </ul>
+        </div>
+        <div class="curri__slot">
+          <span class="curri__time">午後 2.5h ／ ワークショップ 2</span>
+          <ul>
+            <li>自社AI活用計画書の作成</li>
+            <li>AI利用ガイドライン（ドラフト）の仕上げ</li>
+            <li>発表・フィードバック</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ⑦ Deliverables ============================ -->
+<section class="section" id="deliverables">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Deliverables</p>
+      <h2>研修で作成する成果物。</h2>
+      <div class="h-rule"></div>
+    </div>
+    <div class="acards reveal" data-d="1">
+      <div class="acard">
+        <h3>自社AI活用計画書</h3>
+        <p>ワークショップで洗い出したAI活用アイデアを、部署別・優先度別に整理した実行計画。研修後すぐに社内展開できます。</p>
+      </div>
+      <div class="acard">
+        <h3>AI利用ガイドライン（ドラフト）</h3>
+        <p>自社のAI利用ルールの雛形。セキュリティ・著作権・データ取扱いを網羅した実用的なドキュメント。社内のAI利用の「共通ルール」になります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ⑧ Subsidy + シミュレーターB ============================ -->
+<section class="section section--paper2" id="sim">
   <div class="wrap">
     <div class="section__head center reveal">
       <p class="eyebrow center">Subsidy</p>
@@ -210,56 +337,31 @@
   </div>
 </section>
 
-<!-- なぜ大阪放送 -->
-<section class="section section--ink" id="why">
-  <div class="wrap">
-    <div class="section__head center reveal">
-      <p class="eyebrow center on-ink">Why us</p>
-      <h2>「使ったことのある人」が教えます。</h2>
-    </div>
-    <p class="lead center reveal" data-d="1" style="color:var(--on-ink);max-width:42em;margin-inline:auto">私たちは研修だけの会社ではありません。AIを自ら開発・実装し、現場で日々使い倒しています。「使ったことのある人」が教えるから、机上ではなく現場で効く使い方を渡せます。</p>
-  </div>
-</section>
-
-<!-- 単体でも、入口としても -->
-<section class="section" id="standalone">
-  <div class="wrap">
-    <div class="thread reveal">
-      <p><strong>この研修は、単体で受けられます。</strong>「まずAIに慣れたい」会社の第一歩としても、経理システム導入の前段としても活用できます。</p>
-    </div>
-  </div>
-</section>
-
-<!-- 料金 -->
-<section class="section section--paper2" id="price">
+<!-- ============================ ⑨ Pricing ============================ -->
+<section class="section" id="price">
   <div class="wrap">
     <div class="section__head center reveal">
       <p class="eyebrow center">Pricing</p>
       <h2>料金<span style="display:block;font-size:.42em;color:var(--text-mut);letter-spacing:.04em;margin-top:.8em;font-family:var(--sans)">1名・税込</span></h2>
     </div>
-    <div class="dprice reveal" data-d="1">
-      <div class="dprice__row">
-        <span class="dprice__plan">対面</span>
-        <span class="dprice__val">40<small>万円/人</small>　<span style="font-size:.6em;color:var(--text-mut)">（6〜10名は36万円/人）</span></span>
-      </div>
-      <div class="dprice__row">
-        <span class="dprice__plan">オンライン</span>
-        <span class="dprice__val">38<small>万円/人</small>　<span style="font-size:.6em;color:var(--text-mut)">（6〜10名は34万円/人）</span></span>
-      </div>
-      <div class="dprice__row">
-        <span class="dprice__plan">例：中小・対面・5名</span>
-        <span class="dprice__val">研修費200万円　→　<span class="net">実質 約44.5万円</span></span>
-      </div>
-      <p class="dprice__note">1人あたり約8.9万円／実質助成率77.8%（試算）。※実際の支給額は審査により異なります。助成金は後払い・計画届が事前に必要。対象は雇用保険適用の従業員（役員・事業主は対象外）。</p>
-    </div>
-    <div class="related reveal">
-      <a href="system.html">経理を仕組みごと：AI経理システム導入<span class="arr">→</span></a>
-    </div>
+    <table class="ptable reveal" data-d="1">
+      <thead>
+        <tr><th></th><th scope="col">対面プラン</th><th scope="col">オンラインプラン</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">研修時間</th><td>11時間（2日間）</td><td>11時間（全6回）</td></tr>
+        <tr><th scope="row">形式</th><td>対面（講師派遣）</td><td>Zoomライブ</td></tr>
+        <tr><th scope="row">税込料金 / 人</th><td>¥400,000</td><td>¥380,000</td></tr>
+        <tr><th scope="row">6〜10名割引</th><td>¥360,000 / 人</td><td>¥340,000 / 人</td></tr>
+        <tr class="ptable__net"><th scope="row">助成金適用後</th><td>約 ¥89,000 / 人</td><td>約 ¥85,000 / 人</td></tr>
+      </tbody>
+    </table>
+    <p class="ptable__note reveal">※助成金適用後は中小企業・5名受講の場合の試算。11名以上は別途お見積もり。</p>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section" id="faq">
+<!-- ============================ ⑩ FAQ ============================ -->
+<section class="section section--paper2" id="faq">
   <div class="wrap">
     <div class="section__head center reveal">
       <p class="eyebrow center">FAQ</p>
@@ -268,36 +370,83 @@
     <div class="faq reveal" data-d="1">
       <div class="faq__item">
         <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>研修だけでも頼めますか？</span><span class="ico" aria-hidden="true"></span></button>
-        <div class="faq__a"><div class="faq__a-inner"><p>はい。単体で受けられます。</p></div></div>
+        <div class="faq__a"><div class="faq__a-inner"><p>はい。単体で受けられます。「まずAIに慣れたい」という第一歩としても、経理システム導入の前段としても活用できます。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>他社のAI研修と何が違いますか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>私たちは「研修屋」ではありません。自社出資先の放送局（ラジオ大阪）を実際にAI化した実行者です。教科書の知識ではなく、現場で効いた方法だけをお伝えします。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>ChatGPT研修ではないのですか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>ChatGPT「だけ」ではありません。ChatGPT・Claude・Geminiの3大AIを横断的に学び、業務に応じて最適なAIを選べる力を身につけます。</p></div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>助成金はいつもらえますか？</span><span class="ico" aria-hidden="true"></span></button>
-        <div class="faq__a"><div class="faq__a-inner"><p>後払いです。費用は先にお支払いいただき、研修完了後に支給されます。</p></div></div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>助成金に条件はありますか？</span><span class="ico" aria-hidden="true"></span></button>
-        <div class="faq__a"><div class="faq__a-inner"><p>対象は雇用保険適用の従業員（役員・事業主は対象外）です。研修開始1ヶ月前までに計画届の提出が必要で、その手続きもサポートします。</p></div></div>
+        <div class="faq__a"><div class="faq__a-inner"><p>後払いです。研修費用は先にお支払いいただき、研修完了後に助成金が支給されます。申請手続きのサポートも行います。</p></div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>何名から受講できますか？</span><span class="ico" aria-hidden="true"></span></button>
-        <div class="faq__a"><div class="faq__a-inner"><p>1名から受講可能です。6名以上で割引があります。</p></div></div>
+        <div class="faq__a"><div class="faq__a-inner"><p>1名から可能です。6名以上でボリュームディスカウントがあります。</p></div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>内容はカスタマイズできますか？</span><span class="ico" aria-hidden="true"></span></button>
-        <div class="faq__a"><div class="faq__a-inner"><p>はい。業種・課題に合わせて調整します。</p></div></div>
+        <div class="faq__a"><div class="faq__a-inner"><p>はい。業種・課題に合わせて調整します。製造業向け、経営者向けなど専門テーマもご用意しています。</p></div></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
+
+<!-- ============================ 他の事業を見る ============================ -->
+<section class="section section--paper2" id="related-products">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <p class="eyebrow center">Our Business</p>
+      <h2>大阪放送のAI事業</h2>
+    </div>
+    <div class="prods prods--nav">
+      <a class="prod prod--nav reveal" data-d="1" href="/ai-bpo/system">
+        <div class="prod__head">
+          <span class="prod__no">01</span>
+          <span class="prod__badge"><span class="prod__badge-lbl">対象補助金</span>デジタル化・AI導入補助金</span>
+        </div>
+        <span class="prod__corr">仕組みを入れ替える</span>
+        <h3 class="prod__title">AI経理システム導入</h3>
+        <p class="prod__lede">人に依存した経理を、入力から経営数字まで仕組みごと入れ替える。</p>
+        <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
+      </a>
+      <div class="prod prod--nav prod--current reveal" data-d="2">
+        <div class="prod__head">
+          <span class="prod__no">02</span>
+          <span class="prod__badge"><span class="prod__badge-lbl">対象助成金</span>人材開発支援助成金</span>
+        </div>
+        <span class="prod__corr">人がAIを使えるようにする</span>
+        <h3 class="prod__title">AI活用研修</h3>
+        <p class="prod__lede">社員がAIを武器にする、実践型研修。</p>
+        <span class="prod__here">いまご覧のページ</span>
+      </div>
+      <a class="prod prod--nav reveal" data-d="3" href="/ai-bpo/bpo">
+        <div class="prod__head">
+          <span class="prod__no">03</span>
+          <span class="prod__badge prod__badge--plain"><span class="prod__badge-lbl">ご契約形態</span>月額・継続支援</span>
+        </div>
+        <span class="prod__corr">回し続ける</span>
+        <h3 class="prod__title">月額BPO運用</h3>
+        <p class="prod__lede">入れ替えた経理を、運用ごと任せる。</p>
+        <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="section contact" id="contact">
   <div class="wrap">
     <div class="contact__grid">
       <div class="contact__intro reveal">
         <p class="eyebrow on-ink">Contact</p>
-        <h2>まずは、3分の<br>無料診断から。</h2>
-        <p class="contact__lead">売り込みはしません。お困りごとと現状をうかがって、何ができるか一緒に考えます。相談は無料です。</p>
+        <h2>まずは、お気軽に<br>ご相談ください。</h2>
+        <p class="contact__lead">売り込みはしません。御社の課題をうかがい、最適な研修プランを一緒に考えます。相談は無料です。</p>
         <p class="contact__alt">※ご相談だけでも歓迎です。しつこい営業はいたしません。</p>
       </div>
       <form class="form reveal" data-d="1" id="contactForm" data-form="osakahoso-soudan" action="" method="POST" novalidate>

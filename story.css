@@ -78,3 +78,9 @@
   .story-table th{ width:42%; }
   .story-table th, .story-table td{ padding:.85em .9em; }
 }
+
+/* ===== 3分でわかるまとめ ===== */
+.story-summary{ margin:1.2em 0 2.4em; padding:1.5em 1.8em; border-left:3px solid var(--orange); background:rgba(176,141,87,.05); border-radius:0 3px 3px 0; }
+.story-summary p{ font-size:15px; line-height:2.05; color:var(--text); margin-bottom:1em; }
+.story-summary p:last-child{ margin-bottom:0; }
+.story-summary p strong{ color:var(--ink); font-weight:600; }

@@ -457,3 +457,72 @@
 .sim__check{ display:inline-flex; align-items:center; gap:.55em; font-size:14px; color:var(--text); cursor:pointer; padding:.2em 0; }
 .sim__check input{ width:16px; height:16px; accent-color:var(--orange); cursor:pointer; }
 input.sim__select[type="number"]{ -moz-appearance:textfield; }
+
+/* ===== サブページ共通 タブナビ ===== */
+.tabnav{ background:var(--paper-2,#f3efe6); border-bottom:1px solid var(--line); }
+.tabnav__wrap{ display:flex; gap:0; max-width:var(--wrap); margin:0 auto; padding:0 clamp(20px,4vw,40px); }
+.tabnav__item{
+  flex:1 1 0; text-align:center; padding:1.05em 1em;
+  font-family:var(--serif); font-size:clamp(13px,1.5vw,16px); color:var(--text-mut);
+  border-bottom:2px solid transparent; letter-spacing:.04em;
+  transition:color .25s, border-color .25s, background .25s;
+}
+.tabnav__item:hover{ color:var(--ink); background:#fff; }
+.tabnav__item.is-current{ color:var(--orange); font-weight:600; border-bottom-color:var(--orange); background:#fff; cursor:default; }
+.tabnav__item.is-current:hover{ color:var(--orange); }
+@media (max-width:640px){
+  .tabnav__wrap{ padding:0 12px; }
+  .tabnav__item{ font-size:12px; padding:.85em .35em; letter-spacing:.01em; }
+}
+
+/* ===== サブページ共通「他の事業を見る」3カード ===== */
+.prod--current{ cursor:default; opacity:.62; position:relative; }
+.prod--current:hover{ transform:none; box-shadow:none; border-top-color:var(--gold); }
+.prod--current .prod__cta{ display:none; }
+.prod--current .prod__here{
+  display:inline-block; margin-top:.6em;
+  font-family:var(--eyebrow); letter-spacing:.16em; text-transform:uppercase;
+  font-size:11px; color:var(--text-mut); border:1px solid var(--line);
+  padding:.4em .9em; border-radius:100px;
+}
+
+/* ===== training: After / Deliverables カード（2x2グリッド） ===== */
+.acards{ display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(16px,2.2vw,28px); margin-top:clamp(30px,4vw,48px); }
+.acard{ background:var(--paper); border:1px solid var(--line); border-top:2px solid var(--gold); padding:clamp(22px,2.6vw,32px); border-radius:3px; transition:transform .35s, box-shadow .35s; }
+.acard:hover{ transform:translateY(-4px); box-shadow:0 22px 44px -28px rgba(27,42,65,.32); border-top-color:var(--orange); }
+.acard h3{ font-family:var(--serif); font-size:clamp(17px,1.9vw,21px); color:var(--ink); letter-spacing:.04em; margin-bottom:.6em; line-height:1.45; }
+.acard p{ font-size:14px; line-height:1.95; color:var(--text-mut); }
+@media (max-width:640px){ .acards{ grid-template-columns:1fr; } }
+
+/* ===== training: Why us photo grid ===== */
+.whygrid{ display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(16px,2.5vw,30px); margin-top:clamp(30px,3.5vw,46px); }
+.whygrid figcaption{ font-family:var(--mono); font-size:11.5px; color:var(--text-mut); padding:.7em .2em 0; line-height:1.6; }
+.whygrid .ph{ aspect-ratio:4/3; }
+@media (max-width:640px){ .whygrid{ grid-template-columns:1fr; } }
+
+/* ===== training: Curriculum ===== */
+.curri__meta{ font-family:var(--eyebrow); letter-spacing:.14em; font-size:12px; color:var(--text-mut); margin-top:1.4em; text-transform:uppercase; }
+.curri{ display:grid; gap:clamp(28px,3.5vw,46px); margin-top:clamp(28px,3.5vw,44px); }
+.curri__day{ border-top:2px solid var(--orange); padding-top:1.4em; }
+.curri__day h3{ font-family:var(--serif); font-size:clamp(19px,2.1vw,24px); color:var(--ink); margin-bottom:1em; letter-spacing:.04em; }
+.curri__slot{ padding:1.2em 1.4em; background:var(--paper); border:1px solid var(--line); border-radius:3px; margin-bottom:.8em; }
+.curri__time{ display:inline-block; font-family:var(--eyebrow); letter-spacing:.18em; text-transform:uppercase; font-size:11.5px; color:var(--orange); margin-bottom:.5em; }
+.curri__slot h4{ font-family:var(--serif); font-size:clamp(15px,1.7vw,18px); color:var(--ink); margin-bottom:.6em; letter-spacing:.04em; }
+.curri__slot ul{ list-style:disc; padding-left:1.4em; margin:0; }
+.curri__slot li{ font-size:13.5px; line-height:1.85; color:var(--text-mut); padding:.15em 0; }
+
+/* ===== training: Pricing 表 ===== */
+.ptable{ width:100%; border-collapse:collapse; margin-top:clamp(28px,3.5vw,44px); font-size:14.5px; }
+.ptable th, .ptable td{ padding:.95em 1em; border-bottom:1px solid var(--line); text-align:center; }
+.ptable thead th{ font-family:var(--eyebrow); letter-spacing:.1em; font-size:12px; color:var(--text-mut); padding-bottom:.8em; }
+.ptable tbody th[scope="row"]{ font-family:var(--serif); color:var(--ink); text-align:left; font-weight:400; }
+.ptable tbody td{ font-family:var(--serif); color:var(--ink); }
+.ptable tr.ptable__net td{ color:var(--orange); font-weight:600; }
+.ptable__note{ font-family:var(--mono); font-size:11px; line-height:1.8; color:var(--text-mut); margin-top:1.4em; max-width:46em; }
+@media (max-width:640px){ .ptable{ font-size:13px; } .ptable th, .ptable td{ padding:.7em .4em; } }
+
+/* ===== training: Programs - 一番人気カードの大きさ調整 ===== */
+.theme--featured{ grid-column:1/-1; padding:clamp(26px,3vw,40px); border-left:3px solid var(--orange); background:#fff; }
+.theme--featured h3{ font-size:clamp(20px,2.4vw,26px); margin-bottom:.8em; }
+.theme--featured p{ font-size:14.5px; line-height:1.95; color:var(--text); }
+.theme--featured .programs__meta{ font-family:var(--eyebrow); letter-spacing:.18em; text-transform:uppercase; font-size:11.5px; color:var(--text-mut); margin-top:1em; }

@@ -46,7 +46,15 @@
     </button>
     <nav class="nav" id="nav">
       <a href="index.html#about">私たちについて</a>
-      <a href="ai-bpo.html" aria-current="page">事業</a>
+      <div class="nav__group">
+        <a href="/ai-bpo" class="nav__top" aria-current="page">事業 <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/ai-bpo" role="menuitem" aria-current="page" class="is-current">事業の全体像</a>
+          <a href="/ai-bpo/system" role="menuitem">AI経理システム導入</a>
+          <a href="/ai-bpo/training" role="menuitem">AI活用研修</a>
+          <a href="/ai-bpo/bpo" role="menuitem">月額BPO運用</a>
+        </div>
+      </div>
       <a href="index.html#proof">実証（OBC）</a>
       <a href="index.html#history">沿革</a>
       <a href="story.html">STORY</a>
@@ -88,83 +96,147 @@
   <div class="wrap">
     <div class="hero__inner">
       <p class="eyebrow reveal">AI Accounting ／ Training ／ BPO</p>
-      <h1 class="reveal" data-d="1">人に依存した経理を、<br>仕組みごと丸ごと入れ替える。</h1>
-      <p class="hero__sub reveal" data-d="2">“あの人しか分からない”“辞めたら止まる”——その属人的な経理を、人ではなく仕組みが回す状態へ。大阪放送は、経理をまるごと入れ替える会社です。</p>
+      <h1 class="reveal" data-d="1">入力から経営指標まで。<br>AI経理・財務の力を、丸ごと。</h1>
+      <p class="hero__sub reveal" data-d="2">経理を“仕組みごと入れ替える”。社員を“AIの使い手に変える”。そして“経営に効く数字を、毎月届ける”。——この3つを、一本で。<br>80年つづく大阪放送が、自ら実証したAIの力で。</p>
       <div class="hero__cta reveal" data-d="3">
-        <a href="#contact" class="btn btn--orange">無料診断（3分）<span class="arr">→</span></a>
-        <a href="#contact" class="btn btn--ghost-light">無料相談する</a>
+        <a href="#products" class="btn btn--ghost-light">事業を詳しく見る<span class="arr">↓</span></a>
+        <a href="#contact" class="btn btn--orange">無料で相談する<span class="arr">→</span></a>
       </div>
     </div>
   </div>
   <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
 </section>
 
-<!-- ============================ ② 読み物（リード） ============================ -->
-<section class="section" id="intro">
+<!-- ============================ ② The Problem ============================ -->
+<section class="section" id="problem">
   <div class="wrap">
-    <div class="read">
-      <div class="read__block reveal">
-        <h3 class="read__h"><span class="n">01</span>「AIを入れる」の、本当の意味</h3>
-        <p>「AIを導入する」と聞くと、多くの人はツールを1つ買うことだと考えます。ChatGPTを契約する、便利なソフトを入れる——。でも、それで現場が本当に変わった会社は、驚くほど少ない。“入れたのに使われないAI”が、あちこちで眠っています。</p>
-        <p>理由はシンプルです。仕事のやり方が、人に依存したままだから。「あの人がやる」「あの人しか分からない」という属人的な流れの上に、便利な道具を1つ乗せても、流れそのものは変わりません。だから使われない。問われているのは「どのAIを使うか」ではなく、「何を変えるか」なのです。</p>
-      </div>
-      <div class="read__block reveal" data-d="1">
-        <h3 class="read__h"><span class="n">02</span>変わるのは「道具」ではなく「仕事の流れ」</h3>
-        <p>本当のAI導入とは、便利な道具を足すことではありません。人がいないと回らなかった仕事を、仕組みが回す状態に作り替えること。担当者が誰であっても、同じ結果が同じ速さで出る。人が抜けても止まらない。そこまで踏み込んで初めて、AIは「コスト」ではなく「投資」になります。</p>
-      </div>
-      <div class="read__block reveal" data-d="1">
-        <h3 class="read__h"><span class="n">03</span>事業に根付かせるには、三つが要る</h3>
-        <p>AIを事業に本当に根付かせるには、突き詰めると３つしかありません。</p>
-        <ol class="read__list">
-          <li><strong>仕組みそのものを入れ替える。</strong>どれだけ優れたAIでも、古いやり方の上に乗せるだけでは動かない。流れごと作り替える必要があります。</li>
-          <li><strong>人がAIを使えるようにする。</strong>仕組みを入れても、現場が使いこなせなければ宝の持ち腐れ。人の側の底上げが要ります。</li>
-          <li><strong>回し続ける。</strong>導入は一度きりのイベントではありません。運用して、初めて根付きます。</li>
-        </ol>
-        <p>私たちは、この３つを経理という現場で、自分たち自身が実証しました。その経験を、３つの形でお届けします。</p>
-      </div>
+    <div class="section__head reveal">
+      <p class="eyebrow">The Problem</p>
+      <h2>その経理の求人、出す前に。</h2>
+      <div class="h-rule"></div>
+    </div>
+    <div class="pain">
+      <p class="pain__lead reveal" data-d="1">経理担当者を一人採用すると、給与だけで年間400〜500万円。さらに採用にかかる手間、3か月以上の教育期間、そして“その人が辞めたら業務が止まる”という属人化のリスク。<span class="q">——もし、それらをまるごと手放せるとしたら？</span></p>
+      <ul class="painlist reveal" data-d="2">
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>経理担当者の採用が、なかなか決まらない</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>一人に業務が集中し、その人が休むと回らない</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>数字の集計に時間がかかり、経営判断が後手になる</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>同じ数字を、紙からシステム、システムからエクセルへと何度も手で転記している</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>何にいくら使っているか、リアルタイムで把握できていない</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ============================ ③ 3つの入口 ============================ -->
+<!-- ============================ ③ The Solution（Before/After） ============================ -->
+<section class="section section--paper2" id="solution">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">The Solution</p>
+      <h2>入力から、経営の数字まで。</h2>
+      <div class="h-rule"></div>
+    </div>
+    <div class="cmp reveal" data-d="1">
+      <div class="cmp__col cmp__col--before">
+        <span class="cmp__tag">Before ／ いま</span>
+        <ul class="cmp__list">
+          <li>採用・教育・退職リスクを抱える</li>
+          <li>手作業で数字を集計している</li>
+          <li>業務が特定の人に属人化している</li>
+          <li>月次の締めが遅い</li>
+          <li>“数字が読める頃には手遅れ”</li>
+        </ul>
+      </div>
+      <div class="cmp__mid" aria-hidden="true">→</div>
+      <div class="cmp__col cmp__col--after">
+        <span class="cmp__tag">After ／ まるごと任せたら</span>
+        <ul class="cmp__list">
+          <li>採用は不要。人の出入りに左右されない</li>
+          <li>AIで自動集計。手作業から解放</li>
+          <li>仕組みで標準化。誰が見ても同じ</li>
+          <li>数字を、すぐ把握できる</li>
+          <li>“経営判断に使える指標が毎月そろう”</li>
+        </ul>
+      </div>
+    </div>
+    <p class="cmp__close reveal" data-d="2">経理を手放し、経営の数字を手に入れる。あなたは、経営に集中できます。</p>
+  </div>
+</section>
+
+<!-- ============================ ④ Our Difference ============================ -->
+<section class="section" id="why-special">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Our Difference</p>
+      <h2>“数字を入力する”会社では<br>ありません。</h2>
+      <div class="h-rule"></div>
+    </div>
+    <p class="biz__lead reveal" data-d="1">私たちの強みは、ひとりの人間が<strong>経営・財務・AIの3つを同時に</strong>持っていること。普通は別々の専門家に分かれている3つの役割を、一気通貫で。だから、ただ記帳を代行するのではなく、“経営の役に立つ数字”の出口から、日々の入力までを設計し直せます。</p>
+    <div class="roles">
+      <article class="role reveal" data-d="1">
+        <span class="role__no">01</span>
+        <h3>経営がわかる</h3>
+        <p>どんな数字で判断すべきか、出口を決める。たとえば“月の利益がいくら”ではなく、“この事業はあと何ヶ月で黒字に転じるか”がすぐに見える状態をつくります。</p>
+      </article>
+      <article class="role reveal" data-d="2">
+        <span class="role__no">02</span>
+        <h3>財務から経理を設計できる</h3>
+        <p>その出口を生むために、日々の入力をどう組むか。帳簿の並べ方ひとつで、出てくる数字の質が変わる。入力がゴミなら、分析もゴミ——だから、入口から設計し直します。</p>
+      </article>
+      <article class="role reveal" data-d="3">
+        <span class="role__no">03</span>
+        <h3>AIで実装できる</h3>
+        <p>設計だけして終わりではなく、AIを使って仕組みを実装し、動く状態にしてお渡しします。構想から実装までを、常識外の速さで。</p>
+      </article>
+    </div>
+    <div class="def reveal" data-d="1">
+      <span class="def__tag">Our Definition</span>
+      <p class="def__term">出口から逆算する経理設計</p>
+      <p>“どんな数字で経営判断したいか”という出口を先に決め、そこから日々の入力を設計し直す、当社独自のアプローチです。<strong>入力がゴミなら、どんな分析もゴミになる。</strong>だから私たちは、出口から逆算します。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ⑤ 3つの事業 ============================ -->
 <section class="section section--paper2" id="products">
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we do</p>
-      <h2>私たちが、できること。</h2>
+      <h2>3つの事業で、丸ごと。</h2>
       <div class="h-rule"></div>
     </div>
+    <p class="biz__lead reveal" data-d="1">仕組みを入れ替え、人を育て、運用を引き受ける。この3つが揃ってはじめて、経理は本当に変わります。</p>
     <div class="prods prods--nav">
-      <a class="prod prod--nav reveal" data-d="1" href="ai-bpo/system.html">
+      <a class="prod prod--nav reveal" data-d="1" href="/ai-bpo/system">
         <div class="prod__head">
           <span class="prod__no">01</span>
           <span class="prod__badge"><span class="prod__badge-lbl">対象補助金</span>デジタル化・AI導入補助金</span>
         </div>
         <span class="prod__corr">仕組みを入れ替える</span>
         <h3 class="prod__title">AI経理システム導入</h3>
-        <p class="prod__lede">人に依存した経理を、入力から経営数字まで仕組みごと入れ替える。</p>
+        <p class="prod__lede">“あの人しか分からない”属人経理を、AIが回す仕組みに丸ごと入れ替え。デジタル化・AI導入補助金（1/2・上限450万円）対象。</p>
         <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
       </a>
 
-      <a class="prod prod--nav reveal" data-d="2" href="ai-bpo/training.html">
+      <a class="prod prod--nav reveal" data-d="2" href="/ai-bpo/training">
         <div class="prod__head">
           <span class="prod__no">02</span>
           <span class="prod__badge"><span class="prod__badge-lbl">対象助成金</span>人材開発支援助成金</span>
         </div>
         <span class="prod__corr">人がAIを使えるようにする</span>
         <h3 class="prod__title">AI活用研修</h3>
-        <p class="prod__lede">社員がAIを武器にする、実践型研修。</p>
+        <p class="prod__lede">ChatGPT・Claude・Geminiを“現場で使える”状態にする実践型研修。人材開発支援助成金で中小は最大75%。</p>
         <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
       </a>
 
-      <a class="prod prod--nav reveal" data-d="3" href="ai-bpo/bpo.html">
+      <a class="prod prod--nav reveal" data-d="3" href="/ai-bpo/bpo">
         <div class="prod__head">
           <span class="prod__no">03</span>
           <span class="prod__badge prod__badge--plain"><span class="prod__badge-lbl">ご契約形態</span>月額・継続支援</span>
         </div>
         <span class="prod__corr">回し続ける</span>
         <h3 class="prod__title">月額BPO運用</h3>
-        <p class="prod__lede">入れ替えた経理を、運用ごと任せる。</p>
+        <p class="prod__lede">入れ替えた仕組みの上で、日々の経理から経営指標まで月額で引き受け。社外にCFO機能を持つ感覚で。</p>
         <span class="prod__cta">詳しく見る<span class="arr">→</span></span>
       </a>
     </div>
@@ -172,29 +244,105 @@
   </div>
 </section>
 
-<!-- ============================ ③ 実証（さわり） ============================ -->
-<section class="section section--ink" id="proof">
+<!-- ============================ ⑥ How it works ============================ -->
+<section class="section" id="flow">
   <div class="wrap">
-    <div class="proof-teaser reveal">
-      <p class="eyebrow center on-ink">Proof</p>
-      <h2>自分たちで、実証しています。</h2>
-      <p class="proof-teaser__lead">私たちは出資先のラジオ大阪（OBC）で、この３つを自ら実践しました。理論ではなく、やったことをお届けします。</p>
-      <p class="why__link"><a href="ai-bpo/system.html">実証の詳しい中身を見る →</a></p>
+    <div class="section__head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2>ご利用の流れ</h2>
+      <div class="h-rule"></div>
+    </div>
+    <div class="flow">
+      <div class="step reveal"><span class="step__n">Step 01</span><h3>無料相談</h3><p>いまのお困りごとと、経理の状況をお聞きします。オンライン可。</p></div>
+      <div class="step reveal" data-d="1"><span class="step__n">Step 02</span><h3>現状の見える化</h3><p>業務とコストを整理し、3つの事業のうち何をどう組み合わせるかをご提案。</p></div>
+      <div class="step reveal" data-d="2"><span class="step__n">Step 03</span><h3>設計・導入</h3><p>お客様に合わせて仕組みを設計。補助金の申請もここでサポート。</p></div>
+      <div class="step reveal" data-d="3"><span class="step__n">Step 04</span><h3>運用・伴走</h3><p>動き始めたら、そのまま伴走。月額BPOで、ずっと。</p></div>
+    </div>
+    <p class="flow__close reveal">ご相談から導入・運用まで、すべて私たちが並走します。</p>
+  </div>
+</section>
+
+<!-- ============================ ⑦ Why us ============================ -->
+<section class="section section--ink" id="why-us">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <p class="eyebrow center on-ink">Why us</p>
+      <h2>なぜ、私たちなのか。</h2>
+    </div>
+    <div class="why">
+      <div class="why__item reveal" data-d="1">
+        <span class="why__no">80 Years</span>
+        <h3>80年の歴史</h3>
+        <p>1945年創業。大阪に根ざした会社です。</p>
+      </div>
+      <div class="why__item reveal" data-d="2">
+        <span class="why__no">Proven</span>
+        <h3>自ら、現場で実証</h3>
+        <p>ラジオ大阪に入り込み、月2,500〜3,000件の仕訳を自動化。紙の伝票も承認印も全廃しました。</p>
+      </div>
+      <div class="why__item reveal" data-d="3">
+        <span class="why__no">All-in</span>
+        <h3>設計から運用まで、一本で</h3>
+        <p>仕組みを入れ替え、社員を育て、運用まで引き受けます。ツールを売って終わりではなく、経理の結果に責任を持ちます。</p>
+      </div>
+    </div>
+    <figure class="why__photo reveal" data-d="1">
+      <div class="ph has-photo" data-tone="color"><img src="assets/studio-mixer.jpg" alt="ラジオ大阪（OBC）の放送卓のクローズアップ。出資先の放送局でAI化を実証した現場"><span class="ph__corner">現在</span></div>
+    </figure>
+    <p class="why__link reveal"><a href="/ai-bpo/system">実証の詳しい中身を見る →</a></p>
+  </div>
+</section>
+
+<!-- ============================ ⑧ FAQ ============================ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <p class="eyebrow center">FAQ</p>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq reveal" data-d="1">
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>記帳代行と何が違いますか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>記帳代行は「数字を入力する」サービスです。私たちは経理の仕組みそのものを設計し直し、経営判断に使える数字が出る状態をつくります。設計・運用・経営分析を一本で。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>顧問税理士がいますが、変える必要がありますか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>いいえ。今の税理士さんはそのままで大丈夫です。日々の経理と月次までを私たちが担い、申告は顧問税理士と連携します。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>紙の領収書が多いのですが、対応できますか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>はい。紙のままで構いません。AIが読み取り、デジタル化と仕訳まで行います。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>料金はいくらですか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>事業内容によって異なります。AI経理システム導入は補助金適用で実質250万円〜、月額BPO運用は25万円/月〜、AI研修は助成金適用で1人あたり実質約9万円〜。詳しくは各事業ページをご覧ください。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>補助金・助成金は使えますか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>AI経理システム導入にはデジタル化・AI導入補助金（1/2・上限450万円）、AI研修には人材開発支援助成金（中小は最大75%）が活用できます。申請のサポートも行います。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>対応エリアは？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>オンラインで全国対応可能です。</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false"><span class="qmark">Q.</span><span>どのくらいで始められますか？</span><span class="ico" aria-hidden="true"></span></button>
+        <div class="faq__a"><div class="faq__a-inner"><p>まずは無料相談から。現状をお聞きしたうえで、最短の工程をご提案します。</p></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================ ④ お問い合わせ／無料診断 ============================ -->
+<!-- ============================ ⑨ Contact ============================ -->
 <section class="section contact" id="contact">
   <div class="wrap">
     <div class="contact__grid">
       <div class="contact__intro reveal">
         <p class="eyebrow on-ink">Contact</p>
-        <h2>まずは、3分の<br>無料診断から。</h2>
-        <p class="contact__lead">売り込みはしません。現状をうかがって、何ができるか一緒に考えます。相談は無料です。</p>
+        <h2>まずは、その求人を<br>止めませんか。</h2>
+        <p class="contact__lead">経理・バックオフィスでお困りなら、一度ご相談ください。80年の信用と、自分たちで実証したAIの力で、お応えします。</p>
         <p class="contact__alt">※ご相談だけでも歓迎です。しつこい営業はいたしません。</p>
       </div>
-      <!-- 送信先メールはページには記載せず、フォームサービス（Formspree/Netlify Forms 等）の管理画面で設定します。本番で action をそのエンドポイントに差し替えてください（宛先は CLAUDE.md 参照）。 -->
       <form class="form reveal" data-d="1" id="contactForm" data-form="osakahoso-soudan" action="" method="POST" novalidate>
         <div class="form__row">
           <div class="field">
