@@ -577,3 +577,15 @@ section[id]{ scroll-margin-top:var(--header-h); }
 @media (max-width:860px){
   .nav-lang{ justify-content:center; padding:16px 0; gap:1.1em; }
 }
+
+/* ===== 代表者プロフィールの外部リンク ===== */
+.rep__links{ margin-top:1.6em; display:flex; flex-wrap:wrap; gap:.7em 1.4em; }
+.rep__links a{ display:inline-flex; align-items:center; gap:.55em; font-family:var(--eyebrow); font-size:15px;
+  letter-spacing:.1em; color:var(--ink); transition:color .3s; }
+.rep__links a .lbl{ border-bottom:1px solid var(--gold); padding-bottom:2px; transition:border-color .3s; }
+.rep__links a .ext{ font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; color:var(--text-mut); transition:color .3s; }
+.rep__links a:hover{ color:var(--orange); }
+.rep__links a:hover .lbl{ border-bottom-color:var(--orange); }
+.rep__links a:hover .ext{ color:var(--orange); }
+.rep__links a .ic{ width:15px; height:15px; color:var(--gold); transition:color .3s; }
+.rep__links a:hover .ic{ color:var(--orange); }
