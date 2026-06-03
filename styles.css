@@ -354,10 +354,17 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .daily__partner{ margin-top:1.3em; font-size:13.5px; color:var(--on-ink-mut); letter-spacing:.02em; }
 .daily__partner a{ color:var(--gold); border-bottom:1px solid rgba(176,141,87,.45); padding-bottom:1px; transition:color .3s, border-color .3s; }
 .daily__partner a:hover{ color:var(--orange); border-bottom-color:var(--orange); }
-.daily__media{ aspect-ratio:512/211; border-radius:3px; overflow:hidden; }
-.daily__media{ display:block; position:relative; cursor:pointer; text-decoration:none; }
-.daily__media img{ width:100%; height:100%; object-fit:cover; display:block;
-  transition:transform .6s cubic-bezier(.2,.7,.2,1), filter .4s; }
+.daily__media{
+  aspect-ratio:512/211; border-radius:3px; overflow:hidden;
+  display:block; position:relative; cursor:pointer; text-decoration:none;
+  /* override .ph defaults that conflict with the banner layout */
+  min-height:0; min-width:0; border:0; width:100%; background:none;
+}
+.daily__media img{
+  position:absolute; inset:0;
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .6s cubic-bezier(.2,.7,.2,1), filter .4s;
+}
 .daily__media:hover img{ transform:scale(1.04); filter:brightness(.82); }
 .daily__play{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) scale(.9); width:62px; height:62px; border-radius:50%;
   display:flex; align-items:center; justify-content:center; color:#fff;
