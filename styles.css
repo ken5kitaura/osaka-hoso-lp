@@ -471,7 +471,23 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .reps__intro p{ font-family:var(--serif); font-size:clamp(20px,2.6vw,30px); line-height:1.85; color:var(--ink); letter-spacing:.04em; text-wrap:balance; }
 .reps{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(36px,5vw,72px); }
 .rep{ display:flex; flex-direction:column; }
-.rep__portrait{ aspect-ratio:4/3; min-height:0; margin-bottom:30px; }
+/* 代表者ポートレートは画像本来の比率で表示（cover でクロップしない）
+   素材ごとに比率がバラバラ（kato 2.09:1 / kitaura 1.5:1）なので
+   コンテナ側で比率を固定しない。グローバルな .ph.has-photo > img の
+   絶対配置/cover を !important で上書き */
+.rep__portrait{
+  display:block; position:relative;
+  margin-bottom:30px; padding:0;
+  background:none; border:0; overflow:hidden; border-radius:2px;
+  aspect-ratio:auto; min-height:0; height:auto;
+}
+.rep__portrait > picture,
+.rep__portrait > picture > img,
+.rep__portrait > img{
+  position:static !important; inset:auto !important;
+  width:100% !important; height:auto !important;
+  display:block !important; object-fit:initial !important;
+}
 .rep__role{ font-family:var(--eyebrow); letter-spacing:.3em; text-transform:uppercase; font-size:13px; color:var(--orange); margin-bottom:1em; display:flex; align-items:center; gap:.7em; }
 .rep__role::before{ content:""; width:26px; height:1px; background:var(--gold); }
 .rep__name{ font-family:var(--serif); font-size:clamp(23px,2.6vw,30px); color:var(--ink); letter-spacing:.05em; margin-bottom:.2em; }
