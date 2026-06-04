@@ -38,12 +38,13 @@ AddDefaultCharset UTF-8
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain
 </IfModule>
 
-# WebP 自動配信: 同名 .webp があり、ブラウザが対応していれば差し替え
+# WebP 自動配信: 拡張子置換版 .webp (例 dashboard.jpg → dashboard.webp) があり、
+# ブラウザが image/webp を Accept すれば差し替え
 <IfModule mod_rewrite.c>
   RewriteCond %{HTTP_ACCEPT} image/webp
-  RewriteCond %{REQUEST_URI} \.(jpe?g|png)$
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.webp -f
-  RewriteRule ^(.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,L]
+  RewriteCond %{REQUEST_FILENAME} (.+)\.(jpe?g|png)$
+  RewriteCond %1.webp -f
+  RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,L]
 </IfModule>
 <IfModule mod_headers.c>
   <FilesMatch "\.(jpe?g|png)$">
