@@ -762,3 +762,39 @@ section[id]{ scroll-margin-top:var(--header-h); }
   width:100% !important; height:100% !important;
   object-fit:cover !important;
 }
+
+/* ============================================================
+   COLUMN（最新コラム / ホームページ用）
+   ※ Claude Design 提供版を .col-* → .home-col-* にリネーム
+      （column 個別ページの story.css 内 .col-* と衝突回避）
+   ============================================================ */
+.home-col-list{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(18px,2.2vw,30px); }
+.home-col-card{
+  display:flex; flex-direction:column; gap:1.05em;
+  background:var(--paper); border:1px solid var(--line); border-top:2px solid var(--gold);
+  padding:clamp(28px,2.6vw,40px) clamp(24px,2.2vw,32px) clamp(26px,2.4vw,32px);
+  text-decoration:none; color:inherit; border-radius:1px;
+  transition:transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s, border-color .5s;
+}
+.home-col-card:hover{ transform:translateY(-6px); box-shadow:0 26px 50px -32px rgba(27,42,65,.4); border-top-color:var(--orange); }
+.home-col-card__date{ font-family:var(--mono); font-size:12.5px; letter-spacing:.1em; color:var(--text-mut);
+  display:flex; align-items:center; gap:.8em; }
+.home-col-card__date::before{ content:""; width:22px; height:1px; background:var(--gold); display:inline-block; flex:none; }
+.home-col-card__title{ font-family:var(--serif); font-weight:600; font-size:clamp(18px,1.9vw,21px);
+  line-height:1.62; letter-spacing:.02em; color:var(--ink); text-wrap:pretty; transition:color .4s; }
+.home-col-card:hover .home-col-card__title{ color:var(--orange); }
+.home-col-card__excerpt{ font-size:14px; line-height:1.95; color:var(--text-mut);
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.home-col-card__more{ margin-top:auto; padding-top:.3em; font-family:var(--sans); font-weight:500;
+  font-size:13.5px; letter-spacing:.08em; color:var(--orange); display:inline-flex; align-items:center; gap:.5em; }
+.home-col-card__more .arr{ transition:transform .45s cubic-bezier(.2,.7,.3,1); }
+.home-col-card:hover .home-col-card__more .arr{ transform:translateX(5px); }
+.home-col-foot{ text-align:center; margin-top:clamp(40px,5vw,60px); }
+.home-col-all{ font-family:var(--sans); font-size:14.5px; letter-spacing:.1em; color:var(--ink);
+  border-bottom:1px solid var(--gold); padding-bottom:4px; display:inline-flex; align-items:center; gap:.6em; transition:.4s; }
+.home-col-all:hover{ color:var(--orange); border-color:var(--orange); }
+.home-col-all .arr{ transition:transform .45s cubic-bezier(.2,.7,.3,1); }
+.home-col-all:hover .arr{ transform:translateX(5px); }
+@media (max-width:1024px){
+  .home-col-list{ grid-template-columns:1fr; max-width:560px; margin-inline:auto; }
+}
