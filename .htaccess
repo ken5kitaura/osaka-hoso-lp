@@ -1,0 +1,69 @@
+# Vercel cleanUrls 相当（lolipop / Apache 用）
+Options -MultiViews
+DirectorySlash Off
+RewriteEngine On
+
+# 1a) /xxx/index.html や /index.html はディレクトリrootへ301
+RewriteCond %{THE_REQUEST} \s/+((?:.+?/)?)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 1b) その他 /xxx.html を /xxx に 301 リダイレクト（canonical統一）
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 2) 拡張子なしリクエストで、対応する .html が存在すれば内部リライト
+#    （同名ディレクトリが存在しても .html を優先）
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# デフォルトドキュメント
+DirectoryIndex index.html
+
+# 文字コード（lolipop互換）
+AddDefaultCharset UTF-8
+
+# キャッシュ制御
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png  "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType text/css   "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType text/html  "access plus 1 hour"
+</IfModule>
+
+# gzip 圧縮
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain
+</IfModule>
+
+# WebP 自動配信: 同名 .webp があり、ブラウザが対応していれば差し替え
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{REQUEST_URI} \.(jpe?g|png)$
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.webp -f
+  RewriteRule ^(.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,L]
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpe?g|png)$">
+    Header append Vary Accept
+  </FilesMatch>
+</IfModule>
+
+# セキュリティヘッダー
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# sitemap.xml / robots.txt / llms*.txt は正しい Content-Type で配信
+<IfModule mod_mime.c>
+  AddType application/xml .xml
+  AddType text/plain .txt
+</IfModule>
+
+# 404ページ
+ErrorDocument 404 /index.html

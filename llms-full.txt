@@ -1,0 +1,2437 @@
+# Osaka Hoso Co., Ltd. — Full Site Content for AI
+
+> This file expands llms.txt with the full text of every published page,
+> for AI search engines and LLMs that prefer a single, machine-readable corpus.
+
+---
+
+# Osaka Hoso Co., Ltd. (大阪放送株式会社)
+
+> Founded in 1945 as a steel company in Osaka, Japan. Now an AI/DX transformation company.
+
+## What we do
+
+Osaka Hoso transforms mid-market companies' back-office operations using AI. Our three services:
+
+1. **AI Accounting System** — Replace people-dependent accounting with an AI-powered system, end to end. Eligible for Japan's Digital / AI Adoption Subsidy (50%, up to ¥4.5 million).
+2. **AI Skills Training** — Hands-on corporate training for ChatGPT, Claude, and Gemini. 2 days, 11 hours. Up to 75% subsidized for SMEs via Japan's Human Resources Development Subsidy.
+3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement. From ¥250,000/month.
+
+## Our proof
+
+We walked into Radio Osaka (OBC) — a broadcaster we invested in, on the air since 1958 — and rebuilt it with AI:
+- 2,500–3,000 journal entries per month, processed automatically by AI
+- Every paper voucher and approval stamp eliminated
+- AI announcer (Benten Obi) and AI broadcast summary (Daily Radio Osaka) deployed
+
+## Key people
+
+- **Yorihiko Kato** — Representative Director. 4th-generation leader. Angel investor who backed 80+ startups across Asia. Changed the company name from Maruichi Kosan to Osaka Hoso.
+- **Kengo Kitaura** — Director. Founded AGRIBUDDY (agri-fintech) in Cambodia. Designed and built OBC's AI transformation.
+
+## Company facts
+
+- Founded: October 1, 1945 (as Maruichi Shokai)
+- Incorporated: December 17, 1948 (as Maruichi Kosan Co., Ltd.)
+- Renamed: May 20, 2026 (to Osaka Hoso Co., Ltd.)
+- HQ: Tsuneyoshi, Konohana-ku, Osaka, Japan
+- Website: https://osakahoso.com
+- Languages: Japanese, English
+
+## Links
+
+- Japanese site: https://osakahoso.com/
+- English site: https://osakahoso.com/en/
+- AI Accounting System: https://osakahoso.com/ai-bpo/system
+- AI Skills Training: https://osakahoso.com/ai-bpo/training
+- Monthly BPO: https://osakahoso.com/ai-bpo/bpo
+- Our Story: https://osakahoso.com/story
+- Radio Osaka (OBC): https://www.obc1314.co.jp/
+
+
+---
+
+## Page: Top page (Japanese)
+URL: https://osakahoso.com/
+
+# / (トップページ) — 英訳用 JP本文
+
+> source: `index.html` / canonical: `https://osaka-hoso-lp.vercel.app/`
+
+## メタ
+
+- **<title>**: 大阪放送株式会社 ｜ 八十年の信用を、AIの時代に。
+- **<meta description>**: 1945年創業・80年つづく大阪の会社が、いまAIで企業を変える。その証拠に、出資先の放送局ラジオ大阪（OBC）に自ら入り込み丸ごとAI化しました。企業のAI/DX変革をご相談ください。
+
+## 本文（各セクション）
+
+### [section #top] 八十年の信用を、AIの時代に。
+- **eyebrow**: OSAKA HOSO CO., LTD. ／ SINCE 1945
+
+OSAKA HOSO CO., LTD. ／ SINCE 1945
+
+1945年、大阪の鉄の会社として創業。私たち大阪放送は今、企業のAI/DX変革を中核事業としています。その何よりの証明が——大阪放送が出資する〈ラジオ大阪〉に私たち自身が一員として入り込み、現場から経理まで丸ごとAI化した実績です。
+
+**[ボタン]** 私たちの取り組みを見る↓
+
+**[ボタン]** ご相談はこちら→
+
+古写真：千日前・歌舞伎座付近（大阪／1933年）Wikimedia Commons ／ Public Domain
+
+
+### [section #about] 80年、大阪とともに。
+- **eyebrow**: About Us
+
+About Us
+
+大阪放送株式会社は、1945年の創業以来、80年にわたり大阪に根ざしてきた会社です。時代とともに事業の姿を変えながら、変わらず大切にしてきたのは“信用”の二文字。いま私たちは、その信用を土台に、企業のAI/DX変革という新しい事業に挑んでいます。
+
+
+### [section #business] 古い会社ほど、AIで変わる。
+- **eyebrow**: Our Business
+
+Our Business
+
+世の中のAI活用は、もともとデジタルに強い新しい会社のものだと思われがちです。しかし私たちの考えは逆です。紙が多く、人手に頼り、長年同じやり方を続けてきた“古い組織”ほど、AIで劇的に変わる余地が大きい。 私たちは、経理・財務をはじめとする企業のバックオフィスを、AIを使って丸ごと設計し直します。
+
+#### 経営からの逆算
+
+“どんな数字で経営判断したいか”という出口から、日々の入力までを設計し直します。道具より先に、設計を。
+
+#### AIは増幅装置
+
+AIに“何をやらせるか”を見抜くことが本質。ツールを渡して終わりではなく、成果が出る仕組みごとお渡しします。
+
+#### 圧倒的なスピード
+
+構想から実装までを、AIを駆使して常識外の速さで形にします。
+
+**[ボタン]** AI経理・財務BPOの事業を詳しく見る→
+
+
+### [section #proof] 証明は、自分たちで。
+- **eyebrow**: Proof
+
+Proof
+
+最初の実証相手は、自分たち自身でした。大阪放送が出資する〈ラジオ大阪（OBC）〉——1958年開局、長くアナログの蓄積を持つ放送局。その現場に、私たち自身が一員として入り込み、経理から番組づくりまで、手を動かしてAI化を進めてきました。 外から評価するのではなく、中から変える。いちばん手強い相手から始めた。それが、何よりの実績です。
+
+紙の伝票、手作業の集計、属人化した経理。
+
+AIによる自動仕訳・自動分析、リアルタイムで見える経営数字。
+
+紙とハンコの放送局が、こう変わりました。
+
+2,500〜3,000件 / 月
+
+の仕訳を、AIで自動処理しています。
+
+- ✕あらゆる紙の伝票と、何名分もの承認印を廃止。発注・振替・請求・経費——そのすべてを電子化しました。
+あらゆる紙の伝票と、何名分もの承認印を廃止。発注・振替・請求・経費——そのすべてを電子化しました。
+
+- ✕「紙で起こす → 転記 → 入力 → また紙で集計 → エクセルに手入力」という何重もの転記を、まるごと撤廃。
+「紙で起こす → 転記 → 入力 → また紙で集計 → エクセルに手入力」という何重もの転記を、まるごと撤廃。
+
+- ✕ベテランの“頭の中”にしかなかった例外処理を整理。同じ処理に何通りもの経路があった状態を解き、誰がやっても同じ結果が出る経理へ。
+ベテランの“頭の中”にしかなかった例外処理を整理。同じ処理に何通りもの経路があった状態を解き、誰がやっても同じ結果が出る経理へ。
+
+#### 経営管理・財務以外のAI活用事例「Dailyラジオ大阪」
+
+その日のワイド番組で放送した全トピックスを、AIが約20分の音声に自動でまとめ、毎日お届けする新サービス。さらに、ラジオ大阪のキャラクター〈弁天おび氏〉がAIアナウンサーに就任。AIは“裏方の効率化”にとどまらず、リスナーに届く番組そのものにまで及んでいます。
+
+PLUS IMPACT株式会社とのタイアップで誕生しました。
+
+机上の空論は、語りません。
+
+自分たちで実証したからこそ、自信を持ってお客様にお届けできます。
+
+
+### [section #group] 大阪放送と、その関係企業
+- **eyebrow**: Group
+
+Group
+
+#### グループ企業
+
+- OSAKA HOSO PTE. LTD.
+- MARUICHI PTE. LTD.
+- 株式会社ToGEAR MSC
+- サンクチュアリ株式会社
+#### 出資先
+
+- 株式会社ラジオ大阪（OBC） OBC公式サイト
+- ひろのぶと株式会社
+
+### [section #history] 沿革
+- **eyebrow**: History
+
+History
+
+1945年の創業から、2026年の生まれ変わりまで。
+
+丸一商会として創業（創業者 加藤源太郎）。
+
+12月17日、丸一興産株式会社として設立。
+
+加藤勝弘（1979）／ 加藤昌孝（2003）／ 加藤順彦（2017）と承継。
+
+本店を此花区常吉へ移転。
+
+株式会社ラジオ大阪（OBC）へ出資。加藤順彦が同社代表取締役会長に就任。
+
+5月20日、商号を「大阪放送株式会社」に変更。事業目的に経営コンサルティング・AI（人工知能）開発／導入支援等を加え、企業のAI/DX変革を中核事業に据える。
+
+
+### [section #story-cta] ひとりの男から、すべては始まった。
+- **eyebrow**: Story
+
+Story
+
+丸一興産を一代で築いた創業者・加藤源太郎。その特異な生涯を、当時の記録とともに残しています。
+
+**[ボタン]** STORY を読む→
+
+
+### [section #representatives] なぜ、いま。
+- **eyebrow**: Message
+
+Message
+
+ひとりの男が築いた会社は、80年の時を経て、いま二人の手に委ねられている。受け継ぐ者と、変える者。
+
+#### 加藤 順彦
+
+代表取締役（株式会社ラジオ大阪 代表取締役会長 兼務）
+
+1967年生まれ、大阪育ち。関西学院大学在学中から起業の世界に身を投じ、1992年に広告会社・日広（現GMO NIKKO）を創業。2008年に同社をGMOインターネットグループへ譲渡し、シンガポールへ拠点を移す。以後、アジアを舞台に80社を超える日本人スタートアップを支援するエンジェル事業家として活動。2017年、80年つづく家業・丸１グループを承継し、その代表に就く。
+
+家業の重みも、新しい事業の最前線も——その両方を知る人間として。加藤は、長い歴史を刻んできた放送局〈ラジオ大阪〉の、これからに本気で向き合うことを選んだ。出資して、あとは任せる——そういう距離の取り方ではない。会社として総力をあげて支え、自らも一人の人間として現場に入る。その姿勢を内外にはっきりと示すために、80年つづく家業の社名を、〈大阪放送〉へと改めた。ラジオ大阪の、さらなる発展のために。会社も、自分自身も、全力で。
+
+> 社名を変えてまで、示したかった。——本気で、ともに前へ進む、と。
+
+その覚悟は、言葉だけではない。加藤の主導で、社内のAI自動化から、AIが番組を要約する〈Dailyラジオ大阪〉まで、具体的なAIサービスが次々と動き出している（⑤ 実証）。
+
+加藤順彦のコラム・記事machikado-creative.jp ↗
+
+#### 北浦 健吾
+
+取締役（株式会社ラジオ大阪 経営管理本部）
+
+大阪生まれ。中学卒業と同時に渡米。帰国後の事業経営を経て、2009年からカンボジアへ。2014年、農業フィンテック企業AGRIBUDDYを創業しCEOに就く。記録も信用情報もない小規模農家の営農データを集めて可視化し、金融につなぐ仕組みを築き、日経FinTech Conference最優秀賞、Global Startup Award『年間最優秀創業者』（ASEAN／カンボジア企業初）などを受賞。2023年に帰国し、現在は企業の経理・管理業務のAIによる自動化に取り組む。
+
+北浦は、評論家ではない。一番デジタルから遠い世界を、自分の手で“動くように”してきた実行者だ。カンボジアの農村で、記録も信用情報もない農家を、データでつなぎ、金融につないだ。古く、紙が多く、人手に頼る組織ほど、テクノロジーで大きく変わる——その確信は、机上ではなく現場で得たものだ。いま北浦は、その同じ力を日本の古い組織へ向けている。大阪放送が出資する〈ラジオ大阪〉のAI化も、現場から経理まで、自ら設計し、つくった。
+
+> 道具は、誰でも手に入る。違いは“何をやらせるか”を見抜けるかどうか。出口から逆算して、設計し直す。
+
+北浦健吾のブログnote.com ↗
+
+信頼と、実行力。この二つが揃ったとき、古い組織は、本当に変わる。
+
+
+### [section #company] 会社概要
+- **eyebrow**: Company
+
+Company
+
+
+### [section #contact] まずは、その求人を止めませんか。
+- **eyebrow**: Contact
+
+Contact
+
+経理・バックオフィスでお困りなら、一度ご相談ください。80年の信用と、自分たちで実証したAIの力で、お応えします。
+
+
+## 画像alt（翻訳対象）
+
+| src | alt (JP) |
+|---|---|
+| `assets/logo-mark.png` | 大阪放送株式会社 シンボルマーク |
+| `assets/osaka-1933-web.jpg` | 戦前の大阪・千日前の賑わい（1933年） |
+| `assets/hq.jpg` | 大阪放送株式会社 本社（大阪市此花区常吉） |
+| `assets/biz-decision.jpg` | まるなげ経理 経営シミュレーターを囲んで議論する経営チーム。経営判断に使う数字から逆算して設計する |
+| `assets/biz-2.jpg` | ノートPCを打つ手元と、奉に並ぶモニター（人とPCが並ぶ実務） |
+| `assets/biz-3.jpg` | 夜の都市を見下ろす高速道路の光跡（流れ・スピードの象徴） |
+| `assets/program-1958.webp` | 大阪放送（OBC）番組確定表 昭和33年（1958年）7月1日・開局当時 |
+| `assets/simulator.jpg` | まるなげ経理 経営シミュレーターの画面。売上・利益・キャッシュ残高をリアルタイムに可視化 |
+| `assets/daily-band.jpg` | AI音声番組「Dailyラジオ大阪」— ラジオ大阪（OBC）公式マスコットがAIパーソナリティを務める日本初のラジオ番組 |
+| `assets/obc-logo.jpg` | ラジオ大阪 OBC |
+| `assets/founder.jpg` | 創業者 加藤源太郎 |
+| `assets/hq.jpg` | 本社（此花区常吉） |
+| `assets/founder.jpg` | 創業者 加藤源太郎 |
+| `assets/kato.jpg` | 代表取締役 加藤順彦 |
+| `assets/kitaura-web.jpg` | 取締役 北浦健吾 |
+| `assets/logo-mark-white.png` | 大阪放送株式会社 |
+
+---
+
+## Page: AI BPO hub (Japanese)
+URL: https://osakahoso.com/ai-bpo
+
+# /ai-bpo (事業ハブ) — 英訳用 JP本文
+
+> source: `ai-bpo.html` / canonical: `https://osaka-hoso-lp.vercel.app/ai-bpo`
+
+## メタ
+
+- **<title>**: 経理を、仕組みごと入れ替える｜AI経理・AI研修・経理BPO｜大阪放送株式会社
+- **<meta description>**: 人に依存した経理を、仕組みごと丸ごと入れ替える。大阪放送のAI経理サービス。システム導入・AI研修・月額運用の3つを、それぞれ補助金つきで提供します。
+
+## 本文（各セクション）
+
+### [section #top] 入力から経営指標まで。AI経理・財務の力を、丸ごと。
+- **eyebrow**: AI Accounting ／ Training ／ BPO
+
+AI Accounting ／ Training ／ BPO
+
+経理を“仕組みごと入れ替える”。社員を“AIの使い手に変える”。そして“経営に効く数字を、毎月届ける”。——この3つを、一本で。80年つづく大阪放送が、自ら実証したAIの力で。
+
+**[ボタン]** 事業を詳しく見る↓
+
+**[ボタン]** 無料で相談する→
+
+
+### [section #problem] その経理の求人、出す前に。
+- **eyebrow**: The Problem
+
+The Problem
+
+経理担当者を一人採用すると、給与だけで年間400〜500万円。さらに採用にかかる手間、3か月以上の教育期間、そして“その人が辞めたら業務が止まる”という属人化のリスク。——もし、それらをまるごと手放せるとしたら？
+
+- 経理担当者の採用が、なかなか決まらない
+- 一人に業務が集中し、その人が休むと回らない
+- 数字の集計に時間がかかり、経営判断が後手になる
+- 同じ数字を、紙からシステム、システムからエクセルへと何度も手で転記している
+- 何にいくら使っているか、リアルタイムで把握できていない
+
+### [section #solution] 入力から、経営の数字まで。
+- **eyebrow**: The Solution
+
+The Solution
+
+- 採用・教育・退職リスクを抱える
+- 手作業で数字を集計している
+- 業務が特定の人に属人化している
+- 月次の締めが遅い
+- “数字が読める頃には手遅れ”
+- 採用は不要。人の出入りに左右されない
+- AIで自動集計。手作業から解放
+- 仕組みで標準化。誰が見ても同じ
+- 数字を、すぐ把握できる
+- “経営判断に使える指標が毎月そろう”
+経理を手放し、経営の数字を手に入れる。あなたは、経営に集中できます。
+
+
+### [section #why-special] “数字を入力する”会社ではありません。
+- **eyebrow**: Our Difference
+
+Our Difference
+
+私たちの強みは、ひとりの人間が経営・財務・AIの3つを同時に持っていること。普通は別々の専門家に分かれている3つの役割を、一気通貫で。だから、ただ記帳を代行するのではなく、“経営の役に立つ数字”の出口から、日々の入力までを設計し直せます。
+
+#### 経営がわかる
+
+どんな数字で判断すべきか、出口を決める。たとえば“月の利益がいくら”ではなく、“この事業はあと何ヶ月で黒字に転じるか”がすぐに見える状態をつくります。
+
+#### 財務から経理を設計できる
+
+その出口を生むために、日々の入力をどう組むか。帳簿の並べ方ひとつで、出てくる数字の質が変わる。入力がゴミなら、分析もゴミ——だから、入口から設計し直します。
+
+#### AIで実装できる
+
+設計だけして終わりではなく、AIを使って仕組みを実装し、動く状態にしてお渡しします。構想から実装までを、常識外の速さで。
+
+出口から逆算する経理設計
+
+“どんな数字で経営判断したいか”という出口を先に決め、そこから日々の入力を設計し直す、当社独自のアプローチです。入力がゴミなら、どんな分析もゴミになる。だから私たちは、出口から逆算します。
+
+
+### [section #products] 3つの事業で、丸ごと。
+- **eyebrow**: What we do
+
+What we do
+
+仕組みを入れ替え、人を育て、運用を引き受ける。この3つが揃ってはじめて、経理は本当に変わります。
+
+#### AI経理システム導入
+
+“あの人しか分からない”属人経理を、AIが回す仕組みに丸ごと入れ替え。デジタル化・AI導入補助金（1/2・上限450万円）対象。
+
+#### AI活用研修
+
+ChatGPT・Claude・Geminiを“現場で使える”状態にする実践型研修。人材開発支援助成金で中小は最大75%。
+
+#### 月額BPO運用
+
+入れ替えた仕組みの上で、日々の経理から経営指標まで月額で引き受け。社外にCFO機能を持つ感覚で。
+
+研修だけ・システムだけ、もちろんOK。どれか1つからでも始められます。
+
+
+### [section #flow] ご利用の流れ
+- **eyebrow**: How it works
+
+How it works
+
+#### 無料相談
+
+いまのお困りごとと、経理の状況をお聞きします。オンライン可。
+
+#### 現状の見える化
+
+業務とコストを整理し、3つの事業のうち何をどう組み合わせるかをご提案。
+
+#### 設計・導入
+
+お客様に合わせて仕組みを設計。補助金の申請もここでサポート。
+
+#### 運用・伴走
+
+動き始めたら、そのまま伴走。月額BPOで、ずっと。
+
+ご相談から導入・運用まで、すべて私たちが並走します。
+
+
+### [section #why-us] なぜ、私たちなのか。
+- **eyebrow**: Why us
+
+Why us
+
+#### 80年の歴史
+
+1945年創業。大阪に根ざした会社です。
+
+#### 自ら、現場で実証
+
+ラジオ大阪に入り込み、月2,500〜3,000件の仕訳を自動化。紙の伝票も承認印も全廃しました。
+
+#### 設計から運用まで、一本で
+
+仕組みを入れ替え、社員を育て、運用まで引き受けます。ツールを売って終わりではなく、経理の結果に責任を持ちます。
+
+実証の詳しい中身を見る →
+
+
+### [section #faq] よくある質問
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. 記帳代行と何が違いますか？
+
+記帳代行は「数字を入力する」サービスです。私たちは経理の仕組みそのものを設計し直し、経営判断に使える数字が出る状態をつくります。設計・運用・経営分析を一本で。
+
+#### Q. 顧問税理士がいますが、変える必要がありますか？
+
+いいえ。今の税理士さんはそのままで大丈夫です。日々の経理と月次までを私たちが担い、申告は顧問税理士と連携します。
+
+#### Q. 紙の領収書が多いのですが、対応できますか？
+
+はい。紙のままで構いません。AIが読み取り、デジタル化と仕訳まで行います。
+
+#### Q. 料金はいくらですか？
+
+事業内容によって異なります。AI経理システム導入は補助金適用で実質250万円〜、月額BPO運用は25万円/月〜、AI研修は助成金適用で1人あたり実質約9万円〜。詳しくは各事業ページをご覧ください。
+
+#### Q. 補助金・助成金は使えますか？
+
+AI経理システム導入にはデジタル化・AI導入補助金（1/2・上限450万円）、AI研修には人材開発支援助成金（中小は最大75%）が活用できます。申請のサポートも行います。
+
+#### Q. 対応エリアは？
+
+オンラインで全国対応可能です。
+
+#### Q. どのくらいで始められますか？
+
+まずは無料相談から。現状をお聞きしたうえで、最短の工程をご提案します。
+
+
+### [section #contact] まずは、その求人を止めませんか。
+- **eyebrow**: Contact
+
+Contact
+
+経理・バックオフィスでお困りなら、一度ご相談ください。80年の信用と、自分たちで実証したAIの力で、お応えします。
+
+※ご相談だけでも歓迎です。しつこい営業はいたしません。
+
+
+## 画像alt（翻訳対象）
+
+| src | alt (JP) |
+|---|---|
+| `assets/logo-mark.png` | 大阪放送株式会社 シンボルマーク |
+| `assets/biz-2.jpg` | ノートPCで作業する手元。経理を仕組みから入れ替える |
+| `assets/dashboard.jpg` | まるなげ経理 経営ダッシュボードをモニターで確認する経営者。リアルタイムで経営数字が見える |
+| `assets/training.jpg` | AI活用研修の風景。講師が受講者のノートPCを指し、生成AIの使い方を実演している |
+| `assets/bpo.jpg` | 月額BPO運用ダッシュボードを囲んで打ち合わせするチーム。経理から経営指標までを継続して支える |
+| `assets/studio-mixer.jpg` | ラジオ大阪（OBC）の放送卓のクローズアップ。出資先の放送局でAI化を実証した現場 |
+| `assets/logo-mark-white.png` | 大阪放送株式会社 |
+
+## JSON-LD（FAQPage等：英訳対象）
+
+---
+
+## Page: AI Accounting System (JP)
+URL: https://osakahoso.com/ai-bpo/system
+
+# /ai-bpo/system (AI経理システム導入) — 英訳用 JP本文
+
+> source: `ai-bpo/system.html` / canonical: `https://osaka-hoso-lp.vercel.app/ai-bpo/system`
+
+## メタ
+
+- **<title>**: 人に依存した経理を、仕組みごと入れ替える｜AI経理システム導入｜大阪放送株式会社
+- **<meta description>**: “あの人しか分からない”属人的な経理を、入力から経営数字まで仕組みごと丸ごと入れ替えます。デジタル化・AI導入補助金（1/2・上限450万円）対象。大阪放送が出資先のラジオ大阪で自ら実証。
+
+## 本文（各セクション）
+
+### [section #top] 人に依存した経理を、仕組みごと丸ごと入れ替える。
+- **eyebrow**: AI Accounting System
+
+事業/AI経理システム導入
+
+AI Accounting System
+
+“あの人しか分からない”“辞めたら止まる”——その属人的な経理を、人ではなく仕組みが回す状態へ。領収書1枚の入力から経営に使う数字まで、会社の経理を一括で差し替えます。
+
+**[ボタン]** 無料診断（3分）→
+
+**[ボタン]** 無料相談する
+
+
+### [section #what] ソフトを足すのでは、ありません。
+- **eyebrow**: What we do
+
+What we do
+
+会社の経理を、入口から出口まで一本のパイプラインに作り替えます。これは「特定の人がいないと回らない経理」を、「誰がいても同じ結果が出る経理」に置き換える工事です。ツール導入ではなく、経理機能そのものの差し替え。
+
+領収書・請求書をAIが読み取り、仕訳まで自動で起こす。紙の運用のままでもOK。
+
+紙の伝票も承認印も廃止。「紙に書く→転記→入力→紙で集計→Excelに再入力」の連鎖を、まるごと撤去します。
+
+試算表・月次・キャッシュフローまで自動集計。経営に使える数字を、リアルタイムのダッシュボードで。
+
+現場に合わせた設定・カスタマイズ、操作の研修、その後の保守まで含めてお渡しします。
+
+*(figcaption)* ※画面はイメージです
+
+
+### [section #change] どう変わるか。
+- **eyebrow**: Before & After
+
+Before & After
+
+- “あの人”に依存していて、抜けたら止まる
+- 採用・育成・退職リスクに毎年振り回される
+- 集計が遅く、数字が出る頃には手遅れ
+- 同じ数字を紙→システム→Excelと何度も手入力
+- 人ではなく仕組みが回す。担当者がいなくても止まらない
+- 採用・育成・退職リスクから解放される
+- AIが自動で仕訳・集計。経営数字をリアルタイムで把握
+- 二重入力ゼロ。誰がやっても同じ帳簿
+
+### [section #impact] 人件費は、どれだけ消えるか。
+- **eyebrow**: Impact
+
+Impact
+
+*(figcaption)* いまの経理 紙の山、手集計、そして“その人が辞めたら”。 伝票を一枚ずつめくり、電卓で合計し、また転記する。属人化したこの作業に、毎月いくらの人件費が消えているでしょうか。
+
+「経理担当1人ぶん」の話ではありません。たとえば経理作業員（月30万）×3名＋経理部長クラス（月60万）で回している体制は、仕組みに入れ替えれば常駐1名で回ります。
+
+年 約1,690万円
+
+システム導入の初期費用（補助後 実質250万円〜）は、この削減額の約1.8ヶ月分で回収できる計算です。
+
+※会社が実際に負担する額で算出：給与に社会保険の会社負担（給与の約15%）を含む。採用コストは中途採用の平均（1人あたり約80万円）と全国の離職率（一般労働者 約11.5%／厚労省2024）をもとに控えめに概算。これに加え、交通費・福利厚生、採用にかかる現場の工数、空席中の業務停滞、退職のたびのリスクも不要になります。
+
+
+### [section #sim] 補助金で、実質いくら？
+- **eyebrow**: Subsidy
+
+Subsidy
+
+このシステム導入は、デジタル化・AI導入補助金（通常枠）の対象です。補助率は原則1/2、上限450万円。
+
+デジタル化・AI導入補助金（通常枠／補助率 1/2、最低賃金近傍は 2/3・上限450万円）を適用した場合の試算です。
+
+¥2,500,000
+
+※試算です。対象経費として認められる範囲・審査結果により変動します。補助金は交付決定後の契約・後払いが原則で、採択されて初めて支給されます。申請は大阪放送がサポートします。
+
+**[ボタン]** この内容で無料相談する→
+
+
+### [section #proof] 自分たちで、実証した。
+- **eyebrow**: Proof
+
+Proof
+
+私たちは、出資先の〈ラジオ大阪（OBC）〉で、まさにこれをやりました。人に依存していた経理を、紙の伝票も承認印も全廃し、仕組みごと丸ごと入れ替え。月2,500〜3,000件の取引をAIで自動処理しています。理論ではなく、自分たちの手でやり切ったことを、そのままお届けします。
+
+2,500〜3,000件 / 月
+
+の取引を、AIで自動処理しています。
+
+
+### [section #why] 設計から運用まで、1社で。
+- **eyebrow**: Why us
+
+Why us
+
+市場の経理サービスは「作業代行」か「コンサル」のどちらかしかやりません。大阪放送は、仕組みの設計・日々の運用・経営判断材料の提供を1社で統合します。
+
+
+### [section #price] 料金
+- **eyebrow**: Pricing
+
+Pricing
+
+※補助率1/2・上限450万円を適用した場合の実質負担（目安）。対象経費の範囲・審査により変動します。導入後の運用は「月額BPO運用」で継続支援します。
+
+
+### [section #faq] よくある質問
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. クラウド会計ソフトと何が違いますか？
+
+ソフトは「箱」を渡すだけです。私たちは入力から経営数字まで、経理の仕組みそのものを作り替えて引き渡します。
+
+#### Q. 紙の領収書が多くても大丈夫ですか？
+
+はい。AIが読み取ってデジタル化・仕訳まで行います。今の業務のやり方を変える必要はありません。
+
+#### Q. 税理士は変える必要がありますか？
+
+いいえ。日々の経理と月次までを担い、申告は顧問税理士と連携します。
+
+#### Q. 補助金は必ず使えますか？
+
+補助金は審査・採択を経て、後払いで支給されます。採択は保証されません。だからこそ、申請サポートまで含めて伴走します。
+
+#### Q. どれくらいで入れ替わりますか？
+
+規模によります。無料相談で現状を見て、工程をご提案します。
+
+
+### [section #related-products] 大阪放送のAI事業
+- **eyebrow**: Our Business
+
+Our Business
+
+#### AI経理システム導入
+
+人に依存した経理を、入力から経営数字まで仕組みごと入れ替える。
+
+#### AI活用研修
+
+社員がAIを武器にする、実践型研修。
+
+#### 月額BPO運用
+
+入れ替えた経理を、運用ごと任せる。
+
+
+### [section #contact] まずは、その経理の悩みを聞かせてください。
+- **eyebrow**: Contact
+
+Contact
+
+売り込みはしません。いまの経理のお困りごとを伺い、何ができるかを一緒に考えます。相談は無料です。
+
+※ご相談だけでも歓迎です。しつこい営業はいたしません。
+
+
+## 画像alt（翻訳対象）
+
+| src | alt (JP) |
+|---|---|
+| `../assets/logo-mark.png` | 大阪放送株式会社 シンボルマーク |
+| `../assets/dashboard.jpg` | まるなげ経理 経営ダッシュボードをモニターで確認する経営者。リアルタイムで売上・利益・キャッシュ残高が見える状態 |
+| `/assets/simulator.jpg` | まるなげ経理 経営シミュレーターの画面。売上・粗利益率・営業利益・経常利益・キャッシュ残高をリアルタイムに試算できる |
+| `/assets/paper-office.jpg` | 紙の伝票が山積みになった経理部のオフィス。手作業で集計する担当者たち |
+| `../assets/studio-mixer.jpg` | ラジオ大阪（OBC）の放送卓。自社の放送局でAI化を実証した現場 |
+| `../assets/dashboard.jpg` | まるなげ経理 経営ダッシュボードをモニターで確認する経営者。リアルタイムで経営数字が見える |
+| `../assets/training.jpg` | AI活用研修の風景。講師が受講者のノートPCを指し、生成AIの使い方を実演している |
+| `../assets/bpo.jpg` | 月額BPO運用ダッシュボードを囲んで打ち合わせするチーム。経理から経営指標までを継続して支える |
+| `../assets/logo-mark-white.png` | 大阪放送株式会社 |
+
+## JSON-LD（FAQPage等：英訳対象）
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI経理システム導入",
+  "provider": { "@type": "Organization", "name": "大阪放送株式会社" },
+  "areaServed": "JP",
+  "description": "領収書1枚の入力から経営に使う数字まで、会社の経理を仕組みごと一括で差し替えるAI経理システムの導入。デジタル化・AI導入補助金（通常枠・補助率1/2・上限450万円）対象。"
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"クラウド会計ソフトと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"ソフトは「箱」を渡すだけです。私たちは入力から経営数字まで、経理の仕組みそのものを作り替えて引き渡します。"}},
+    {"@type":"Question","name":"紙の領収書が多くても大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。AIが読み取ってデジタル化・仕訳まで行います。今の業務のやり方を変える必要はありません。"}},
+    {"@type":"Question","name":"税理士は変える必要がありますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。日々の経理と月次までを担い、申告は顧問税理士と連携します。"}},
+    {"@type":"Question","name":"補助金は必ず使えますか？","acceptedAnswer":{"@type":"Answer","text":"補助金は審査・採択を経て、後払いで支給されます。採択は保証されません。だからこそ申請サポートまで含めて伴走します。"}},
+    {"@type":"Question","name":"どれくらいで入れ替わりますか？","acceptedAnswer":{"@type":"Answer","text":"規模によります。無料相談で現状を見て、工程をご提案します。"}}
+  ]
+}
+```
+
+---
+
+## Page: AI Skills Training (JP)
+URL: https://osakahoso.com/ai-bpo/training
+
+# /ai-bpo/training (AI活用研修) — 英訳用 JP本文
+
+> source: `ai-bpo/training.html` / canonical: `https://osaka-hoso-lp.vercel.app/ai-bpo/training`
+
+## メタ
+
+- **<title>**: 社員がAIを武器にする｜法人向けAI活用研修｜大阪放送株式会社
+- **<meta description>**: ChatGPT・Claude・Geminiを“現場で本当に使える”状態にする実践型AI研修（2日・計11時間）。人材開発支援助成金で中小は最大75%。AIを自社開発する大阪放送の知見をそのまま研修に。
+
+## 本文（各セクション）
+
+### [section #top] 「入れたのに使われないAI」を、現場の武器に変える。
+- **eyebrow**: AI Skills Training
+
+事業/AI活用研修
+
+AI Skills Training
+
+ツールを入れても、社員が使いこなせなければ意味がない。ChatGPT・Claude・Geminiを、実際の業務で“効く”状態にする実践型研修。ラジオ大阪をAI化した実行者が、現場で本当に使える方法だけを教えます。
+
+**[ボタン]** 無料で相談する→
+
+**[ボタン]** カリキュラムを見る↓
+
+
+### [section #before] 研修前の、よくある課題。
+- **eyebrow**: Before
+
+Before
+
+- AIツールを導入したが、社内で使われていない
+- ChatGPTを使っている社員もいるが、業務に落とし込めていない
+- AI研修を受けたが、座学だけで実践につながらなかった
+- どのAIツールを使えばいいか、誰も判断できない
+- 「AI、やらなきゃ」という焦りだけがある
+
+### [section #after] 研修後に、起きる変化。
+- **eyebrow**: After
+
+After
+
+#### 3大AIを使い分けられる
+
+ChatGPT・Claude・Gemini、それぞれの得意を理解して業務に応じて選べる状態に。
+
+#### 翌日から業務で使える
+
+議事録・書類作成・データ整理——研修中に自社の業務で実際に組み立てるから、翌日からすぐ使えます。
+
+#### 持ち帰れる成果物
+
+自社のAI活用計画書とAI利用ガイドラインを研修中に作成。社内展開にそのまま使えます。
+
+#### 助成金で最大75%OFF
+
+人材開発支援助成金で、中小企業は費用の最大75%以上が助成。申請サポートも込み。
+
+
+### [section #why] 研修屋では、ありません。古い放送局を、自分たちでAI化した実行者です。
+- **eyebrow**: Why us
+
+Why us
+
+私たちは、出資先の〈ラジオ大阪（OBC）〉に自ら入り込み、紙の伝票も承認印も全廃。月2,500〜3,000件の仕訳をAIで自動処理し、AIアナウンサー〈弁天おび氏〉や番組AI要約「Dailyラジオ大阪」まで——放送局を丸ごとAI化しました。「AIで何ができるか」を、教科書で学んだのではありません。自分たちの手で実際にやり切った。だから、現場で本当に効く使い方だけをお伝えできます。
+
+*(figcaption)* 自社出資先・ラジオ大阪（OBC）。ここで、すべてを実証した。
+
+*(figcaption)* ラジオ大阪で稼働中のAI経理システム（イメージ）。
+
+
+### [section #programs] 研修テーマ一覧。
+- **eyebrow**: Programs
+
+Programs
+
+組織の課題とフェーズに合わせて選べます。
+
+#### 生成AI活用 基礎研修一番人気 / 全社員向け
+
+AIで何ができるかを正しく理解し、自社業務での活用イメージを明確にする研修。ChatGPT・Claude・Geminiの3大AIを横断的に学び、座学で終わらせず、研修中に自社業務へのAI活用を実際に組み立てます。
+
+全4回（2日間）｜計11時間｜対面 or オンライン
+
+#### 製造業×AI実装研修
+
+品質管理・生産計画・検査工程でのAI活用。製造業に特化した実践型。
+
+#### 経営者・管理職向け AI戦略研修
+
+AI投資判断と推進体制の構築。「自社にAIをどう入れるか」を経営目線で。
+
+#### AIエージェント活用研修
+
+業務の自動化を、AIエージェントで実現。DX推進担当向け。
+
+#### Copilot活用研修
+
+Microsoft 365にAIを組み込み、日常のWordやExcel作業を効率化。
+
+
+### [section #curriculum] カリキュラム生成AI活用 基礎研修
+- **eyebrow**: Curriculum
+
+Curriculum
+
+対面プラン: 2日間・計11時間 ／ オンラインプラン: 全6回・計11時間
+
+#### Day 1（5.5時間）
+
+- 最新のAI動向と、3大AI（ChatGPT・Claude・Gemini）の特性
+- ラジオ大阪でのAI活用 実事例デモンストレーション
+- AIに適切な指示を出す「プロンプト設計」の基本
+- 「自社の業務で、どこにAIが効くか」テーブルディスカッション
+- 講師がテーブルごとにフォローアップ
+- アイデア発表
+#### Day 2（5.5時間）
+
+- ChatGPT / Claude / Gemini の業務別使い分け戦略
+- プロンプト設計の実践（自社の業務を題材に）
+- AI利用ガイドライン策定ワーク
+- 自社AI活用計画書の作成
+- AI利用ガイドライン（ドラフト）の仕上げ
+- 発表・フィードバック
+
+### [section #deliverables] 研修で作成する成果物。
+- **eyebrow**: Deliverables
+
+Deliverables
+
+#### 自社AI活用計画書
+
+ワークショップで洗い出したAI活用アイデアを、部署別・優先度別に整理した実行計画。研修後すぐに社内展開できます。
+
+#### AI利用ガイドライン（ドラフト）
+
+自社のAI利用ルールの雛形。セキュリティ・著作権・データ取扱いを網羅した実用的なドキュメント。社内のAI利用の「共通ルール」になります。
+
+
+### [section #sim] 助成金で、実質いくら？
+- **eyebrow**: Subsidy
+
+Subsidy
+
+この研修は、人材開発支援助成金（事業展開等リスキリング支援コース）の対象です。中小企業は経費助成 最大75%、加えて賃金助成も。
+
+人材開発支援助成金（リスキリング支援コース）を適用した場合の試算です。11名以上は別途お見積りします。
+
+¥445,000
+
+※試算です。実際の支給額は審査により異なります。助成金は後払い（費用を先に全額お支払い、研修完了後に支給）。研修開始の1ヶ月前までに労働局へ計画届の提出が必要です。対象は雇用保険適用事業所の従業員（事業主・役員は対象外）。申請はサポートします。
+
+**[ボタン]** この内容で無料相談する→
+
+
+### [section #price] 料金1名・税込
+- **eyebrow**: Pricing
+
+Pricing
+
+※助成金適用後は中小企業・5名受講の場合の試算。11名以上は別途お見積もり。
+
+
+### [section #faq] よくある質問
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. 研修だけでも頼めますか？
+
+はい。単体で受けられます。「まずAIに慣れたい」という第一歩としても、経理システム導入の前段としても活用できます。
+
+#### Q. 他社のAI研修と何が違いますか？
+
+私たちは「研修屋」ではありません。自社出資先の放送局（ラジオ大阪）を実際にAI化した実行者です。教科書の知識ではなく、現場で効いた方法だけをお伝えします。
+
+#### Q. ChatGPT研修ではないのですか？
+
+ChatGPT「だけ」ではありません。ChatGPT・Claude・Geminiの3大AIを横断的に学び、業務に応じて最適なAIを選べる力を身につけます。
+
+#### Q. 助成金はいつもらえますか？
+
+後払いです。研修費用は先にお支払いいただき、研修完了後に助成金が支給されます。申請手続きのサポートも行います。
+
+#### Q. 何名から受講できますか？
+
+1名から可能です。6名以上でボリュームディスカウントがあります。
+
+#### Q. 内容はカスタマイズできますか？
+
+はい。業種・課題に合わせて調整します。製造業向け、経営者向けなど専門テーマもご用意しています。
+
+
+### [section #related-products] 大阪放送のAI事業
+- **eyebrow**: Our Business
+
+Our Business
+
+#### AI経理システム導入
+
+人に依存した経理を、入力から経営数字まで仕組みごと入れ替える。
+
+#### AI活用研修
+
+社員がAIを武器にする、実践型研修。
+
+#### 月額BPO運用
+
+入れ替えた経理を、運用ごと任せる。
+
+
+### [section #contact] まずは、お気軽にご相談ください。
+- **eyebrow**: Contact
+
+Contact
+
+売り込みはしません。御社の課題をうかがい、最適な研修プランを一緒に考えます。相談は無料です。
+
+※ご相談だけでも歓迎です。しつこい営業はいたしません。
+
+
+## 画像alt（翻訳対象）
+
+| src | alt (JP) |
+|---|---|
+| `../assets/logo-mark.png` | 大阪放送株式会社 シンボルマーク |
+| `../assets/training.jpg` | AI活用研修の風景。講師が受講者のノートPCを指し、生成AIの使い方を実演している |
+| `../assets/studio-mixer.jpg` | ラジオ大阪（OBC）の放送卓。AI化を実証した現場 |
+| `../assets/ai-system.jpg` | 複数モニターで売上集計やコード画面を確認しながら、AIで経理を自動化する執務風景 |
+| `../assets/dashboard.jpg` | まるなげ経理 経営ダッシュボードをモニターで確認する経営者。リアルタイムで経営数字が見える |
+| `../assets/training.jpg` | AI活用研修の風景。講師が受講者のノートPCを指し、生成AIの使い方を実演している |
+| `../assets/bpo.jpg` | 月額BPO運用ダッシュボードを囲んで打ち合わせするチーム。経理から経営指標までを継続して支える |
+| `../assets/logo-mark-white.png` | 大阪放送株式会社 |
+
+## JSON-LD（FAQPage等：英訳対象）
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "法人向けAI活用研修",
+  "description": "ChatGPT・Claude・Geminiを現場の業務で使えるようにする実践型研修（2日・計11時間）。人材開発支援助成金の対象。",
+  "provider": { "@type": "Organization", "name": "大阪放送株式会社" }
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"研修だけでも頼めますか？","acceptedAnswer":{"@type":"Answer","text":"はい。単体で受けられます。"}},
+    {"@type":"Question","name":"助成金はいつもらえますか？","acceptedAnswer":{"@type":"Answer","text":"後払いです。費用は先にお支払いいただき、研修完了後に支給されます。"}},
+    {"@type":"Question","name":"助成金に条件はありますか？","acceptedAnswer":{"@type":"Answer","text":"対象は雇用保険適用の従業員（役員・事業主は対象外）。研修開始1ヶ月前までに計画届の提出が必要です。サポートします。"}},
+    {"@type":"Question","name":"何名から受講できますか？","acceptedAnswer":{"@type":"Answer","text":"1名から受講可能です。6名以上で割引があります。"}},
+    {"@type":"Question","name":"内容はカスタマイズできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。業種・課題に合わせて調整します。"}}
+  ]
+}
+```
+
+---
+
+## Page: Monthly BPO (JP)
+URL: https://osakahoso.com/ai-bpo/bpo
+
+# /ai-bpo/bpo (月額BPO運用) — 英訳用 JP本文
+
+> source: `ai-bpo/bpo.html` / canonical: `https://osaka-hoso-lp.vercel.app/ai-bpo/bpo`
+
+## メタ
+
+- **<title>**: 経理の運用も、まるごと任せる｜月額経理BPO・CFO機能｜大阪放送株式会社
+- **<meta description>**: 作り替えた仕組みの上で、日々の経理運用から月次・予実分析・キャッシュフロー予測まで大阪放送が引き受けます。設計・運用・経営判断を1社で。月額制。
+
+## 本文（各セクション）
+
+### [section #top] 仕組みを入れた、その先も。経理の運用ごと任せられる。
+- **eyebrow**: Monthly BPO ＆ CFO Function
+
+事業/月額BPO運用
+
+Monthly BPO ＆ CFO Function
+
+経理を仕組みに入れ替えたあと、その運用までまるごと引き受けます。日々の経理から、月次・予実分析・キャッシュフロー予測といった経営判断の材料まで。社外にCFO機能を持つ感覚で。
+
+**[ボタン]** 無料相談する→
+
+
+### [section #what] 作り替えた仕組みの上で、回し続ける。
+- **eyebrow**: What we do
+
+What we do
+
+「AI経理システム導入」で作り替えた仕組みの上で、運用を継続的に引き受けます。単なる作業の受託ではなく、経理の結果に責任を持つ、CFO的な関与です。
+
+仕組みの上で、日常の経理を回す。担当者の採用も育成も不要に。
+
+毎月の数字を、速く・正確に。経営会議に間に合う締めを。
+
+予実分析・キャッシュフロー予測など、経営判断に使える材料を提供します。
+
+作業の受託ではなく、経理の結果に責任を持つCFO的な関与です。
+
+
+### [section #change] どう変わるか。
+- **eyebrow**: After
+
+After
+
+- 経理の運用負荷から解放される。採用も育成も、もう不要。
+- 「作業だけ」の経理代行と違い、経営判断に使える数字が毎月出てくる。
+- 予実分析やキャッシュフロー予測まで——社外に、経理と財務の両方を分かっている相談相手を持てる。
+
+### [section #why] 設計・運用・経営判断を、1社で。
+- **eyebrow**: Why us
+
+Why us
+
+「作業代行」は仕組みを直しません。「コンサル」は運用を引き受けません。大阪放送は、設計・運用・経営判断の3つを1社で担います。このBPOは、「AI経理システム導入」で作り替えた仕組みの上で回すのが最も効果的です。まず仕組みを入れ替え、その運用を任せる——という流れが王道です。
+
+
+### [section #relation]
+
+このBPOは、「AI経理システム導入」で作り替えた仕組みの上で回すのが最も効果的です。まず仕組みを入れ替え、その運用を任せる——という流れが王道です。
+
+
+### [section #price] 料金補助対象外・通常料金
+- **eyebrow**: Pricing
+
+Pricing
+
+月額BPOは継続的な運用サービスのため、補助金（ツール導入の補助）の対象外です。価格は会社の規模で決まります。導入（システム導入）には補助金が使えます。
+
+
+### [section #faq] よくある質問
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. BPOだけでも頼めますか？
+
+ご相談ください。ただし、仕組みを入れ替えた上での運用が最も効果を発揮します。
+
+#### Q. なぜ補助金が使えないのですか？
+
+補助金はツール導入（システム導入）への補助で、月々の運用サービスは対象外です。導入には補助金が使えます。
+
+#### Q. 税理士との違いは？
+
+税理士は申告が主です。私たちは日々の運用と経営判断材料の提供までを担い、申告は顧問税理士と連携します。
+
+
+### [section #related-products] 大阪放送のAI事業
+- **eyebrow**: Our Business
+
+Our Business
+
+#### AI経理システム導入
+
+人に依存した経理を、入力から経営数字まで仕組みごと入れ替える。
+
+#### AI活用研修
+
+社員がAIを武器にする、実践型研修。
+
+#### 月額BPO運用
+
+入れ替えた経理を、運用ごと任せる。
+
+
+### [section #contact] まずは、ご相談ください。
+- **eyebrow**: Contact
+
+Contact
+
+売り込みはしません。いまの経理の状況を伺い、運用をどう引き受けられるかを一緒に考えます。相談は無料です。
+
+※ご相談だけでも歓迎です。しつこい営業はいたしません。
+
+
+## 画像alt（翻訳対象）
+
+| src | alt (JP) |
+|---|---|
+| `../assets/logo-mark.png` | 大阪放送株式会社 シンボルマーク |
+| `../assets/bpo.jpg` | 月額BPO運用ダッシュボードを囲んで打ち合わせするチーム。経理の運用を継続して支える |
+| `../assets/dashboard.jpg` | まるなげ経理 経営ダッシュボードをモニターで確認する経営者。リアルタイムで経営数字が見える |
+| `../assets/training.jpg` | AI活用研修の風景。講師が受講者のノートPCを指し、生成AIの使い方を実演している |
+| `../assets/bpo.jpg` | 月額BPO運用ダッシュボードを囲んで打ち合わせするチーム。経理から経営指標までを継続して支える |
+| `../assets/logo-mark-white.png` | 大阪放送株式会社 |
+
+## JSON-LD（FAQPage等：英訳対象）
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "月額経理BPO・CFO機能",
+  "provider": { "@type": "Organization", "name": "大阪放送株式会社" },
+  "areaServed": "JP",
+  "description": "作り替えた仕組みの上で、日々の経理運用から月次・予実分析・キャッシュフロー予測まで引き受ける月額制の経理BPO。設計・運用・経営判断を1社で。"
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"BPOだけでも頼めますか？","acceptedAnswer":{"@type":"Answer","text":"ご相談ください。ただし、仕組みを入れ替えた上での運用が最も効果を発揮します。"}},
+    {"@type":"Question","name":"なぜ補助金が使えないのですか？","acceptedAnswer":{"@type":"Answer","text":"補助金はツール導入（システム導入）への補助で、月々の運用サービスは対象外です。導入には補助金が使えます。"}},
+    {"@type":"Question","name":"税理士との違いは？","acceptedAnswer":{"@type":"Answer","text":"税理士は申告が主です。私たちは日々の運用と経営判断材料の提供までを担い、申告は顧問税理士と連携します。"}}
+  ]
+}
+```
+
+---
+
+## Page: Story (JP)
+URL: https://osakahoso.com/story
+
+# /story (創業物語) — 英訳用 JP本文
+
+> source: `story.html` / canonical: `https://osaka-hoso-lp.vercel.app/story`
+> 注: 既存 `/en/story.html` に**軽い英訳版**が存在（鐵→放送→AIの導入文＋沿革＋創業者の凝縮版略歴）。本ドキュメントは現行JPの最新内容を反映した英訳用ソース。創業者評伝は既存EN方針通り「軽い凝縮版」で（鐵鋼春秋出典明記）。
+
+---
+
+## メタ
+
+- **<title>**: STORY ｜ 大阪放送株式会社
+- **<meta description>**: 大阪放送株式会社の前身「丸一興産株式会社」は、1945年創業の大阪の鐵の会社。80年にわたり鉄鋼流通・不動産賃貸を手がけ、2026年に商号を大阪放送へ改め、企業のAI/DX変革を中核事業に。創業者・加藤源太郎の評伝とともに、その歩みを残します。
+
+---
+
+## ヒーロー
+
+- **eyebrow**: Story
+- **h1**: 大阪で、鐵の流通と不動産管理に携わり八十年。
+
+---
+
+## イントロ（鐵→放送→AI の物語）
+
+大阪放送株式会社の前身「丸一興産株式会社」は、1945年、大阪の鐵の会社として創業しました。立売堀、堺三宝、江戸堀、そして北港常吉へ。事業の地を移しながら、80年にわたって鐵とその合金の加工・流通に従事し、不動産賃貸とあわせて、確かな土台を築いてきました。
+
+その私たちが、ひとつの放送局と出会います。〈ラジオ大阪（OBC）〉——1958年開局、大阪の電波を半世紀以上にわたって支えてきた、公共性のある放送局です。時代が大きく移りゆくなかで、この放送局もまた、次の時代へ向けた新たな体制を必要としていました。長く受け継がれてきた電波を、未来へつないでいきたい。私たちは、ただ出資して見守るのではなく、自ら一員として現場に入り、ともに次の時代を築くと決めました。
+
+2026年、私たちは商号を旧社名「大阪放送株式会社」へと改めます。これは、ただの社名変更ではありません。80年の祖業の看板を、放送の名に掛け替える——ラジオ大阪と一蓮托生で歩む、という覚悟の証です。
+
+そして私たちは、この放送局を「コンテンツIPスタジオ」へと変えていきます。電波に乗せて流れ、消えていく番組から、つくるほどに資産として積み上がるコンテンツへ。ラジオを発端に、長く愛され、残り続けるIPを生み出していく——それが、私たちの描くラジオの新しいあり方です。
+
+その挑戦を、私たちはまず足元から始めました。〈ラジオ大阪〉の現場から経理、そして番組づくりまで、自らの手でAI化したのです。「古い組織ほど、AIで大きく変わる」——80年つちかった"信用"を土台に得たこの確信は、いまや企業のAI/DX変革という、私たちの新たな中核事業になっています。
+
+鐵から、放送、そしてAIへ。事業の姿は変えても、大阪とともにあり、守るべきものは何があっても守り抜く——私たちの根は、変わりません。
+
+> 注：「一蓮托生」は英訳では literal な "shared fate" を避け、"a commitment to walk forward with Radio Osaka, all in" 系の言い回しで意訳する（既存ENの確定方針）。
+
+---
+
+## 沿革テーブル
+
+| 日付 | 内容 |
+|---|---|
+| 1945年10月1日 | 丸一商会 として創業　創業社長 加藤源太郎（雄己） |
+| 1948年12月17日 | 丸一興産株式會社 として法人成り |
+| 1979年 | 社長（二代目） 加藤勝弘 |
+| 2003年 | 社長（三代目） 加藤昌孝 |
+| 2017年 | 社長（四代目） 加藤順彦 |
+
+---
+
+## 創業者・加藤源太郎——3分でわかる生涯（新規セクション）
+
+明治39年、兵庫県豊岡市に生まれる。15歳で大阪の鉄商・北島安太郎商店に入り、鉄の世界に足を踏み入れた。20年にわたり北島のもとで鍛えられ、洞察力と度胸、そして義理堅さで頭角を現す。
+
+終戦翌月の1945年10月、39歳で独立。机ひとつから始めた加藤商店を、やがて丸一興産として法人化。高度成長期に急成長を遂げ、関西の鉄鋼特約店界で重鎮として確固たる地位を築いた。**創業以来、一度も赤字を出さなかった。**
+
+厳格でありながら社員を家族のように遇し、落魄した恩人・北島安太郎の面倒を30年にわたって見続けた。その報恩の姿勢は、知る人の間で「美談」として語り継がれている。
+
+1979年、73歳で現役社長のまま逝去。その事業は息子・勝弘、孫・昌孝、そして現代表・順彦へと受け継がれ、80年の時を経て、いま「大阪放送」として新たな章を刻んでいる。
+
+---
+
+## 創業時の記録（評伝）
+
+### signpost（英版で表示するイントロ）
+
+Below is a short biography of our founder, Gentaro Kato, who built the steel firm Maruichi Kosan from the ground up after founding it in 1945. It was published in the Spring 1980 issue of the steel-trade journal *Tekko Shunju*, and is reproduced here, condensed, with the author's permission — preserved as a record of the man who started it all.
+
+### 評伝の構造（軽い凝縮版・5節＋pull-quote 1本）
+
+既存 `/en/story.html` に確定版あり。**新規の英訳は不要**で、現行のままを継承する。構成だけ示す：
+
+1. **Gifted, yet modest by nature** — 73歳で逝去・後年高い評価、控えめだが鋭い洞察
+2. **Into the Kitajima firm after commercial school** — 1906年豊岡生まれ、15歳で大阪・北島安太郎商店へ
+3. **An insight that stood above the rest**（小野木雅次郎の回想 pull-quote 1本）+ 25-26歳で慈光会入信
+4. **After the war: independent, building the foundation in earnest** — 1945年10月独立、1948年丸一興産設立、関西で重鎮、創業以来赤字ゼロ
+5. **A connoisseur in the pursuit of true flavor** — 誠実・忍耐・努力、社員を家族のように、美食の道楽、後継=勝弘
+
+末尾の出典：`Condensed from *Tekko Shunju*, Spring issue (April 15, 1980).`
+
+---
+
+## 画像alt（翻訳対象）
+
+| src | alt (JP) |
+|---|---|
+| `assets/story-steel.jpg` | 積み上げられた鋼材（H形鋼） |
+| `assets/founder.jpg` | 丸一興産 創業者 加藤源太郎（通名・雄己） |
+| `assets/osaka-1916-web.jpg` | 大正期の大阪・千日前の街並みと市電（1916年） |
+| `assets/story-510.jpg` | 丸一興産 鉄鋼倉庫の内部。鋼材とクレーン |
+| `assets/story-steel-stack.jpg` | 積み上げられた鋼材（H形鋼）。鉄商として築いた基盤 |
+| `assets/hq.jpg` | 丸一興産 本社・倉庫（大阪市此花区常吉） |
+
+---
+
+## フッター末尾
+
+- **戻るリンク**: ← トップへ戻る
+- **タグライン**: Tradition, in motion. — Since 1945（変更なし）
+- **コピーライト**: © 大阪放送株式会社 → © Osaka Hoso Co., Ltd.
+
+---
+
+## Page: Top page (English)
+URL: https://osakahoso.com/en/
+
+# / (Top Page) — EN Translation
+
+> source: `index.html` / canonical: `https://osakahoso.com/en/`
+
+## Meta
+
+- **<title>**: Osaka Hoso Co., Ltd. | Eighty Years of Trust, Now Powered by AI
+- **<meta description>**: Founded in 1945, Osaka Hoso is an 80-year-old Osaka company now transforming businesses with AI. We walked into Radio Osaka — a broadcaster we invested in — and rebuilt it with AI, end to end. Talk to us about AI/DX transformation.
+
+## Body (by section)
+
+### [section #top] Eighty years of trust, now powered by AI.
+- **eyebrow**: OSAKA HOSO CO., LTD. ／ SINCE 1945
+
+OSAKA HOSO CO., LTD. ／ SINCE 1945
+
+Founded in 1945 as an Osaka steel company, Osaka Hoso now drives AI/DX transformation for businesses. Our proof: we walked into Radio Osaka — a broadcaster we invested in — and rebuilt it from accounting to on-air programming, with AI.
+
+**[button]** See what we do ↓
+
+**[button]** Talk to us →
+
+Vintage photo: Sennichimae, near the Kabuki-za (Osaka, 1933). Wikimedia Commons / Public Domain
+
+
+### [section #about] Eighty years, rooted in Osaka.
+- **eyebrow**: About Us
+
+About Us
+
+Osaka Hoso Co., Ltd. has been rooted in Osaka since 1945 — eighty years. Our businesses have evolved with the times, but one thing never changed: trust. Now we're building on that trust to take on a new mission: AI/DX transformation for businesses.
+
+
+### [section #business] The older the company, the bigger the AI impact.
+- **eyebrow**: Our Business
+
+Our Business
+
+Most people assume AI is for digital-native startups. We see it the opposite way. Companies buried in paper, dependent on manual processes, running the same way for decades — those are the ones where AI delivers the most dramatic change. We redesign back-office operations — starting with accounting and finance — from the ground up, using AI.
+
+#### Reverse-engineered from the CEO's desk
+
+We start with the end: "What numbers do you need to make decisions?" Then we redesign every input to produce exactly that. Design before tools.
+
+#### AI is an amplifier
+
+The real skill isn't using AI — it's knowing what to aim it at. We don't hand you tools and walk away. We deliver a working system that produces results.
+
+#### Unreasonable speed
+
+From concept to implementation, we move at a speed that shouldn't be possible. AI makes it possible.
+
+**[button]** See our AI Accounting & Finance BPO →
+
+
+### [section #proof] We proved it on ourselves.
+- **eyebrow**: Proof
+
+Proof
+
+Our first test subject was ourselves. Radio Osaka (OBC) — a broadcaster we invested in, on the air since 1958, built on decades of analog processes. We didn't observe from the outside. We walked in as members of the team and rebuilt it with our own hands — from accounting to programming.
+
+Start from the hardest case. Prove it there first. That's the only credential that counts.
+
+Paper slips, manual tallying, accounting that lived inside one person's head.
+
+AI-powered automatic journaling and analysis. Management numbers visible in real time.
+
+This is what happened when a paper-and-stamp broadcaster met AI.
+
+2,500–3,000 entries / month
+
+processed automatically by AI.
+
+- Every paper voucher and every approval stamp — eliminated. Purchase orders, transfers, invoices, expenses — all digitized.
+
+- The endless chain of "write on paper → copy → enter → tally on paper again → re-enter in Excel" — ripped out entirely.
+
+- Exception handling that existed only in veterans' heads — untangled. Multiple paths for the same process — unified. Now anyone can run the books and get the same result.
+
+#### AI beyond accounting: Daily Radio Osaka
+
+Every topic from the day's live broadcast, automatically condensed by AI into a 20-minute audio summary, delivered daily. Radio Osaka's character Benten Obi has been appointed as an AI announcer. AI isn't just working behind the scenes — it's reaching listeners directly.
+
+Created in partnership with PLUS IMPACT Inc.
+
+We don't deal in theory.
+
+We proved it ourselves. That's why we can deliver it with confidence.
+
+
+### [section #group] Osaka Hoso and its related companies
+- **eyebrow**: Group
+
+Group
+
+#### Group Companies
+
+- OSAKA HOSO PTE. LTD.
+- MARUICHI PTE. LTD.
+- ToGEAR MSC Inc.
+- Sanctuary Inc.
+
+#### Investments
+
+- Radio Osaka (OBC) — OBC Official Site
+- Hironobuto Inc.
+
+
+### [section #history] History
+- **eyebrow**: History
+
+History
+
+From our founding in 1945 to our rebirth in 2026.
+
+Founded as Maruichi Shokai (Founder: Gentaro Kato).
+
+December 17 — incorporated as Maruichi Kosan Co., Ltd.
+
+Succession: Katsuhiro Kato (1979) / Masataka Kato (2003) / Yorihiko Kato (2017).
+
+Headquarters relocated to Tsuneyoshi, Konohana-ku.
+
+Invested in Radio Osaka (OBC). Yorihiko Kato appointed Representative Director and Chairman of Radio Osaka.
+
+May 20 — company name changed to Osaka Hoso Co., Ltd. Business purposes expanded to include management consulting and AI development/implementation support, establishing AI/DX transformation as a core business.
+
+
+### [section #story-cta] It all started with one man.
+- **eyebrow**: Story
+
+Story
+
+Gentaro Kato built Maruichi Kosan from nothing. His extraordinary life is preserved here, alongside the original records.
+
+**[button]** Read the STORY →
+
+
+### [section #representatives] Why now.
+- **eyebrow**: Message
+
+Message
+
+One man built this company. Eighty years later, it's in the hands of two. One carries the legacy. The other rewrites the playbook.
+
+#### Yorihiko Kato
+
+Representative Director (concurrently Chairman, Radio Osaka)
+
+Born 1967, raised in Osaka. Started his first venture while still a student at Kwansei Gakuin University and founded the advertising company Nikko (now GMO NIKKO) in 1992. In 2008, he sold the company to GMO Internet Group and moved to Singapore. From there, he operated as an angel investor across Asia, backing more than 80 Japanese startups. In 2017, he took the helm of Maruichi — the 80-year-old family enterprise — as its fourth-generation leader.
+
+Kato knows both sides: the weight of a legacy business and the edge of building something new. He chose to go all in on Radio Osaka — a broadcaster the company invested in — not from a distance, but up close. Not "invest and watch." Full commitment, personally on the ground. To make that commitment unmistakable — inside and out — he changed the 80-year-old family company's name to Osaka Hoso. For Radio Osaka's next chapter. Everything the company has. Everything he has.
+
+> He changed the company name to make one thing clear: we're in this together, all the way forward.
+
+That commitment isn't just words. Under Kato's direction, concrete AI services are already live — from internal automation to Daily Radio Osaka, where AI summarizes the day's broadcasts (⑤ Proof).
+
+Yorihiko Kato's columns and articles: machikado-creative.jp ↗
+
+#### Kengo Kitaura
+
+Director (Management & Administration Division, Radio Osaka)
+
+Born in Osaka. Left for the U.S. right after middle school. After returning to Japan and running businesses, he moved to Cambodia in 2009. In 2014, he founded AGRIBUDDY, an agri-fintech company, and served as CEO. He built a system to collect and visualize farming data from smallholder farmers who had no records and no credit history, connecting them to financial services. Awards include Grand Prize at the Nikkei FinTech Conference and Global Startup Award "Founder of the Year" (the first ASEAN/Cambodian company to win). He returned to Japan in 2023 and now works on automating corporate accounting and back-office operations with AI.
+
+Kitaura is not a commentator. He's an operator who has made things work in the places furthest from digital. In Cambodian villages, he connected farmers with no records and no credit to data, then to finance. The older, more paper-heavy, more manual an organization is, the more dramatically technology can transform it — that conviction was forged in the field, not at a desk. Now Kitaura aims that same force at old organizations in Japan. The AI transformation of Radio Osaka — from operations to accounting — he designed and built it himself.
+
+> The tools are available to everyone. The difference is knowing what to aim them at. Reverse-engineer from the outcome. Redesign from there.
+
+Kengo Kitaura's blog: note.com ↗
+
+Trust and execution. When both are present, old organizations truly change.
+
+
+### [section #company] Company Information
+- **eyebrow**: Company
+
+Company
+
+
+### [section #contact] What if you didn't need to post that job listing?
+- **eyebrow**: Contact
+
+Contact
+
+If your accounting or back-office is a headache, let's talk. Eighty years of trust, and AI we proved on ourselves. That's what we bring.
+
+
+## Image alt (translated)
+
+| src | alt (EN) |
+|---|---|
+| `assets/logo-mark.png` | Osaka Hoso Co., Ltd. symbol mark |
+| `assets/osaka-1933-web.jpg` | Bustling Sennichimae district, Osaka (1933) |
+| `assets/hq.jpg` | Osaka Hoso Co., Ltd. headquarters (Tsuneyoshi, Konohana-ku, Osaka) |
+| `assets/biz-decision.jpg` | Management team discussing around the Management Simulator dashboard — designing accounting from the decision-making outcome backward |
+| `assets/biz-2.jpg` | Hands on a laptop with multiple monitors — real-world operations where people and AI work side by side |
+| `assets/biz-3.jpg` | Light trails on an elevated highway over a city at night — speed and momentum |
+| `assets/program-1958.webp` | Radio Osaka (OBC) program schedule, July 1, 1958 — the station's opening day |
+| `assets/simulator.jpg` | Management Simulator screen showing real-time revenue, profit, and cash balance |
+| `assets/daily-band.jpg` | Daily Radio Osaka — AI audio summary. Radio Osaka's official mascot serves as AI personality in Japan's first AI-hosted radio segment |
+| `assets/obc-logo.jpg` | Radio Osaka OBC |
+| `assets/founder.jpg` | Founder Gentaro Kato |
+| `assets/hq.jpg` | Headquarters (Tsuneyoshi, Konohana-ku) |
+| `assets/kato.jpg` | Representative Director Yorihiko Kato |
+| `assets/kitaura-web.jpg` | Director Kengo Kitaura |
+| `assets/logo-mark-white.png` | Osaka Hoso Co., Ltd. |
+
+---
+
+## Page: AI BPO hub (English)
+URL: https://osakahoso.com/en/ai-bpo
+
+# /ai-bpo (Business Hub) — EN Translation
+
+> source: `ai-bpo.html` / canonical: `https://osakahoso.com/en/ai-bpo`
+
+## Meta
+
+- **<title>**: Replace Your Accounting, End to End | AI Accounting · AI Training · Accounting BPO | Osaka Hoso Co., Ltd.
+- **<meta description>**: Replace people-dependent accounting with a system that runs itself. Osaka Hoso's AI accounting services: system implementation, AI skills training, and monthly BPO operations — each eligible for government subsidies.
+
+## Body (by section)
+
+### [section #top] From data entry to decision metrics. AI accounting and finance, end to end.
+- **eyebrow**: AI Accounting ／ Training ／ BPO
+
+AI Accounting ／ Training ／ BPO
+
+Replace your accounting infrastructure. Turn your employees into AI power users. Get decision-ready numbers delivered every month. All three, from one company. Backed by eighty years of trust — and AI we proved on ourselves.
+
+**[button]** See what we do ↓
+
+**[button]** Talk to us →
+
+
+### [section #problem] Before you post that accounting job — read this.
+- **eyebrow**: The Problem
+
+The Problem
+
+Hiring one accountant costs ¥4–5 million a year in salary alone. Add the time to recruit, three-plus months of training, and the risk that everything stops if that person quits. What if you could let go of all of that?
+
+- You can't find an accountant to hire
+- One person carries the entire workload — if they're out, nothing moves
+- Financial numbers arrive too late for decisions that matter
+- The same figures are manually re-entered from paper to system to spreadsheet
+- You can't see where your money is going in real time
+
+
+### [section #solution] From data entry to decision-ready numbers.
+- **eyebrow**: The Solution
+
+The Solution
+
+- Hiring, training, and turnover risk
+- Numbers compiled manually
+- Operations dependent on specific individuals
+- Month-end close is always late
+- "By the time the numbers are ready, it's too late"
+
+→
+
+- No hiring needed. Not affected by people coming or going
+- AI handles aggregation. Manual work eliminated
+- Standardized by design. Anyone can read the books
+- Numbers available immediately
+- "Decision-ready metrics, delivered every month"
+
+Let go of the accounting burden. Get the numbers you need. Focus on running your business.
+
+
+### [section #why-special] We don't just "enter your numbers."
+- **eyebrow**: Our Difference
+
+Our Difference
+
+Our edge: one person who holds management, finance, and AI all at once. Three roles that are normally split across separate specialists — unified. That's why we don't just do bookkeeping. We redesign your entire accounting flow, starting from the outcome: numbers your CEO can actually use.
+
+#### We understand management
+
+We define the end state first: what numbers do you need to make decisions? Not "what's this month's profit" — but "how many months until this business line turns profitable?" We build the view that answers that question instantly.
+
+#### We design accounting from the finance side
+
+To produce the right output, you need to restructure the inputs. How ledgers are organized changes the quality of the numbers you get. Garbage in, garbage out — so we redesign from the entry point.
+
+#### We implement with AI
+
+We don't just design and hand over a blueprint. We build the system with AI, get it running, and deliver it working. From concept to implementation, at unreasonable speed.
+
+Outcome-first accounting design
+
+We define "what numbers do you need for decisions?" first, then redesign the daily inputs to produce exactly that. Our proprietary approach. Garbage in, garbage out — that's why we reverse-engineer from the outcome.
+
+
+### [section #products] Three services. One complete solution.
+- **eyebrow**: What we do
+
+What we do
+
+Replace the system. Train the people. Run the operations. All three have to come together for accounting to truly change.
+
+#### AI Accounting System
+
+Replace people-dependent accounting with an AI-powered system, end to end. Eligible for the Digital / AI Adoption Subsidy (50%, up to ¥4.5 million).
+
+#### AI Skills Training
+
+Hands-on training to make ChatGPT, Claude, and Gemini actually useful in your daily work. SMEs can receive up to 75% back through the Human Resources Development Subsidy.
+
+#### Monthly BPO
+
+We take over daily accounting operations through monthly management dashboards — like having a fractional CFO on retainer.
+
+You can start with any one of the three. All three, or just one — it's your call.
+
+
+### [section #flow] How it works
+- **eyebrow**: How it works
+
+How it works
+
+#### Free consultation
+
+Tell us what's not working and where your accounting stands. Online is fine.
+
+#### Map the current state
+
+We organize your workflows and costs, then recommend which of our three services to deploy — and how.
+
+#### Design & implement
+
+We design a system tailored to your company. Subsidy applications are supported here too.
+
+#### Operate & support
+
+Once it's running, we stay alongside you. Monthly BPO, ongoing.
+
+From first conversation to implementation and beyond — we walk with you the entire way.
+
+
+### [section #why-us] Why us.
+- **eyebrow**: Why us
+
+Why us
+
+#### 80 years of history
+
+Founded 1945. Rooted in Osaka.
+
+#### Proved it ourselves
+
+We walked into Radio Osaka — a broadcaster we invested in — and automated 2,500–3,000 journal entries a month. Eliminated every paper voucher and every approval stamp.
+
+#### Design to operations, one company
+
+We replace the system, train your people, and run the operations. We don't sell tools and disappear — we take responsibility for results.
+
+See our proof in detail →
+
+
+### [section #faq] FAQ
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. How is this different from a bookkeeping service?
+
+Bookkeeping services enter numbers. We redesign your entire accounting infrastructure to produce numbers your management can actually use — design, operations, and financial analysis, all in one.
+
+#### Q. Do I need to change my tax accountant?
+
+No. Keep your current tax accountant. We handle daily accounting and monthly close; tax filings are coordinated with your accountant.
+
+#### Q. We have a lot of paper receipts. Can you handle that?
+
+Yes. Paper is fine. AI reads, digitizes, and journals them. You don't need to change how you work.
+
+#### Q. How much does it cost?
+
+It depends on the service. AI Accounting System starts at approximately ¥2.5 million after subsidies. Monthly BPO starts at ¥250,000/month. AI Training works out to roughly ¥89,000 per person after subsidies. See each service page for details.
+
+#### Q. Can I use government subsidies?
+
+The AI Accounting System is eligible for the Digital / AI Adoption Subsidy (50%, up to ¥4.5 million). AI Training is eligible for the Human Resources Development Subsidy (up to 75% for SMEs). We support the application process.
+
+#### Q. What areas do you serve?
+
+We work online, nationwide.
+
+#### Q. How quickly can we start?
+
+Start with a free consultation. We'll assess your current state and propose the fastest path forward.
+
+
+### [section #contact] What if you didn't need to post that job listing?
+- **eyebrow**: Contact
+
+Contact
+
+If your accounting or back-office is a headache, let's talk. Eighty years of trust, and AI we proved on ourselves. That's what we bring.
+
+No hard sell. No follow-up spam. Just a conversation.
+
+
+## Image alt (translated)
+
+| src | alt (EN) |
+|---|---|
+| `assets/logo-mark.png` | Osaka Hoso Co., Ltd. symbol mark |
+| `assets/biz-2.jpg` | Hands working on a laptop — replacing accounting from the infrastructure level |
+| `assets/dashboard.jpg` | Manager reviewing the Management Dashboard on a monitor — real-time visibility into financial performance |
+| `assets/training.jpg` | AI skills training in progress — instructor demonstrating generative AI on a participant's laptop |
+| `assets/bpo.jpg` | Team meeting around a monthly BPO operations dashboard — ongoing support from accounting to management metrics |
+| `assets/studio-mixer.jpg` | Radio Osaka (OBC) broadcast console close-up — the site where we proved AI transformation firsthand |
+| `assets/logo-mark-white.png` | Osaka Hoso Co., Ltd. |
+
+## JSON-LD (translated)
+
+---
+
+## Page: AI Accounting System (EN)
+URL: https://osakahoso.com/en/ai-bpo/system
+
+# /ai-bpo/system (AI Accounting System) — EN Translation
+
+> source: `ai-bpo/system.html` / canonical: `https://osakahoso.com/en/ai-bpo/system`
+
+## Meta
+
+- **<title>**: Replace People-Dependent Accounting, End to End | AI Accounting System | Osaka Hoso Co., Ltd.
+- **<meta description>**: "Only one person knows how it works" — replace that fragile, people-dependent accounting with an AI-powered system, from data entry to management metrics. Eligible for the Digital / AI Adoption Subsidy (50%, up to ¥4.5 million). Proved at Radio Osaka by Osaka Hoso.
+
+## Body (by section)
+
+### [section #top] Replace people-dependent accounting. The entire system, end to end.
+- **eyebrow**: AI Accounting System
+
+Business / AI Accounting System
+
+AI Accounting System
+
+"Only one person understands it." "If they quit, everything stops." We replace that fragile, people-dependent accounting with a system that runs regardless of who's on the team. From a single receipt to the numbers your CEO needs — we swap out your entire accounting infrastructure in one shot.
+
+**[button]** Free assessment (3 min) →
+
+**[button]** Talk to us
+
+
+### [section #what] We don't bolt on software.
+- **eyebrow**: What we do
+
+What we do
+
+We rebuild your company's accounting as a single, end-to-end pipeline — from entry to output. This is not a tool implementation. It's a full replacement of your accounting function: from "it only works when that one person is here" to "anyone can run it and get the same result."
+
+#### Intake
+
+AI reads receipts and invoices and generates journal entries automatically. Paper workflows stay as they are — no problem.
+
+#### Rebuild
+
+Paper vouchers and approval stamps — abolished. The chain of "write on paper → copy → enter → tally on paper → re-enter in Excel" — ripped out entirely.
+
+#### Output
+
+Trial balance, monthly close, cash flow — auto-aggregated. Decision-ready numbers delivered through a real-time Management Dashboard.
+
+#### Handover
+
+Configured and customized for your operations. Staff training and ongoing maintenance included.
+
+*(figcaption)* Screen image is illustrative.
+
+
+### [section #change] Before and after.
+- **eyebrow**: Before & After
+
+Before & After
+
+Before — People-dependent accounting:
+- Everything depends on "that person" — if they leave, it stops
+- Hiring, training, and turnover risk every year
+- Numbers arrive too late — by the time you see them, it's already too late
+- The same figures hand-entered from paper → system → Excel, over and over
+
+→
+
+After — System-driven accounting:
+- The system runs it. No single point of failure
+- Free from hiring, training, and turnover risk
+- AI journals and aggregates automatically. Management numbers in real time
+- Zero double-entry. Anyone runs it, same books
+
+
+### [section #impact] How much payroll disappears.
+- **eyebrow**: Impact
+
+Impact
+
+*(figcaption)* Current state: mountains of paper, manual tallying, and "what if that person quits?" Flipping through vouchers one by one, totaling on a calculator, copying again. How much payroll is consumed by this every month?
+
+This isn't about replacing "one accountant." Consider a setup with three accounting staff (¥300,000/month each) plus one accounting manager (¥600,000/month). Replace the system, and one person can handle it.
+
+About ¥16.9 million saved per year
+
+The initial system cost (approximately ¥2.5 million after subsidy) pays for itself in roughly 1.8 months of savings.
+
+*Calculated on actual company cost: salary plus employer-side social insurance (approx. 15% of salary). Recruitment cost based on mid-career hiring average (approx. ¥800,000 per hire) and national separation rate (approx. 11.5%, MHLW 2024), conservatively estimated. Additional savings not quantified here: transportation, benefits, management time spent on recruiting, business disruption during vacancies, and repeated turnover risk.*
+
+
+### [section #sim] After subsidies, what's the real cost?
+- **eyebrow**: Subsidy
+
+Subsidy
+
+This system implementation is eligible for the Digital / AI Adoption Subsidy (standard track). Subsidy rate: 50% (up to ¥4.5 million).
+
+Estimate based on the Digital / AI Adoption Subsidy (standard track / 50% rate; 2/3 for near-minimum-wage businesses, capped at ¥4.5 million).
+
+¥2,500,000
+
+*This is an estimate. Eligible expenses and amounts vary by application review. Subsidies are disbursed after approval, on a reimbursement basis — payment is only made after acceptance. Osaka Hoso supports the application process.*
+
+**[button]** Talk to us about this →
+
+
+### [section #proof] We proved it on ourselves.
+- **eyebrow**: Proof
+
+Proof
+
+We did exactly this at Radio Osaka (OBC) — a broadcaster we invested in. Replaced people-dependent accounting, eliminated every paper voucher and approval stamp, and swapped out the entire system. 2,500–3,000 transactions a month, processed automatically by AI. Not theory. We did it with our own hands, and that's exactly what we deliver.
+
+2,500–3,000 entries / month
+
+processed automatically by AI.
+
+
+### [section #why] Design to operations. One company.
+- **eyebrow**: Why us
+
+Why us
+
+Most accounting services on the market do either "task outsourcing" or "consulting" — never both. Osaka Hoso integrates system design, daily operations, and management-grade financial analysis in one company.
+
+|  | Outsourcers | BPO firms | DX Consultants | Osaka Hoso |
+|---|---|---|---|---|
+| System design | ✕ | ✕ | ○ | ◎ |
+| AI utilization | ✕ | △ | ○ | ◎ |
+| Daily operations | △ | ◎ | ✕ | ◎ |
+| Financial analysis / CFO function | ✕ | ✕ | △ | ◎ |
+| Scope of responsibility | Tasks only | Operations | Design only | Design → Ops → Decisions |
+
+
+### [section #price] Pricing
+- **eyebrow**: Pricing
+
+Pricing
+
+*After subsidy (50%, up to ¥4.5 million). Actual eligible expenses and amounts vary by review. Post-implementation operations continue through our Monthly BPO service.*
+
+
+### [section #faq] FAQ
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. How is this different from cloud accounting software?
+
+Software gives you a box. We rebuild your entire accounting system — from data entry to management metrics — and hand it over working.
+
+#### Q. We have a lot of paper receipts. Is that a problem?
+
+Not at all. AI reads, digitizes, and journals them. You don't need to change how you currently work.
+
+#### Q. Do we need to change our tax accountant?
+
+No. We handle daily accounting and monthly close. Tax filings are coordinated with your existing accountant.
+
+#### Q. Is the subsidy guaranteed?
+
+Subsidies require application review and are disbursed on a reimbursement basis. Approval is not guaranteed. That's exactly why we support the entire application process.
+
+#### Q. How long does the replacement take?
+
+It depends on scale. We'll assess your current state in a free consultation and propose a timeline.
+
+
+### [section #related-products] Osaka Hoso's AI Business
+- **eyebrow**: Our Business
+
+Our Business
+
+#### AI Accounting System
+
+Replace people-dependent accounting — from data entry to management metrics — end to end.
+
+#### AI Skills Training
+
+Turn your employees into AI power users. Hands-on, practical training.
+
+#### Monthly BPO
+
+Hand over the operations on the new system. Ongoing, monthly.
+
+
+### [section #contact] Tell us about your accounting headache.
+- **eyebrow**: Contact
+
+Contact
+
+No hard sell. Tell us what's not working, and we'll figure out what we can do — together. The consultation is free.
+
+No hard sell. No follow-up spam. Just a conversation.
+
+
+## Image alt (translated)
+
+| src | alt (EN) |
+|---|---|
+| `../assets/logo-mark.png` | Osaka Hoso Co., Ltd. symbol mark |
+| `../assets/dashboard.jpg` | Manager reviewing the Management Dashboard on a monitor — real-time visibility into revenue, profit, and cash balance |
+| `/assets/simulator.jpg` | Management Simulator screen — trial revenue, gross margin, operating profit, ordinary profit, and cash balance in real time |
+| `/assets/paper-office.jpg` | Accounting office buried in paper vouchers — staff tallying manually |
+| `../assets/studio-mixer.jpg` | Radio Osaka (OBC) broadcast console — the site where we proved AI transformation firsthand |
+| `../assets/dashboard.jpg` | Manager reviewing the Management Dashboard — real-time financial visibility |
+| `../assets/training.jpg` | AI skills training in progress — instructor demonstrating generative AI on a participant's laptop |
+| `../assets/bpo.jpg` | Team meeting around the monthly BPO operations dashboard — ongoing support from accounting to management metrics |
+| `../assets/logo-mark-white.png` | Osaka Hoso Co., Ltd. |
+
+## JSON-LD (translated)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI Accounting System Implementation",
+  "provider": { "@type": "Organization", "name": "Osaka Hoso Co., Ltd." },
+  "areaServed": "JP",
+  "description": "Replace people-dependent accounting with an AI-powered system — from receipt-level data entry to management metrics. Eligible for the Digital / AI Adoption Subsidy (standard track, 50%, up to ¥4.5 million)."
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How is this different from cloud accounting software?","acceptedAnswer":{"@type":"Answer","text":"Software gives you a box. We rebuild your entire accounting system — from data entry to management metrics — and hand it over working."}},
+    {"@type":"Question","name":"We have a lot of paper receipts. Is that a problem?","acceptedAnswer":{"@type":"Answer","text":"Not at all. AI reads, digitizes, and journals them. You don't need to change how you currently work."}},
+    {"@type":"Question","name":"Do we need to change our tax accountant?","acceptedAnswer":{"@type":"Answer","text":"No. We handle daily accounting and monthly close. Tax filings are coordinated with your existing accountant."}},
+    {"@type":"Question","name":"Is the subsidy guaranteed?","acceptedAnswer":{"@type":"Answer","text":"Subsidies require application review and are disbursed on a reimbursement basis. Approval is not guaranteed. That's exactly why we support the entire application process."}},
+    {"@type":"Question","name":"How long does the replacement take?","acceptedAnswer":{"@type":"Answer","text":"It depends on scale. We'll assess your current state in a free consultation and propose a timeline."}}
+  ]
+}
+```
+
+---
+
+## Page: AI Skills Training (EN)
+URL: https://osakahoso.com/en/ai-bpo/training
+
+# /ai-bpo/training (AI Skills Training) — EN Translation
+
+> source: `ai-bpo/training.html` / canonical: `https://osakahoso.com/en/ai-bpo/training`
+
+## Meta
+
+- **<title>**: Turn Your Team into AI Power Users | Corporate AI Skills Training | Osaka Hoso Co., Ltd.
+- **<meta description>**: Hands-on AI training (2 days, 11 hours total) that makes ChatGPT, Claude, and Gemini actually useful in your daily work. Up to 75% covered by the Human Resources Development Subsidy for SMEs. Taught by the team that rebuilt a broadcaster with AI.
+
+## Body (by section)
+
+### [section #top] Your team adopted AI. Nobody's using it. We fix that.
+- **eyebrow**: AI Skills Training
+
+Business / AI Skills Training
+
+AI Skills Training
+
+Installing tools means nothing if your team can't use them. We run hands-on training that makes ChatGPT, Claude, and Gemini genuinely effective in real work. Taught by the people who walked into a broadcaster and rebuilt it with AI — we only teach what actually works in the field.
+
+**[button]** Talk to us →
+
+**[button]** See the curriculum ↓
+
+
+### [section #before] The problems we see before training.
+- **eyebrow**: Before
+
+Before
+
+- AI tools were introduced, but nobody's using them
+- Some employees use ChatGPT, but can't connect it to actual work
+- Previous AI training was all lecture, no practice — nothing stuck
+- Nobody can judge which AI tool to use for what
+- There's a vague anxiety: "We need to do something about AI"
+
+
+### [section #after] What changes after training.
+- **eyebrow**: After
+
+After
+
+#### Use the Big Three with confidence
+
+ChatGPT, Claude, Gemini — understand what each does best, and choose the right one for the job.
+
+#### Use it at work the next day
+
+Meeting notes, document drafting, data organization — built with your own company's workflows during the training. Ready to use the moment you're back at your desk.
+
+#### Walk away with real deliverables
+
+Your company's AI adoption plan and an AI usage guideline — created during the training. Ready for internal rollout as-is.
+
+#### Up to 75% subsidized
+
+Through the Human Resources Development Subsidy, SMEs can recover over 75% of the cost. Application support included.
+
+
+### [section #why] We're not a training company. We rebuilt a broadcaster with AI — ourselves.
+- **eyebrow**: Why us
+
+Why us
+
+We walked into Radio Osaka (OBC) — a broadcaster we invested in — and eliminated every paper voucher and approval stamp. 2,500–3,000 journal entries a month, processed automatically by AI. We deployed Benten Obi as an AI announcer and launched Daily Radio Osaka, an AI-powered broadcast summary. We rebuilt a broadcaster, end to end, with AI.
+
+We didn't learn "what AI can do" from a textbook. We did it with our own hands. That's why we can teach what actually works.
+
+*(figcaption)* Radio Osaka (OBC) — a broadcaster we invested in. This is where we proved everything.
+
+*(figcaption)* The AI accounting system running live at Radio Osaka (illustrative).
+
+
+### [section #programs] Training programs.
+- **eyebrow**: Programs
+
+Programs
+
+Choose based on your organization's challenges and stage.
+
+#### Generative AI Essentials — Most Popular / All employees
+
+Build a correct understanding of what AI can do, and create a clear picture of how to apply it in your own business. Covers all three major AIs — ChatGPT, Claude, and Gemini — across a hands-on format. Not just lectures: participants build real AI workflows for their own operations during the training.
+
+4 sessions (2 days) | 11 hours total | In-person or online
+
+#### Manufacturing × AI Implementation
+
+AI applications in quality control, production planning, and inspection. Hands-on, tailored for manufacturing.
+
+#### AI Strategy for Executives & Managers
+
+AI investment decisions and building an internal AI promotion structure. "How do we bring AI into our company?" — from a management perspective.
+
+#### AI Agent Workshop
+
+Automate workflows with AI agents. For DX leads and operations teams.
+
+#### Copilot Workshop
+
+Embed AI into Microsoft 365 — make everyday Word and Excel tasks dramatically faster.
+
+
+### [section #curriculum] Curriculum — Generative AI Essentials
+- **eyebrow**: Curriculum
+
+Curriculum
+
+In-person plan: 2 days, 11 hours total / Online plan: 6 sessions, 11 hours total
+
+#### Day 1 (5.5 hours)
+
+**Morning 3h — Lecture**
+- The current AI landscape and the characteristics of the Big Three (ChatGPT, Claude, Gemini)
+- Live demo: how AI is used at Radio Osaka — real cases
+- Prompt design fundamentals: how to give AI the right instructions
+
+**Afternoon 2.5h — Workshop 1**
+- Table discussions: "Where can AI make an impact in our business?"
+- Instructor follow-up at each table
+- Idea presentations
+
+#### Day 2 (5.5 hours)
+
+**Morning 3h — Deep Dive**
+- ChatGPT / Claude / Gemini: task-specific selection strategy
+- Prompt design practice (using your company's actual workflows as material)
+- AI usage guideline drafting workshop
+
+**Afternoon 2.5h — Workshop 2**
+- Create your company's AI adoption plan
+- Finalize the AI usage guideline (draft)
+- Presentations and feedback
+
+
+### [section #deliverables] What you walk away with.
+- **eyebrow**: Deliverables
+
+Deliverables
+
+#### Company AI Adoption Plan
+
+AI use cases identified in the workshop, organized by department and priority — a ready-to-execute action plan. Deploy internally right after the training.
+
+#### AI Usage Guideline (Draft)
+
+A template for your company's AI usage rules. Covers security, copyright, and data handling — a practical document that becomes your organization's shared rulebook for AI.
+
+
+### [section #sim] After subsidies, what's the real cost?
+- **eyebrow**: Subsidy
+
+Subsidy
+
+This training is eligible for the Human Resources Development Subsidy (Business Reskilling Course). SMEs receive up to 75% expense subsidy, plus wage subsidy on top.
+
+Estimate based on the Human Resources Development Subsidy (Reskilling Course). Custom quotes for groups of 11 or more.
+
+¥445,000
+
+*This is an estimate. Actual amounts vary by review. The subsidy is disbursed after training completion, on a reimbursement basis (full payment upfront, subsidy paid after). A training plan must be submitted to the Labor Bureau at least one month before the start date. Eligible participants are employees covered by employment insurance (business owners and officers are excluded). We support the application.*
+
+**[button]** Talk to us about this →
+
+
+### [section #price] Pricing — per person, tax included
+- **eyebrow**: Pricing
+
+Pricing
+
+| | In-person | Online |
+|---|---|---|
+| Training hours | 11h (2 days) | 11h (6 sessions) |
+| Format | In-person (instructor dispatched) | Zoom live |
+| Price per person | ¥400,000 | ¥380,000 |
+| 6–10 participants | ¥360,000/person | ¥340,000/person |
+| After subsidy | Approx. ¥89,000/person | Approx. ¥85,000/person |
+
+*After-subsidy estimates assume SME, 5 participants. Custom quotes for 11+.*
+
+
+### [section #faq] FAQ
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. Can we do just the training, without the other services?
+
+Yes. It works as a standalone. Whether you want a first step into AI, or a precursor to an accounting system overhaul — either way works.
+
+#### Q. How is this different from other AI training?
+
+We're not a "training company." We're the team that actually rebuilt a broadcaster — Radio Osaka, a station we invested in — with AI. We teach what worked in the field, not what's in a textbook.
+
+#### Q. Is this just ChatGPT training?
+
+No. We cover all three major AIs — ChatGPT, Claude, and Gemini — so your team can choose the right tool for the task.
+
+#### Q. When does the subsidy arrive?
+
+After the training. You pay the full cost upfront; the subsidy is disbursed after completion. We support the paperwork.
+
+#### Q. What's the minimum number of participants?
+
+One. Volume discounts start at six.
+
+#### Q. Can the content be customized?
+
+Yes. We tailor it to your industry and challenges. Specialized tracks for manufacturing, executives, and more are available.
+
+
+### [section #related-products] Osaka Hoso's AI Business
+- **eyebrow**: Our Business
+
+Our Business
+
+#### AI Accounting System
+
+Replace people-dependent accounting — from data entry to management metrics — end to end.
+
+#### AI Skills Training
+
+Turn your employees into AI power users. Hands-on, practical training.
+
+#### Monthly BPO
+
+Hand over the operations on the new system. Ongoing, monthly.
+
+
+### [section #contact] Let's talk.
+- **eyebrow**: Contact
+
+Contact
+
+No hard sell. Tell us about your team's challenges, and we'll figure out the right training plan — together. The consultation is free.
+
+No hard sell. No follow-up spam. Just a conversation.
+
+
+## Image alt (translated)
+
+| src | alt (EN) |
+|---|---|
+| `../assets/logo-mark.png` | Osaka Hoso Co., Ltd. symbol mark |
+| `../assets/training.jpg` | AI skills training in progress — instructor demonstrating generative AI on a participant's laptop |
+| `../assets/studio-mixer.jpg` | Radio Osaka (OBC) broadcast console — the site where we proved AI transformation firsthand |
+| `../assets/ai-system.jpg` | Multi-monitor workstation showing sales aggregation and code — AI-powered accounting automation in action |
+| `../assets/dashboard.jpg` | Manager reviewing the Management Dashboard — real-time financial visibility |
+| `../assets/training.jpg` | AI skills training in progress — instructor demonstrating generative AI on a participant's laptop |
+| `../assets/bpo.jpg` | Team meeting around the monthly BPO operations dashboard — ongoing support from accounting to management metrics |
+| `../assets/logo-mark-white.png` | Osaka Hoso Co., Ltd. |
+
+## JSON-LD (translated)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Corporate AI Skills Training",
+  "description": "Hands-on training (2 days, 11 hours) to make ChatGPT, Claude, and Gemini genuinely effective in daily business operations. Eligible for the Human Resources Development Subsidy.",
+  "provider": { "@type": "Organization", "name": "Osaka Hoso Co., Ltd." }
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Can we do just the training, without the other services?","acceptedAnswer":{"@type":"Answer","text":"Yes. It works as a standalone."}},
+    {"@type":"Question","name":"When does the subsidy arrive?","acceptedAnswer":{"@type":"Answer","text":"After the training. You pay the full cost upfront; the subsidy is disbursed after completion."}},
+    {"@type":"Question","name":"Are there conditions for the subsidy?","acceptedAnswer":{"@type":"Answer","text":"Eligible participants are employees covered by employment insurance (business owners and officers are excluded). A training plan must be submitted at least one month before the start. We handle the paperwork."}},
+    {"@type":"Question","name":"What's the minimum number of participants?","acceptedAnswer":{"@type":"Answer","text":"One. Volume discounts start at six."}},
+    {"@type":"Question","name":"Can the content be customized?","acceptedAnswer":{"@type":"Answer","text":"Yes. We tailor it to your industry and challenges."}}
+  ]
+}
+```
+
+---
+
+## Page: Monthly BPO (EN)
+URL: https://osakahoso.com/en/ai-bpo/bpo
+
+# /ai-bpo/bpo (Monthly BPO) — EN Translation
+
+> source: `ai-bpo/bpo.html` / canonical: `https://osakahoso.com/en/ai-bpo/bpo`
+
+## Meta
+
+- **<title>**: Hand Over Your Accounting Operations, Completely | Monthly Accounting BPO & CFO Function | Osaka Hoso Co., Ltd.
+- **<meta description>**: After replacing the system, we take over the operations too — from daily accounting to monthly close, variance analysis, and cash-flow forecasting. Design, operations, and management decisions, all from one company. Monthly retainer.
+
+## Body (by section)
+
+### [section #top] After the system goes in, we stay. We take over the operations too.
+- **eyebrow**: Monthly BPO & CFO Function
+
+Business / Monthly BPO
+
+Monthly BPO & CFO Function
+
+After replacing your accounting infrastructure, we take over the operations — completely. From daily bookkeeping to monthly close, variance analysis, and cash-flow forecasting. Think of it as having a fractional CFO on retainer.
+
+**[button]** Talk to us →
+
+
+### [section #what] We keep running the system we built.
+- **eyebrow**: What we do
+
+What we do
+
+We continue to operate the system built through our AI Accounting System service. This isn't task outsourcing — it's CFO-level engagement, taking responsibility for accounting outcomes.
+
+#### Operations
+
+Running daily accounting on the new system. No need to hire or train a dedicated accountant.
+
+#### Monthly close
+
+Delivering accurate numbers, fast. Month-end close that's ready for management meetings.
+
+#### Analysis
+
+Variance analysis, cash-flow forecasting — decision-ready materials for management.
+
+#### Accountability
+
+Not task outsourcing. CFO-level engagement, taking responsibility for accounting results.
+
+
+### [section #change] What changes.
+- **eyebrow**: After
+
+After
+
+- Free from the operational burden of accounting. No more hiring or training.
+- Unlike "task-only" outsourcing, you get decision-ready numbers every month.
+- Variance analysis, cash-flow forecasting — you gain an external partner who understands both accounting and finance.
+
+
+### [section #why] Design. Operations. Decisions. One company.
+- **eyebrow**: Why us
+
+Why us
+
+"Task outsourcing" doesn't fix the system. "Consultants" don't run the operations. Osaka Hoso handles design, operations, and management-grade analysis — all in one company.
+
+This BPO is most effective when running on the system built through our AI Accounting System service. The standard path: replace the system first, then hand over the operations.
+
+
+### [section #relation]
+
+This BPO is most effective when running on the system built through our AI Accounting System service. The standard path: replace the system first, then hand over the operations.
+
+
+### [section #price] Pricing — not subsidy-eligible; standard rates
+- **eyebrow**: Pricing
+
+Pricing
+
+Monthly BPO is an ongoing operations service, so it's not eligible for tool-implementation subsidies. Pricing is based on company size. The initial system implementation (separate service) is subsidy-eligible.
+
+
+### [section #faq] FAQ
+- **eyebrow**: FAQ
+
+FAQ
+
+#### Q. Can we use the BPO without the system implementation?
+
+Talk to us. That said, the BPO delivers the most value when running on a properly rebuilt system.
+
+#### Q. Why isn't this subsidy-eligible?
+
+Subsidies cover tool implementation (the system build). Ongoing monthly operations are not eligible. The implementation step is where subsidies apply.
+
+#### Q. How is this different from a tax accountant?
+
+Tax accountants focus on filings. We handle daily operations and provide management-grade financial materials — filings are coordinated with your existing tax accountant.
+
+
+### [section #related-products] Osaka Hoso's AI Business
+- **eyebrow**: Our Business
+
+Our Business
+
+#### AI Accounting System
+
+Replace people-dependent accounting — from data entry to management metrics — end to end.
+
+#### AI Skills Training
+
+Turn your employees into AI power users. Hands-on, practical training.
+
+#### Monthly BPO
+
+Hand over the operations on the new system. Ongoing, monthly.
+
+
+### [section #contact] Let's talk.
+- **eyebrow**: Contact
+
+Contact
+
+No hard sell. Tell us where your accounting stands, and we'll figure out how to take over the operations — together. The consultation is free.
+
+No hard sell. No follow-up spam. Just a conversation.
+
+
+## Image alt (translated)
+
+| src | alt (EN) |
+|---|---|
+| `../assets/logo-mark.png` | Osaka Hoso Co., Ltd. symbol mark |
+| `../assets/bpo.jpg` | Team meeting around the monthly BPO operations dashboard — ongoing support for accounting operations |
+| `../assets/dashboard.jpg` | Manager reviewing the Management Dashboard — real-time financial visibility |
+| `../assets/training.jpg` | AI skills training in progress — instructor demonstrating generative AI on a participant's laptop |
+| `../assets/bpo.jpg` | Team meeting around the monthly BPO operations dashboard — ongoing support from accounting to management metrics |
+| `../assets/logo-mark-white.png` | Osaka Hoso Co., Ltd. |
+
+## JSON-LD (translated)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Monthly Accounting BPO & CFO Function",
+  "provider": { "@type": "Organization", "name": "Osaka Hoso Co., Ltd." },
+  "areaServed": "JP",
+  "description": "Ongoing monthly operations on a rebuilt AI accounting system — from daily bookkeeping to monthly close, variance analysis, and cash-flow forecasting. Design, operations, and management decisions, all from one company."
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Can we use the BPO without the system implementation?","acceptedAnswer":{"@type":"Answer","text":"Talk to us. That said, the BPO delivers the most value when running on a properly rebuilt system."}},
+    {"@type":"Question","name":"Why isn't this subsidy-eligible?","acceptedAnswer":{"@type":"Answer","text":"Subsidies cover tool implementation (the system build). Ongoing monthly operations are not eligible. The implementation step is where subsidies apply."}},
+    {"@type":"Question","name":"How is this different from a tax accountant?","acceptedAnswer":{"@type":"Answer","text":"Tax accountants focus on filings. We handle daily operations and provide management-grade financial materials — filings are coordinated with your existing tax accountant."}}
+  ]
+}
+```
+
+---
+
+## Page: Story (EN)
+URL: https://osakahoso.com/en/story
+
+# /story (Our Story) — EN Translation
+
+> source: `story.html` / canonical: `https://osakahoso.com/en/story`
+> Note: The founder's biography (condensed from *Tekko Shunju*) already exists in `/en/story.html` as a finalized English version. That 5-section condensed text + pull-quote is inherited as-is. This file covers the rest of the page.
+
+---
+
+## Meta
+
+- **<title>**: STORY | Osaka Hoso Co., Ltd.
+- **<meta description>**: Osaka Hoso's predecessor, Maruichi Kosan Co., Ltd., was founded in 1945 as an Osaka steel company. For eighty years it traded in steel and managed real estate. In 2026, it changed its name to Osaka Hoso and placed AI/DX transformation at the center of its business. The story of founder Gentaro Kato and the company he built.
+
+---
+
+## Hero
+
+- **eyebrow**: Story
+- **h1**: Eighty years in Osaka — steel, real estate, and now, something new.
+
+---
+
+## Intro (Steel → Broadcasting → AI)
+
+Osaka Hoso's predecessor, Maruichi Kosan Co., Ltd., was founded in 1945 as a steel company in Osaka. From Itatebori to Sakai-Sanbo, Edobori, then to Hokkō-Tsuneyoshi — moving with the industry, for eighty years the company traded in steel and its alloys, while building a solid foundation in real estate.
+
+Then we met a broadcaster. Radio Osaka (OBC) — on the air since 1958, a public-interest broadcaster that has carried Osaka's airwaves for more than half a century. In a rapidly shifting media landscape, the station needed a new structure for its next era. We didn't just invest and watch from the sidelines. We walked in as members of the team and committed to building that next era together.
+
+In 2026, we changed our company name to Osaka Hoso Co., Ltd. This was not a rebrand. It was a declaration: we staked the name of our 80-year-old enterprise on a commitment to walk forward with Radio Osaka, all in.
+
+Our vision for Radio Osaka is transformation into a content IP studio. Programs that flow through the airwaves and vanish — replaced by content that accumulates as assets the more you create. Starting from radio, building IP that endures and is loved.
+
+We started that transformation at home. We rebuilt Radio Osaka — from operations and accounting to on-air programming — with AI, using our own hands. "The older the organization, the bigger the AI impact." This conviction, forged on the foundation of eighty years of trust, is now our core business: AI/DX transformation for companies.
+
+From steel, to broadcasting, to AI. The shape of the business changes. But we stay rooted in Osaka, and we protect what must be protected, no matter what.
+
+---
+
+## Timeline
+
+| Date | Event |
+|---|---|
+| October 1, 1945 | Founded as Maruichi Shokai (Founder: Gentaro Kato) |
+| December 17, 1948 | Incorporated as Maruichi Kosan Co., Ltd. |
+| 1979 | President (2nd generation): Katsuhiro Kato |
+| 2003 | President (3rd generation): Masataka Kato |
+| 2017 | President (4th generation): Yorihiko Kato |
+
+---
+
+## Founder Gentaro Kato — His life, in brief
+
+Born in 1906 in Toyooka, Hyōgo Prefecture. At fifteen, he entered the Osaka steel firm of Yasutaro Kitajima, stepping into the world of iron. Over twenty years under Kitajima, he sharpened his judgment and nerve, and earned a reputation for unwavering loyalty.
+
+In October 1945 — one month after Japan's surrender — he went independent at age thirty-nine. From a single desk, he built Kato Shoten, which he later incorporated as Maruichi Kosan. The company surged through Japan's high-growth era, and Kato established himself as a pillar of the Kansai steel distribution industry. From founding to death, the company never posted a loss.
+
+Stern but paternal with his employees, he cared for his former mentor Yasutaro Kitajima — who had fallen on hard times — for thirty years. Those who knew called it a story of profound gratitude.
+
+He died in 1979, at seventy-three, still serving as president. His legacy passed to his son Katsuhiro, grandson Masataka, and today's leader Yorihiko — and eighty years on, the company now writes its newest chapter as Osaka Hoso.
+
+---
+
+## The Founding Record (Biography)
+
+### Signpost (intro for EN page)
+
+Below is a short biography of our founder, Gentaro Kato, who built the steel firm Maruichi Kosan from the ground up after founding it in 1945. It was published in the Spring 1980 issue of the steel-trade journal *Tekko Shunju*, and is reproduced here, condensed, with the author's permission — preserved as a record of the man who started it all.
+
+### Biography structure (condensed, 5 sections + 1 pull-quote)
+
+**Existing English text in `/en/story.html` is the finalized version. Inherit as-is — no new translation needed.** Structure for reference:
+
+1. **Gifted, yet modest by nature** — Died at 73, received high praise posthumously; modest but with sharp insight
+2. **Into the Kitajima firm after commercial school** — Born 1906 in Toyooka; entered Yasutaro Kitajima's steel firm at 15
+3. **An insight that stood above the rest** (pull-quote from Masajiro Onogi) + conversion to Jikōkai faith at 25–26
+4. **After the war: independent, building the foundation in earnest** — Independent October 1945; incorporated Maruichi Kosan 1948; became a pillar of Kansai steel; never posted a loss
+5. **A connoisseur in the pursuit of true flavor** — Integrity, patience, effort; treated employees like family; a gourmet; succeeded by Katsuhiro
+
+Source line: `Condensed from *Tekko Shunju*, Spring issue (April 15, 1980).`
+
+---
+
+## Image alt (translated)
+
+| src | alt (EN) |
+|---|---|
+| `assets/story-steel.jpg` | Stacked H-beam steel — the foundation of the steel business |
+| `assets/founder.jpg` | Founder Gentaro Kato (known as Katsumi) of Maruichi Kosan |
+| `assets/osaka-1916-web.jpg` | Sennichimae, Osaka during the Taishō era — streetcars and storefronts (1916) |
+| `assets/story-510.jpg` | Inside a Maruichi Kosan steel warehouse — steel beams and overhead crane |
+| `assets/story-steel-stack.jpg` | Stacked H-beam steel — the foundation built through decades in the steel trade |
+| `assets/hq.jpg` | Maruichi Kosan headquarters and warehouse (Tsuneyoshi, Konohana-ku, Osaka) |
+
+---
+
+## Footer
+
+- **Back link**: ← Back to top
+- **Tagline**: Tradition, in motion. — Since 1945 (unchanged)
+- **Copyright**: © Osaka Hoso Co., Ltd.
+
+---

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- JP pages -->
+  <url>
+    <loc>https://osakahoso.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/ai-bpo</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/ai-bpo/system</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo/system" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo/system" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/ai-bpo/training</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo/training" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo/training" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/ai-bpo/bpo</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo/bpo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo/bpo" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/story</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/story" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/story" />
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- EN pages -->
+  <url>
+    <loc>https://osakahoso.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/ai-bpo</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/ai-bpo/system</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo/system" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo/system" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/ai-bpo/training</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo/training" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo/training" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/ai-bpo/bpo</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/ai-bpo/bpo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/ai-bpo/bpo" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/story</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/story" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/story" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

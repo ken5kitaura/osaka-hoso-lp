@@ -1,0 +1,9 @@
+# osakahoso.com — robots.txt
+# AI クローラー（GPTBot, ChatGPT-User, Google-Extended, ClaudeBot, Anthropic, PerplexityBot 等）も
+# AI検索に引用されたいので明示的にブロックしません（Disallow を設定しない）。
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://osakahoso.com/sitemap.xml

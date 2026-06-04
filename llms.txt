@@ -1,0 +1,42 @@
+# Osaka Hoso Co., Ltd. (大阪放送株式会社)
+
+> Founded in 1945 as a steel company in Osaka, Japan. Now an AI/DX transformation company.
+
+## What we do
+
+Osaka Hoso transforms mid-market companies' back-office operations using AI. Our three services:
+
+1. **AI Accounting System** — Replace people-dependent accounting with an AI-powered system, end to end. Eligible for Japan's Digital / AI Adoption Subsidy (50%, up to ¥4.5 million).
+2. **AI Skills Training** — Hands-on corporate training for ChatGPT, Claude, and Gemini. 2 days, 11 hours. Up to 75% subsidized for SMEs via Japan's Human Resources Development Subsidy.
+3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement. From ¥250,000/month.
+
+## Our proof
+
+We walked into Radio Osaka (OBC) — a broadcaster we invested in, on the air since 1958 — and rebuilt it with AI:
+- 2,500–3,000 journal entries per month, processed automatically by AI
+- Every paper voucher and approval stamp eliminated
+- AI announcer (Benten Obi) and AI broadcast summary (Daily Radio Osaka) deployed
+
+## Key people
+
+- **Yorihiko Kato** — Representative Director. 4th-generation leader. Angel investor who backed 80+ startups across Asia. Changed the company name from Maruichi Kosan to Osaka Hoso.
+- **Kengo Kitaura** — Director. Founded AGRIBUDDY (agri-fintech) in Cambodia. Designed and built OBC's AI transformation.
+
+## Company facts
+
+- Founded: October 1, 1945 (as Maruichi Shokai)
+- Incorporated: December 17, 1948 (as Maruichi Kosan Co., Ltd.)
+- Renamed: May 20, 2026 (to Osaka Hoso Co., Ltd.)
+- HQ: Tsuneyoshi, Konohana-ku, Osaka, Japan
+- Website: https://osakahoso.com
+- Languages: Japanese, English
+
+## Links
+
+- Japanese site: https://osakahoso.com/
+- English site: https://osakahoso.com/en/
+- AI Accounting System: https://osakahoso.com/ai-bpo/system
+- AI Skills Training: https://osakahoso.com/ai-bpo/training
+- Monthly BPO: https://osakahoso.com/ai-bpo/bpo
+- Our Story: https://osakahoso.com/story
+- Radio Osaka (OBC): https://www.obc1314.co.jp/
