@@ -558,7 +558,7 @@ input.sim__select[type="number"]{ -moz-appearance:textfield; }
 /* ===== ダッシュボード出口バンド ===== */
 .dashband{ margin:clamp(26px,3vw,40px) 0; }
 .dashband__frame{ position:relative; border-radius:5px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px -38px rgba(27,42,65,.55); }
-.dashband__frame img{ width:100% !important; height:auto !important; max-width:100%; aspect-ratio:1535/1024; display:block; }
+.dashband__frame img{ width:100% !important; height:auto !important; max-width:100%; aspect-ratio:1672/941; display:block; }
 .dashband__badge{ position:absolute; left:0; bottom:0; display:flex; align-items:center; gap:.5em; margin:14px;
   background:rgba(22,34,52,.78); backdrop-filter:blur(3px); color:var(--on-ink);
   font-family:var(--eyebrow); letter-spacing:.18em; text-transform:uppercase; font-size:11px; padding:.5em .9em; border-radius:2px; }
