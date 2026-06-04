@@ -657,3 +657,40 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .nav__sub a.is-current{ color:var(--orange); }
 .nav__arrow{ font-size:9px; margin-left:.3em; display:inline-block; transition:transform .2s; }
 .nav__group:hover .nav__arrow{ transform:rotate(180deg); }
+
+/* ============================================================
+   EN locale tweaks
+   英語化で nav 文字数が長くなり 1200〜1400px でロゴと衝突するため、
+   字詰め＋ハンバーガー化 breakpoint を 1400px に拡張（JP は無影響）
+   ============================================================ */
+html[lang="en"] .brand__sub{ display:none; }
+html[lang="en"] .brand__name{ font-size:17px; letter-spacing:.1em; }
+html[lang="en"] .nav{ gap:clamp(8px,1.3vw,18px); }
+html[lang="en"] .nav a:not(.nav-cta){ font-size:13px; letter-spacing:.04em; }
+html[lang="en"] .nav-cta{ padding:.6em 1.1em !important; font-size:13px; letter-spacing:.06em; }
+@media (max-width:1400px){
+  html[lang="en"] .nav-toggle{ display:flex; }
+  html[lang="en"] .nav{
+    position:fixed; inset:var(--header-h) 0 auto 0; flex-direction:column; align-items:stretch;
+    background:rgba(255,255,255,.98); backdrop-filter:saturate(140%) blur(10px);
+    padding:24px 22px 32px; transform:translateY(-110%);
+    transition:transform .42s cubic-bezier(.7,.05,.1,1);
+    border-bottom:1px solid var(--line);
+    gap:0; max-height:calc(100vh - var(--header-h)); overflow-y:auto;
+  }
+  html[lang="en"] .nav.open{ transform:none; }
+  html[lang="en"] .nav a{ padding:15px 0; border-bottom:1px solid var(--line); font-size:16px; }
+  html[lang="en"] .nav a:not(.nav-cta)::after{ display:none; }
+  html[lang="en"] .nav-cta{ text-align:center; margin-top:16px; padding:1em !important; font-size:14px; }
+  html[lang="en"] .nav-lang{ justify-content:center; padding:16px 0; gap:1.1em; }
+  /* モバイル展開時はドロップダウンを通常リスト風に */
+  html[lang="en"] .nav__group{ display:block; }
+  html[lang="en"] .nav__sub{
+    position:static !important; opacity:1 !important; visibility:visible !important;
+    pointer-events:auto !important; transform:none; box-shadow:none;
+    border:0; border-top:1px dashed var(--line); padding:0 0 0 1em; margin-top:0;
+    min-width:0; background:transparent;
+  }
+  html[lang="en"] .nav__sub a{ font-size:14px; padding:12px 0; border-bottom:1px solid var(--line); }
+  html[lang="en"] .nav__arrow{ display:none; }
+}
