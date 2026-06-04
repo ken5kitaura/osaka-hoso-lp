@@ -666,13 +666,15 @@ section[id]{ scroll-margin-top:var(--header-h); }
 html[lang="en"] .brand__sub{ display:none; }
 html[lang="en"] .brand__name{ font-size:16px; letter-spacing:.08em; }
 html[lang="en"] .brand img{ height:36px; }
-html[lang="en"] .brand{ gap:10px; flex-shrink:0; }
+html[lang="en"] .brand{ gap:10px; flex-shrink:0; padding-right:8px; }
 html[lang="en"] .nav-toggle{ flex-shrink:0; }
-html[lang="en"] .site-header .wrap{ gap:16px; }
-html[lang="en"] .nav{ gap:clamp(8px,1.3vw,18px); }
+html[lang="en"] .site-header .wrap{ gap:clamp(20px,3vw,40px); }
+html[lang="en"] .nav{ gap:clamp(8px,1.2vw,16px); flex-shrink:1; min-width:0; }
 html[lang="en"] .nav a:not(.nav-cta){ font-size:13px; letter-spacing:.04em; }
 html[lang="en"] .nav-cta{ padding:.6em 1.1em !important; font-size:13px; letter-spacing:.06em; }
-@media (max-width:1500px){
+html[lang="en"] .nav-lang{ gap:.35em; }
+html[lang="en"] .nav-lang .lng__flag{ width:18px; height:18px; }
+@media (max-width:1700px){
   html[lang="en"] .nav-toggle{ display:flex; }
   html[lang="en"] .nav{
     position:fixed; inset:var(--header-h) 0 auto 0; flex-direction:column; align-items:stretch;
