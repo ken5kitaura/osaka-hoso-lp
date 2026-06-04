@@ -84,3 +84,100 @@
 .story-summary p{ font-size:15px; line-height:2.05; color:var(--text); margin-bottom:1em; }
 .story-summary p:last-child{ margin-bottom:0; }
 .story-summary p strong{ color:var(--ink); font-weight:600; }
+
+/* ============================================================
+   COLUMN  — 一覧カード / 個別記事ヘッダー / EN案内
+   ============================================================ */
+.col-list{ display:grid; gap:clamp(20px,2.5vw,32px); margin:clamp(40px,6vw,80px) 0 clamp(24px,3vw,40px); }
+.col-card{
+  display:block; padding:clamp(24px,3vw,40px); background:var(--paper);
+  border:1px solid var(--line); border-radius:3px; position:relative;
+  transition:transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s, border-color .35s;
+  text-decoration:none; color:var(--ink);
+}
+.col-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 22px 44px -28px rgba(27,42,65,.4);
+  border-color:var(--gold);
+}
+.col-card__date{
+  font-family:var(--mono); font-size:12.5px; letter-spacing:.08em;
+  color:var(--text-mut); display:block; margin-bottom:.6em;
+}
+.col-card__title{
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(18px,2.2vw,24px); line-height:1.55;
+  color:var(--ink); margin:0 0 .7em; letter-spacing:.02em;
+}
+.col-card__excerpt{
+  font-size:clamp(14px,1.5vw,15.5px); line-height:1.95;
+  color:var(--text); margin:0 0 1.2em;
+}
+.col-card__more{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-family:var(--eyebrow); font-size:14px; letter-spacing:.16em;
+  color:var(--orange); font-weight:600;
+}
+.col-card__more .arr{ transition:transform .35s; }
+.col-card:hover .col-card__more .arr{ transform:translateX(4px); }
+.col-card__lang{
+  position:absolute; top:18px; right:18px;
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.12em;
+  color:var(--gold); border:1px solid var(--gold); padding:.2em .6em; border-radius:2px;
+}
+.col-note{
+  font-size:13px; color:var(--text-mut); text-align:center;
+  margin:clamp(40px,5vw,60px) 0 clamp(24px,3vw,40px);
+}
+.col-en-notice{
+  margin:clamp(40px,5vw,60px) 0 0;
+  padding:clamp(18px,2vw,24px) clamp(20px,2.5vw,32px);
+  background:rgba(176,141,87,.07); border-left:3px solid var(--gold); border-radius:0 3px 3px 0;
+}
+.col-en-notice .lead{ margin:0; font-size:15.5px; line-height:1.85; color:var(--text); max-width:none; }
+
+/* 個別記事ヘッダー */
+.col-crumb{ margin:clamp(20px,3vw,40px) 0 0; }
+.col-crumb a{ font-family:var(--mono); font-size:12.5px; letter-spacing:.08em; color:var(--text-mut); }
+.col-crumb a:hover{ color:var(--orange); }
+.col-crumb--end{ text-align:center; margin:clamp(60px,8vw,100px) 0 clamp(40px,5vw,60px); }
+.col-article-hero{ margin:clamp(24px,3vw,40px) 0 clamp(40px,5vw,64px); padding-bottom:clamp(24px,3vw,40px); border-bottom:1px solid var(--line); }
+.col-article-hero .eyebrow{ margin-bottom:1.2em; }
+.col-article-title{
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(26px,4vw,42px); line-height:1.45;
+  color:var(--ink); margin:0 0 1.2em; letter-spacing:.02em;
+}
+.col-article-meta{ display:flex; gap:1.5em; flex-wrap:wrap; align-items:baseline; }
+.col-article-author{ font-family:var(--serif); font-weight:500; font-size:15px; color:var(--ink); }
+.col-article-author small{ font-size:12.5px; color:var(--text-mut); font-weight:400; margin-left:.3em; }
+.col-article-date{ font-family:var(--mono); font-size:12.5px; letter-spacing:.08em; color:var(--text-mut); }
+
+/* 本文段落（story.html の story-article 系を継承＋微調整） */
+.col-article-body p{
+  font-size:clamp(15.5px,1.6vw,17px); line-height:2.15;
+  color:var(--text); margin:0 0 1.4em; text-wrap:pretty;
+}
+.col-article-body strong{ color:var(--ink); font-weight:600; }
+.col-article-body em{ color:var(--text-mut); font-style:italic; }
+.col-article-body hr{
+  border:0; border-top:1px solid var(--line);
+  margin:clamp(40px,5vw,64px) auto;
+  width:60px;
+}
+.col-article-body ul, .col-article-body ol{
+  font-size:clamp(15px,1.6vw,16.5px); line-height:2.05;
+  color:var(--text); margin:1.2em 0 1.8em; padding-left:1.6em;
+}
+.col-article-body li{ margin-bottom:.4em; }
+.col-article-body a{
+  color:var(--orange); border-bottom:1px solid rgba(200,90,30,.32);
+  transition:border-color .25s;
+}
+.col-article-body a:hover{ border-bottom-color:var(--orange); }
+.col-article-body .story-h2{
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(22px,2.8vw,28px); line-height:1.55;
+  color:var(--ink); margin:clamp(48px,6vw,72px) 0 1.2em;
+  letter-spacing:.03em;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。｜COLUMN｜大阪放送株式会社</title>
+<meta name="description" content="1958年開局のラジオ大阪（OBC）に経営陣として入り込んだ大阪放送・北浦健吾が、30年分211万行のデータをAIで処理し、紙の伝票と承認印を全廃するまでの実体験。">
+<link rel="canonical" href="https://osakahoso.com/column/obc-case-study">
+<link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/obc-case-study">
+<link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/">
+<link rel="alternate" hreflang="x-default" href="https://osakahoso.com/column/obc-case-study">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20260604seo">
+<link rel="stylesheet" href="/story.css?v=20260604seo">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="大阪放送株式会社">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://osakahoso.com/column/obc-case-study">
+<meta property="og:title" content="計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。｜COLUMN｜大阪放送株式会社">
+<meta property="og:description" content="1958年開局のラジオ大阪（OBC）に経営陣として入り込んだ大阪放送・北浦健吾が、30年分211万行のデータをAIで処理し、紙の伝票と承認印を全廃するまでの実体験。">
+<meta property="og:image" content="https://osakahoso.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。｜COLUMN｜大阪放送株式会社">
+<meta name="twitter:description" content="1958年開局のラジオ大阪（OBC）に経営陣として入り込んだ大阪放送・北浦健吾が、30年分211万行のデータをAIで処理し、紙の伝票と承認印を全廃するまでの実体験。">
+<meta name="twitter:image" content="https://osakahoso.com/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。",
+  "url": "https://osakahoso.com/column/obc-case-study",
+  "datePublished": "2026-06-04",
+  "author": { "@type": "Person", "name": "北浦健吾", "jobTitle": "大阪放送株式会社 取締役" },
+  "publisher": { "@type": "Organization", "name": "大阪放送株式会社", "url": "https://osakahoso.com", "logo": { "@type": "ImageObject", "url": "https://osakahoso.com/assets/logo-mark.png" } },
+  "mainEntityOfPage": "https://osakahoso.com/column/obc-case-study",
+  "image": "https://osakahoso.com/assets/og-image.jpg",
+  "description": "1958年開局のラジオ大阪（OBC）に経営陣として入り込んだ大阪放送・北浦健吾が、30年分211万行のデータをAIで処理し、紙の伝票と承認印を全廃するまでの実体験。"
+}
+</script>
+</head>
+<body>
+<header class="site-header solid" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="大阪放送株式会社 トップへ">
+      <span class="brand__name">大阪放送株式会社<span class="brand__sub">OSAKA HOSO CO., LTD.</span></span>
+      <picture><source srcset="/assets/logo-mark.webp" type="image/webp"><img src="/assets/logo-mark.png" alt="大阪放送株式会社 シンボルマーク" loading="lazy" decoding="async" width="356" height="332"></picture>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/#about">私たちについて</a>
+      <div class="nav__group">
+        <a href="/ai-bpo" class="nav__top">事業 <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/ai-bpo" role="menuitem">事業の全体像</a>
+          <a href="/ai-bpo/system" role="menuitem">AI経理システム導入</a>
+          <a href="/ai-bpo/training" role="menuitem">AI活用研修</a>
+          <a href="/ai-bpo/bpo" role="menuitem">月額BPO運用</a>
+        </div>
+      </div>
+      <a href="/#proof">実証（OBC）</a>
+      <a href="/#history">沿革</a>
+      <a href="/story">STORY</a>
+      <a href="/column/">COLUMN</a>
+      <a href="/#company">会社概要</a>
+      <a href="/#contact" class="nav-cta">無料相談</a>
+      <span class="nav-lang">
+        <span class="lng is-active" lang="ja" aria-current="true">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#fff"/>
+            <circle cx="20" cy="20" r="8" fill="#BC002D"/>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(0,0,0,.14)"/>
+          </svg>JP
+        </span>
+        <span class="lng__sep" aria-hidden="true"></span>
+        <a class="lng" href="/en/column/" hreflang="en" lang="en">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <defs><clipPath id="ukJP"><circle cx="20" cy="20" r="19"/></clipPath></defs>
+            <g clip-path="url(#ukJP)">
+              <rect width="40" height="40" fill="#012169"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#C8102E" stroke-width="3"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#fff" stroke-width="13"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#C8102E" stroke-width="7"/>
+            </g>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+          </svg>EN
+        </a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="story-page" id="pagetop">
+  <div class="wrap">
+
+    <nav class="col-crumb"><a href="/column/">← COLUMN 一覧へ戻る</a></nav>
+
+    <header class="col-article-hero reveal in">
+      <p class="eyebrow">Column</p>
+      <h1 class="col-article-title">計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。</h1>
+      <div class="col-article-meta">
+        <span class="col-article-author">北浦健吾<small>（大阪放送株式会社 取締役）</small></span>
+        <time class="col-article-date" datetime="2026-06-04">2026年6月4日</time>
+      </div>
+    </header>
+
+    <article class="story-article col-article-body">
+<hr />
+<h2 class="story-h2">昭和33年創業のラジオ局に入り込んだ</h2>
+<p>ラジオ大阪（OBC）は、1958年開局の関西の老舗ラジオ局です。大阪放送が出資し、加藤順彦が代表取締役会長に就任したことをきっかけに、私はこの放送局の中に入ることになりました。</p>
+<p>最初に加藤会長から言われたのは、こういうことでした。</p>
+<p>「数字はしっかりしてるけど、経営に使える状態になってない。」</p>
+<hr />
+<h2 class="story-h2">「計器類のない車」の正体</h2>
+<p>会計データは、約30年前に社内の方が独自に構築したシステムに全部入っていました。1996年から今日までの取引が丸ごと。Windows 95の時代に一人で設計・構築されたそのシステムは、30年間一度も途切れることなく記録を残してきました。整備記録簿としては、完璧です。</p>
+<p>ただ、車に例えるとこういう状態でした。</p>
+<p>整備記録簿は完璧。オイル交換の日付もタイヤ交換の履歴も全部ある。30年分、一切の抜け漏れなく。<strong>でも計器類がない。</strong>速度計がない。燃料計がない。エンジン温度のメーターがない。</p>
+<p>月次を締めれば決算書は出てくる。でも「この数字を見て何をするか」が直感的にわからない。記録は出てくるのに、「いま会社がどこを走っているか」がわからない。</p>
+<p>これが、昭和33年創業のラジオ局の実態でした。</p>
+<hr />
+<h2 class="story-h2">最初にやったこと：出口から設計する</h2>
+<p>私がまず取り掛かったのは、「データを全部移し替える」ことではありませんでした。</p>
+<p><strong>「加藤会長が毎月何を見れば経営判断できるか」を先に決める。</strong></p>
+<p>そこから逆算して、必要な数字だけを「使える形」に変えていく。これを私たちは「出口から逆算する経理設計」と呼んでいます。</p>
+<p>具体的には、162あった勘定科目を37カテゴリに集約し、さらに7つのグループにまとめました。加藤会長が見るのは7グループだけでいい。「売上がいくらで、コストがいくらで、利益がいくらか」を毎月確認できる状態をつくる。詳細が必要なら37カテゴリに掘れる。さらに細かく見たければ162科目がある。</p>
+<p>数字を全部見せることが経営管理ではありません。<strong>「必要な時に、必要な粒度で、自分で見られる」状態をつくること</strong>——それが本質だと考えています。</p>
+<hr />
+<h2 class="story-h2">211万行のデータをAIで処理した</h2>
+<p>30年分の伝票データ、211万行。これをAIに読み込ませて、過去5期分の損益計算書（PL）を自動生成しました。</p>
+<p>実際の決算書と突合したところ、<strong>誤差は0.01%</strong>でした。</p>
+<p>この精度が出たのは、AIが賢いからだけではありません。川上の設計——162科目を37カテゴリに集約するという構造——を人間が先に作っていたから、AIが正確に処理できたのです。<strong>何を入れるかを人間が設計して、処理をAIがやる。</strong>この順番が逆だったら、この精度は出なかっただろうと思います。</p>
+<hr />
+<h2 class="story-h2">紙の伝票と承認印を全廃した</h2>
+<p>OBCでは、あらゆる取引が紙の伝票で起票され、何名分もの承認印を経て処理されていました。発注・振替・請求・経費——すべてが紙でした。</p>
+<p>「紙で起こす → 転記 → 入力 → また紙で集計 → Excelに手入力」という何重もの転記の連鎖が日常だったのです。</p>
+<p>これを<strong>まるごと撤去しました</strong>。</p>
+<p>領収書や請求書はAIが読み取り、仕訳まで自動で起こします。紙の承認印は電子承認に置き換え、紙の伝票そのものを廃止しました。</p>
+<p>結果、<strong>月2,500〜3,000件の仕訳がAIで自動処理される状態</strong>になっています。</p>
+<hr />
+<h2 class="story-h2">「全員の脳がつながる」仕組みをつくった</h2>
+<p>経理の自動化と並行して、もうひとつ大きな仕組みをつくりました。</p>
+<p>社内の膨大な情報——財務データ、設備情報、営業資料、放送実績——をAIが読み込める形で整理し、<strong>誰でもAIに会社のことを質問すれば即座に正確な回答が返ってくる状態</strong>を構築したのです。</p>
+<p>「直近5年の利益推移は？」と聞けば、5期比較のPLが出てくる。「設備更新の総額とスケジュールは？」と聞けば、機器別・時期別の計画が表示される。</p>
+<p>計器類のさらに先——ドライバーが「あの数字を見せて」と言えば、一瞬で計器が表示されるコックピットのようなもの。それが今、OBCで動いています。</p>
+<hr />
+<h2 class="story-h2">なぜ「古い会社」ほどAIで変わるのか</h2>
+<p>OBCの改革を通じて確信したことがあります。</p>
+<p><strong>紙が多く、人手に頼り、長年同じやり方を続けてきた「古い組織」ほど、AIで劇的に変わる余地が大きい。</strong></p>
+<p>デジタルネイティブな会社はすでに効率化が進んでいて、AIで削れる部分が少ない。一方、紙とハンコの組織には「何重もの転記」「属人化した暗黙知」「30年変わっていないルール」が山のように残っています。これらはAIにとって「宝の山」です。</p>
+<p>ただし、AIツールを入れるだけでは何も変わりません。<strong>川上の設計——何を入力し、何を出力するかの構造——を人間がつくらないと、AIは空回りします。</strong></p>
+<hr />
+<h2 class="story-h2">この経験を、お客様の会社にも</h2>
+<p>大阪放送は、OBCでの実証を経て、中小企業向けにこの仕組みをサービスとして提供しています。</p>
+<p>「うちも同じような状態だ」と感じた方は、一度お話しさせてください。</p>
+<p>→ <a href="https://osakahoso.com/ai-bpo/system">AI経理システム導入について詳しく見る</a>
+→ <a href="https://osakahoso.com/ai-bpo#contact">無料で相談する</a></p>
+<hr />
+<p><em>この記事は、大阪放送株式会社 取締役・北浦健吾が、出資先であるラジオ大阪（OBC）で実際に行った経営改革の記録に基づいています。</em></p>
+    </article>
+
+    <nav class="col-crumb col-crumb--end"><a href="/column/">← COLUMN 一覧へ戻る</a></nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/logo-mark-white.png" alt="大阪放送株式会社">
+        <span class="name">大阪放送株式会社</span>
+        <span class="sub">OSAKA HOSO CO., LTD.</span>
+        <p class="footer__addr">〒554-0052<br>大阪府大阪市此花区常吉二丁目5番26号<br>マルイチスチールセンター</p>
+      </div>
+      <div class="footer__col">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="/#about">私たちについて</a></li>
+          <li><a href="/ai-bpo">事業（AI経理・研修）</a></li>
+          <li><a href="/#proof">実証（OBC）</a></li>
+          <li><a href="/#history">沿革</a></li>
+          <li><a href="/story">STORY</a></li>
+          <li><a href="/column/">COLUMN</a></li>
+          <li><a href="/#company">会社概要</a></li>
+          <li><a href="/#contact">無料相談</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Group</h4>
+        <ul>
+          <li><a href="https://www.obc1314.co.jp/" class="ext" target="_blank" rel="noopener">株式会社ラジオ大阪（OBC）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 大阪放送株式会社</span>
+      <span class="footer__en">Tradition, in motion. — Since 1945</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js?v=20260604seo"></script>
+</body>
+</html>

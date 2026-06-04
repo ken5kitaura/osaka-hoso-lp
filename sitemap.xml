@@ -45,6 +45,31 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://osakahoso.com/column/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/column/obc-case-study</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/column/ai-last-20-percent</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/column/old-companies-ai</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
   <!-- EN pages -->
   <url>
@@ -87,6 +112,13 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/story" />
     <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/story" />
     <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/column/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/" />
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>

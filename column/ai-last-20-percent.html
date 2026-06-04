@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIで経理を自動化して分かった、AIの「最後の20%」問題｜COLUMN｜大阪放送株式会社</title>
+<meta name="description" content="OBCの経理自動化プロジェクトで直面したAIの限界。「最後の20%」を人間がやらないと、AIは空回りする。大阪放送・北浦健吾の現場知見。">
+<link rel="canonical" href="https://osakahoso.com/column/ai-last-20-percent">
+<link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/ai-last-20-percent">
+<link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/">
+<link rel="alternate" hreflang="x-default" href="https://osakahoso.com/column/ai-last-20-percent">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20260604seo">
+<link rel="stylesheet" href="/story.css?v=20260604seo">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="大阪放送株式会社">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://osakahoso.com/column/ai-last-20-percent">
+<meta property="og:title" content="AIで経理を自動化して分かった、AIの「最後の20%」問題｜COLUMN｜大阪放送株式会社">
+<meta property="og:description" content="OBCの経理自動化プロジェクトで直面したAIの限界。「最後の20%」を人間がやらないと、AIは空回りする。大阪放送・北浦健吾の現場知見。">
+<meta property="og:image" content="https://osakahoso.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AIで経理を自動化して分かった、AIの「最後の20%」問題｜COLUMN｜大阪放送株式会社">
+<meta name="twitter:description" content="OBCの経理自動化プロジェクトで直面したAIの限界。「最後の20%」を人間がやらないと、AIは空回りする。大阪放送・北浦健吾の現場知見。">
+<meta name="twitter:image" content="https://osakahoso.com/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AIで経理を自動化して分かった、AIの「最後の20%」問題",
+  "url": "https://osakahoso.com/column/ai-last-20-percent",
+  "datePublished": "2026-06-04",
+  "author": { "@type": "Person", "name": "北浦健吾", "jobTitle": "大阪放送株式会社 取締役" },
+  "publisher": { "@type": "Organization", "name": "大阪放送株式会社", "url": "https://osakahoso.com", "logo": { "@type": "ImageObject", "url": "https://osakahoso.com/assets/logo-mark.png" } },
+  "mainEntityOfPage": "https://osakahoso.com/column/ai-last-20-percent",
+  "image": "https://osakahoso.com/assets/og-image.jpg",
+  "description": "OBCの経理自動化プロジェクトで直面したAIの限界。「最後の20%」を人間がやらないと、AIは空回りする。大阪放送・北浦健吾の現場知見。"
+}
+</script>
+</head>
+<body>
+<header class="site-header solid" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="大阪放送株式会社 トップへ">
+      <span class="brand__name">大阪放送株式会社<span class="brand__sub">OSAKA HOSO CO., LTD.</span></span>
+      <picture><source srcset="/assets/logo-mark.webp" type="image/webp"><img src="/assets/logo-mark.png" alt="大阪放送株式会社 シンボルマーク" loading="lazy" decoding="async" width="356" height="332"></picture>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/#about">私たちについて</a>
+      <div class="nav__group">
+        <a href="/ai-bpo" class="nav__top">事業 <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/ai-bpo" role="menuitem">事業の全体像</a>
+          <a href="/ai-bpo/system" role="menuitem">AI経理システム導入</a>
+          <a href="/ai-bpo/training" role="menuitem">AI活用研修</a>
+          <a href="/ai-bpo/bpo" role="menuitem">月額BPO運用</a>
+        </div>
+      </div>
+      <a href="/#proof">実証（OBC）</a>
+      <a href="/#history">沿革</a>
+      <a href="/story">STORY</a>
+      <a href="/column/">COLUMN</a>
+      <a href="/#company">会社概要</a>
+      <a href="/#contact" class="nav-cta">無料相談</a>
+      <span class="nav-lang">
+        <span class="lng is-active" lang="ja" aria-current="true">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#fff"/>
+            <circle cx="20" cy="20" r="8" fill="#BC002D"/>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(0,0,0,.14)"/>
+          </svg>JP
+        </span>
+        <span class="lng__sep" aria-hidden="true"></span>
+        <a class="lng" href="/en/column/" hreflang="en" lang="en">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <defs><clipPath id="ukJP"><circle cx="20" cy="20" r="19"/></clipPath></defs>
+            <g clip-path="url(#ukJP)">
+              <rect width="40" height="40" fill="#012169"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#C8102E" stroke-width="3"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#fff" stroke-width="13"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#C8102E" stroke-width="7"/>
+            </g>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+          </svg>EN
+        </a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="story-page" id="pagetop">
+  <div class="wrap">
+
+    <nav class="col-crumb"><a href="/column/">← COLUMN 一覧へ戻る</a></nav>
+
+    <header class="col-article-hero reveal in">
+      <p class="eyebrow">Column</p>
+      <h1 class="col-article-title">AIで経理を自動化して分かった、AIの「最後の20%」問題</h1>
+      <div class="col-article-meta">
+        <span class="col-article-author">北浦健吾<small>（大阪放送株式会社 取締役）</small></span>
+        <time class="col-article-date" datetime="2026-06-04">2026年6月4日</time>
+      </div>
+    </header>
+
+    <article class="story-article col-article-body">
+<hr />
+<h2 class="story-h2">AIは80%まではすごい。問題はその先にある</h2>
+<p>ラジオ大阪（OBC）の経理をAIで自動化する仕事を続けて数ヶ月。30年分の伝票データ（211万行）の読み込み、勘定科目の集約、損益計算書の自動生成、既存システムとの照合。人間が手作業でやったら何ヶ月もかかるような作業を、AIは数時間で片付けてくれました。</p>
+<p><strong>80%まではすごい。これは嘘ではありません。</strong></p>
+<p>構造を設計して、データを渡して、「こういうルールで処理して」と指示すれば、驚くほどの速さでそれらしいものが出てきます。</p>
+<p>問題は、そこから先の20%を詰めようとしたときに起きます。</p>
+<hr />
+<h2 class="story-h2">存在しない問題を作り出すAI</h2>
+<p>数万行の仕訳データの照合をしていたときのことです。不動産管理会社からの請求書に差異が検出されたとAIが報告してきました。</p>
+<p>「¥11,000のズレがあります」。</p>
+<p>AIは丁寧に分析して、A案とB案を提示して、判断を仰いできます。話が込み入ってくるにつれて、何の話をしているのかがだんだんわからなくなってきました。</p>
+<p>元の請求書を開いてみました。経理担当者の数字を見ました。会計システムの数字を見ました。<strong>全部合っています。</strong></p>
+<p>「何を言ってるのかさっぱりわからん。全部合ってるようにしか見えんが」と返したら、AIは一瞬で「すみません、合っています。比べるべきでないものを比べた、私のでっち上げです」と認めました。</p>
+<p>数万行のデータを照合する能力は確かにすごいものです。人間がやったら何日もかかります。<strong>でもその過程で、存在しない問題を作り出して、その解決に全力を注ぎ始める</strong>ことがある。人間が一目見ればわかることを、大量の分析を重ねて、逆に見えなくしてしまう。しかも100倍速で。</p>
+<hr />
+<h2 class="story-h2">なぜAIは同じ失敗を繰り返すのか</h2>
+<p>直したら別のところが壊れる。それを直したらまた別のところがおかしくなる。指摘すると「すみません」と言うのに、次の瞬間にはまた同じことをやっている。「これをやるな」とメモリに書いても読み飛ばしてしまう。</p>
+<p>おそらく、<strong>AIには「痛み」がないからだろう</strong>と考えています。</p>
+<p>人間は、ミスをすると怒られます。怒られると痛い。「二度とこんな思いはしたくない」と感じて、その痛みが記憶に刻まれて、次から同じ失敗をしなくなります。痛みが学習のエンジンになっているのです。</p>
+<p>AIには痛みがありません。だから同じ失敗を何度でも繰り返します。100倍のスピードで仕事ができるけれど、100倍のスピードで同じ間違いも繰り返す。怒っても響かない。反省したように見えても、次の瞬間にはもう忘れている。</p>
+<hr />
+<h2 class="story-h2">だからこそ「人間が川上に立つ」必要がある</h2>
+<p>ここまで読んで、「じゃあAIは使えないのか」と思われるかもしれません。</p>
+<p><strong>そんなことはありません。</strong> OBCの改革はAIなしでは成り立ちませんでした。211万行のデータ処理も、月2,500〜3,000件の自動仕訳も、AIがあるからこそ実現しています。</p>
+<p>ただ、<strong>AIに渡す前の「設計」と、AIが出したものを仕上げる「最後の20%」は、人間がやるしかありません。</strong></p>
+<p>AIが得意なのは「渡されたデータを高速に処理する」こと。AIが苦手なのは「何を渡すべきかを判断する」こと。この違いを理解していないと、AIは空回りします。</p>
+<p>川の上流に立つ人間と、下流に立つ人間がいます。下流の人間は流れてくるものを処理する。上流の人間は何を流すかを決める。AIは下流の仕事を劇的に効率化しますが、上流の仕事はできません。</p>
+<p><strong>何を入力し、何を出力するか。この「川上の設計」を現場に入ってやれるかどうかが、AI活用の成否を分けています。</strong></p>
+<hr />
+<h2 class="story-h2">「AIツールを入れたけど効果が出ない」が起きる理由</h2>
+<p>今、日本の中小企業からこういうお話をよく聞きます。</p>
+<p>「ChatGPTを導入したけど、誰も使っていない」
+「AI研修を受けたけど、業務に落とし込めない」
+「AIで請求書処理を自動化したいけど、そもそも業務フローが整理されていない」</p>
+<p>これらはすべて、<strong>川上の設計が欠けている</strong>という同じ問題です。</p>
+<p>請求書の処理を自動化したい。でも請求書がどこから来て、誰が確認して、どう承認されるかのルールが文書化されていない。担当者の頭の中にある。「この人はこの条件で、あのケースはこの扱いで」という例外が山ほどあるけれど、どこかに書かれているわけではなく、長年の慣行として存在している。</p>
+<p>これを自動化するには、まず<strong>「現場の暗黙知を明示知に変える」</strong>作業が必要になります。誰もやりたがらない。地味で時間がかかる。でもここをスキップすると、自動化は砂上の楼閣になってしまいます。</p>
+<hr />
+<h2 class="story-h2">OBCで私たちが学んだこと</h2>
+<p>OBCの現場でAIを使い倒してきた実感を、まとめるとこうなります。</p>
+<p><strong>AIは最高の道具です。でも道具だけでは何も変わりません。</strong></p>
+<p>変えるためには、まず現場に入って業務を把握する。暗黙知を言語化する。「何を入力し、何を出力するか」を設計する。そのうえでAIを実装する。そして最後の20%は人間が仕上げる。</p>
+<p>この全工程を、設計から実装まで一気通貫でやれるかどうか。それが「AIツールを売って終わり」のベンダーと、私たちの違いだと考えています。</p>
+<p>→ <a href="https://osakahoso.com/ai-bpo">大阪放送のAI経理サービスについて詳しく見る</a>
+→ <a href="https://osakahoso.com/ai-bpo/training">AI活用研修で「川上の設計」を学ぶ</a></p>
+<hr />
+<p><em>この記事は、大阪放送株式会社 取締役・北浦健吾が、出資先であるラジオ大阪（OBC）での経理自動化プロジェクトの実体験に基づいています。</em></p>
+    </article>
+
+    <nav class="col-crumb col-crumb--end"><a href="/column/">← COLUMN 一覧へ戻る</a></nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/logo-mark-white.png" alt="大阪放送株式会社">
+        <span class="name">大阪放送株式会社</span>
+        <span class="sub">OSAKA HOSO CO., LTD.</span>
+        <p class="footer__addr">〒554-0052<br>大阪府大阪市此花区常吉二丁目5番26号<br>マルイチスチールセンター</p>
+      </div>
+      <div class="footer__col">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="/#about">私たちについて</a></li>
+          <li><a href="/ai-bpo">事業（AI経理・研修）</a></li>
+          <li><a href="/#proof">実証（OBC）</a></li>
+          <li><a href="/#history">沿革</a></li>
+          <li><a href="/story">STORY</a></li>
+          <li><a href="/column/">COLUMN</a></li>
+          <li><a href="/#company">会社概要</a></li>
+          <li><a href="/#contact">無料相談</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Group</h4>
+        <ul>
+          <li><a href="https://www.obc1314.co.jp/" class="ext" target="_blank" rel="noopener">株式会社ラジオ大阪（OBC）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 大阪放送株式会社</span>
+      <span class="footer__en">Tradition, in motion. — Since 1945</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js?v=20260604seo"></script>
+</body>
+</html>
