@@ -45,38 +45,66 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* ---- contact form (デモ送信) ---- */
+  /* ---- contact form (fetch → /contact.php) ---- */
   var form = document.getElementById('contactForm');
   var msg = document.getElementById('formMsg');
   if (form) {
+    var isEN = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+    var T = isEN ? {
+      requiredMissing: 'Please fill in the required fields (Name, Email, Message).',
+      invalidEmail:    'Please check the email format.',
+      sending:         'Sending…',
+      success:         'Thank you. We have received your inquiry and will reply within a few business days.',
+      networkFail:     'A network error occurred. Please try again, or contact us by phone.',
+      serverFail:      'Something went wrong. Please try again later.'
+    } : {
+      requiredMissing: '必須項目（お名前・メール・お問い合わせ内容）をご入力ください。',
+      invalidEmail:    'メールアドレスの形式をご確認ください。',
+      sending:         '送信しています…',
+      success:         'お問い合わせを受け付けました。数営業日以内に担当よりご返信いたします。',
+      networkFail:     '通信エラーが発生しました。再度お試しいただくか、お電話でもご連絡可能です。',
+      serverFail:      '送信に失敗しました。時間をおいて再度お試しください。'
+    };
+    var setMsg = function (color, text) {
+      msg.style.color = color;
+      msg.textContent = text;
+    };
     form.addEventListener('submit', function (e) {
-      var name = form.querySelector('#f-name');
-      var email = form.querySelector('#f-email');
+      e.preventDefault();
+      var name    = form.querySelector('#f-name');
+      var email   = form.querySelector('#f-email');
       var message = form.querySelector('#f-msg');
       if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-        e.preventDefault();
-        msg.style.color = 'var(--orange)';
-        msg.textContent = '必須項目（お名前・メール・お問い合わせ内容）をご入力ください。';
-        return;
+        setMsg('var(--orange)', T.requiredMissing); return;
       }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) {
-        e.preventDefault();
-        msg.style.color = 'var(--orange)';
-        msg.textContent = 'メールアドレスの形式をご確認ください。';
-        return;
+        setMsg('var(--orange)', T.invalidEmail); return;
       }
-      // 送信先 action が設定されていれば実送信（宛先はフォームサービス側で設定）。
-      // 未設定（プレビュー/デザイン段階）はデモ表示にとどめる。
-      var action = form.getAttribute('action');
-      if (action && action.trim()) {
-        msg.style.color = 'var(--gold)';
-        msg.textContent = '送信しています…';
-        return; // ネイティブ送信を継続
-      }
-      e.preventDefault();
-      msg.style.color = 'var(--gold)';
-      msg.textContent = 'お問い合わせを受け付けました。担当より折り返しご連絡いたします。（※デモ表示：実送信は未接続）';
-      form.reset();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) { submitBtn.disabled = true; }
+      setMsg('var(--gold)', T.sending);
+
+      var fd = new FormData(form);
+      fd.append('lang', isEN ? 'en' : 'ja');
+      fd.append('source_page', location.pathname + location.search);
+      fd.append('data_form', form.dataset.form || '');
+
+      fetch('/contact.php', { method: 'POST', body: fd, credentials: 'same-origin' })
+        .then(function (r) { return r.json().then(function (j) { return { status: r.status, body: j }; }); })
+        .then(function (res) {
+          if (res.status === 200 && res.body && res.body.ok) {
+            setMsg('var(--gold)', T.success);
+            form.reset();
+          } else {
+            setMsg('var(--orange)', T.serverFail);
+          }
+        })
+        .catch(function () {
+          setMsg('var(--orange)', T.networkFail);
+        })
+        .then(function () {
+          if (submitBtn) { submitBtn.disabled = false; }
+        });
     });
   }
 })();

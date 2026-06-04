@@ -1,5 +1,5 @@
 /* Osaka Hoso Co., Ltd. — interactions (EN)
-   Mirrors /main.js with English form messages. */
+   Same logic as /main.js. Form messages auto-switch by document lang. */
 (function () {
   'use strict';
 
@@ -29,7 +29,7 @@
     a.addEventListener('click', closeNav);
   });
 
-  /* ---- scroll reveal ---- */
+  /* ---- scroll reveal (ふわっと現れる) ---- */
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -45,36 +45,66 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* ---- contact form (demo submission) ---- */
+  /* ---- contact form (fetch → /contact.php) ---- */
   var form = document.getElementById('contactForm');
   var msg = document.getElementById('formMsg');
   if (form) {
+    var isEN = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+    var T = isEN ? {
+      requiredMissing: 'Please fill in the required fields (Name, Email, Message).',
+      invalidEmail:    'Please check the email format.',
+      sending:         'Sending…',
+      success:         'Thank you. We have received your inquiry and will reply within a few business days.',
+      networkFail:     'A network error occurred. Please try again, or contact us by phone.',
+      serverFail:      'Something went wrong. Please try again later.'
+    } : {
+      requiredMissing: '必須項目（お名前・メール・お問い合わせ内容）をご入力ください。',
+      invalidEmail:    'メールアドレスの形式をご確認ください。',
+      sending:         '送信しています…',
+      success:         'お問い合わせを受け付けました。数営業日以内に担当よりご返信いたします。',
+      networkFail:     '通信エラーが発生しました。再度お試しいただくか、お電話でもご連絡可能です。',
+      serverFail:      '送信に失敗しました。時間をおいて再度お試しください。'
+    };
+    var setMsg = function (color, text) {
+      msg.style.color = color;
+      msg.textContent = text;
+    };
     form.addEventListener('submit', function (e) {
-      var name = form.querySelector('#f-name');
-      var email = form.querySelector('#f-email');
+      e.preventDefault();
+      var name    = form.querySelector('#f-name');
+      var email   = form.querySelector('#f-email');
       var message = form.querySelector('#f-msg');
       if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-        e.preventDefault();
-        msg.style.color = 'var(--orange)';
-        msg.textContent = 'Please fill in the required fields (Name, Email, and Message).';
-        return;
+        setMsg('var(--orange)', T.requiredMissing); return;
       }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) {
-        e.preventDefault();
-        msg.style.color = 'var(--orange)';
-        msg.textContent = 'Please check your email address format.';
-        return;
+        setMsg('var(--orange)', T.invalidEmail); return;
       }
-      var action = form.getAttribute('action');
-      if (action && action.trim()) {
-        msg.style.color = 'var(--gold)';
-        msg.textContent = 'Sending…';
-        return;
-      }
-      e.preventDefault();
-      msg.style.color = 'var(--gold)';
-      msg.textContent = 'Thanks — we received your message. We will get back to you shortly. (Demo: live submission is not yet wired up.)';
-      form.reset();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) { submitBtn.disabled = true; }
+      setMsg('var(--gold)', T.sending);
+
+      var fd = new FormData(form);
+      fd.append('lang', isEN ? 'en' : 'ja');
+      fd.append('source_page', location.pathname + location.search);
+      fd.append('data_form', form.dataset.form || '');
+
+      fetch('/contact.php', { method: 'POST', body: fd, credentials: 'same-origin' })
+        .then(function (r) { return r.json().then(function (j) { return { status: r.status, body: j }; }); })
+        .then(function (res) {
+          if (res.status === 200 && res.body && res.body.ok) {
+            setMsg('var(--gold)', T.success);
+            form.reset();
+          } else {
+            setMsg('var(--orange)', T.serverFail);
+          }
+        })
+        .catch(function () {
+          setMsg('var(--orange)', T.networkFail);
+        })
+        .then(function () {
+          if (submitBtn) { submitBtn.disabled = false; }
+        });
     });
   }
 })();
