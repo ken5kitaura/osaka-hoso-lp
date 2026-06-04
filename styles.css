@@ -173,7 +173,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .brand__name{ font-family:var(--serif); font-weight:600; font-size:19px; letter-spacing:.14em; color:var(--ink); white-space:nowrap; }
 .brand__sub{ display:block; font-family:var(--eyebrow); font-size:11px; letter-spacing:.34em; color:var(--gold); margin-top:2px; }
 
-.nav{ display:flex; align-items:center; gap:clamp(14px,1.8vw,30px); }
+.nav{ display:flex; align-items:center; gap:clamp(14px,1.8vw,30px); flex:1 1 auto; min-width:0; justify-content:flex-end; }
 .nav a{ font-size:14px; letter-spacing:.06em; color:var(--ink); position:relative; padding:6px 0; white-space:nowrap; }
 .nav a:not(.nav-cta)::after{
   content:""; position:absolute; left:0; bottom:0; height:1px; width:0; background:var(--orange); transition:width .4s cubic-bezier(.2,.7,.2,1);
