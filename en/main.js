@@ -45,6 +45,114 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
+  /* ---- overflow nav (»): brand と nav が干渉した瞬間だけ overflow メニュー化 ----
+     - レイアウトは一切変えない（nav の flex/min-width など触らない）
+     - brand 右端と nav の最初の項目の左端の距離を測り、安全幅(MIN_GAP)を切ったら
+       後ろから順に » メニューへ退避
+     - CTA(無料相談) と 言語切替(JP|EN) は常に右端固定
+     - 1200px 以下は既存ハンバーガーに任せる
+  ---------------------------------------------------------------------------- */
+  (function () {
+    if (!nav) return;
+    var brand = document.querySelector('.brand');
+    if (!brand) return;
+
+    var cta  = nav.querySelector('.nav-cta');
+    var lang = nav.querySelector('.nav-lang');
+    var MIN_GAP = 28; // brand と nav 最左との最低余白(px)
+
+    // More ラッパー作成
+    var moreWrap = document.createElement('div');
+    moreWrap.className = 'nav__more-wrap';
+    moreWrap.hidden = true;
+    var moreBtn = document.createElement('button');
+    moreBtn.type = 'button';
+    moreBtn.className = 'nav__more-btn';
+    moreBtn.setAttribute('aria-haspopup', 'true');
+    moreBtn.setAttribute('aria-expanded', 'false');
+    moreBtn.setAttribute('aria-label', 'More');
+    moreBtn.innerHTML = '<span aria-hidden="true">»</span>';
+    var moreMenu = document.createElement('div');
+    moreMenu.className = 'nav__more-menu';
+    moreWrap.appendChild(moreBtn);
+    moreWrap.appendChild(moreMenu);
+    if (cta) nav.insertBefore(moreWrap, cta);
+    else if (lang) nav.insertBefore(moreWrap, lang);
+    else nav.appendChild(moreWrap);
+
+    moreBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = moreWrap.classList.toggle('open');
+      moreBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!moreWrap.contains(e.target)) {
+        moreWrap.classList.remove('open');
+        moreBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        moreWrap.classList.remove('open');
+        moreBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    function returnAllToNav() {
+      while (moreMenu.firstChild) {
+        nav.insertBefore(moreMenu.firstChild, moreWrap);
+      }
+    }
+    // nav 内の "最初に見える要素" の左端 - brand 右端 を返す（正なら隙間あり）
+    function getGap() {
+      var brandRect = brand.getBoundingClientRect();
+      var first = nav.firstElementChild;
+      // moreWrap が最初に来ているケースは隙間 = moreWrap.left - brand.right
+      while (first && first.hidden) first = first.nextElementSibling;
+      if (!first) return Infinity;
+      var firstRect = first.getBoundingClientRect();
+      return firstRect.left - brandRect.right;
+    }
+
+    function fit() {
+      // モバイル幅: ハンバーガーに任せる
+      if (window.innerWidth <= 1200) {
+        returnAllToNav();
+        moreWrap.hidden = true;
+        return;
+      }
+      // まず全部戻す
+      returnAllToNav();
+      moreWrap.hidden = true;
+
+      // 隙間 OK ならこのまま
+      if (getGap() >= MIN_GAP) return;
+
+      // 干渉している: » を出して、後ろから順に退避
+      moreWrap.hidden = false;
+      var movable = Array.prototype.slice.call(nav.children).filter(function (el) {
+        return el !== cta && el !== lang && el !== moreWrap;
+      });
+      for (var i = movable.length - 1; i >= 0; i--) {
+        moreMenu.insertBefore(movable[i], moreMenu.firstChild);
+        if (getGap() >= MIN_GAP) break;
+      }
+      // 全部退避しても駄目な場合は moreWrap が最左に。これ以上は縮められない
+      if (moreMenu.children.length === 0) moreWrap.hidden = true;
+    }
+
+    var rt;
+    window.addEventListener('resize', function () {
+      clearTimeout(rt);
+      rt = setTimeout(fit, 60);
+    });
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(fit);
+    }
+    window.addEventListener('load', fit);
+    fit();
+  })();
+
   /* ---- contact form (fetch → /contact.php) ---- */
   var form = document.getElementById('contactForm');
   var msg = document.getElementById('formMsg');

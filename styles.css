@@ -657,3 +657,45 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .nav__sub a.is-current{ color:var(--orange); }
 .nav__arrow{ font-size:9px; margin-left:.3em; display:inline-block; transition:transform .2s; }
 .nav__group:hover .nav__arrow{ transform:rotate(180deg); }
+
+/* ============================================================
+   Overflow nav (»)  — brand と干渉した nav 項目を »ボタン直下に集約
+   1200px 以下では既存ハンバーガーに任せるため非表示
+   ============================================================ */
+.nav__more-wrap{ position:relative; display:inline-flex; align-items:center; }
+.nav__more-btn{
+  background:none; border:0; cursor:pointer; padding:6px 10px;
+  font-size:18px; line-height:1; color:var(--ink); letter-spacing:.02em;
+  font-family:var(--sans); border-radius:3px; transition:color .2s, background .2s;
+}
+.nav__more-btn:hover, .nav__more-wrap.open .nav__more-btn{ color:var(--orange); background:rgba(200,90,30,.06); }
+.nav__more-menu{
+  position:absolute; top:100%; right:0;
+  background:var(--paper); border:1px solid var(--line); border-top:2px solid var(--orange);
+  border-radius:3px; box-shadow:0 24px 48px -28px rgba(27,42,65,.5);
+  padding:6px; min-width:220px; z-index:300;
+  display:none; flex-direction:column;
+}
+.nav__more-wrap.open .nav__more-menu{ display:flex; }
+.nav__more-menu > a,
+.nav__more-menu > .nav__group{
+  padding:.65em .9em; white-space:nowrap; border-radius:2px;
+  font-size:13.5px; color:var(--ink); letter-spacing:.04em;
+  display:block;
+}
+.nav__more-menu > a:hover{ background:var(--paper-2); color:var(--orange); }
+.nav__more-menu > a::after{ display:none !important; }
+.nav__more-menu > .nav__group{ padding:0; position:static; display:block; }
+.nav__more-menu > .nav__group > .nav__top{
+  display:block; padding:.65em .9em; border-bottom:1px dashed var(--line);
+}
+.nav__more-menu > .nav__group .nav__sub{
+  position:static !important; opacity:1 !important; visibility:visible !important;
+  pointer-events:auto !important; transform:none !important;
+  box-shadow:none; border:0; padding:.3em 0 .3em .8em; min-width:0;
+  background:transparent; display:flex; flex-direction:column;
+}
+.nav__more-menu > .nav__group .nav__arrow{ display:none; }
+@media (max-width:1200px){
+  .nav__more-wrap{ display:none !important; }
+}
