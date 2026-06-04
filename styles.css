@@ -664,11 +664,15 @@ section[id]{ scroll-margin-top:var(--header-h); }
    字詰め＋ハンバーガー化 breakpoint を 1400px に拡張（JP は無影響）
    ============================================================ */
 html[lang="en"] .brand__sub{ display:none; }
-html[lang="en"] .brand__name{ font-size:17px; letter-spacing:.1em; }
+html[lang="en"] .brand__name{ font-size:16px; letter-spacing:.08em; }
+html[lang="en"] .brand img{ height:36px; }
+html[lang="en"] .brand{ gap:10px; flex-shrink:0; }
+html[lang="en"] .nav-toggle{ flex-shrink:0; }
+html[lang="en"] .site-header .wrap{ gap:16px; }
 html[lang="en"] .nav{ gap:clamp(8px,1.3vw,18px); }
 html[lang="en"] .nav a:not(.nav-cta){ font-size:13px; letter-spacing:.04em; }
 html[lang="en"] .nav-cta{ padding:.6em 1.1em !important; font-size:13px; letter-spacing:.06em; }
-@media (max-width:1400px){
+@media (max-width:1500px){
   html[lang="en"] .nav-toggle{ display:flex; }
   html[lang="en"] .nav{
     position:fixed; inset:var(--header-h) 0 auto 0; flex-direction:column; align-items:stretch;
@@ -693,4 +697,9 @@ html[lang="en"] .nav-cta{ padding:.6em 1.1em !important; font-size:13px; letter-
   }
   html[lang="en"] .nav__sub a{ font-size:14px; padding:12px 0; border-bottom:1px solid var(--line); }
   html[lang="en"] .nav__arrow{ display:none; }
+}
+@media (max-width:560px){
+  html[lang="en"] .brand__name{ font-size:14px; letter-spacing:.06em; }
+  html[lang="en"] .brand img{ height:30px; }
+  html[lang="en"] .brand{ gap:8px; }
 }
