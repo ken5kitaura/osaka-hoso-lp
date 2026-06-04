@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI | Osaka Hoso Co., Ltd.</title>
+<meta name="description" content="Inside the rebuild of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in. Thirty years of accounting data (2.11 million rows), every paper voucher and approval stamp eliminated, journal entries fully automated. Field notes from Kengo Kitaura, Director.">
+<meta name="google-site-verification" content="8eZ4Jat9EozIO_l0O5h0MQ9vKfr-GikleA4jtYgyMEo" />
+<link rel="canonical" href="https://osakahoso.com/en/column/obc-case-study">
+<link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/obc-case-study">
+<link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/obc-case-study">
+<link rel="alternate" hreflang="x-default" href="https://osakahoso.com/column/obc-case-study">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20260605encol">
+<link rel="stylesheet" href="/story.css?v=20260605encol">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Osaka Hoso Co., Ltd.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:url" content="https://osakahoso.com/en/column/obc-case-study">
+<meta property="og:title" content="How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI | Osaka Hoso Co., Ltd.">
+<meta property="og:description" content="Inside the rebuild of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in. Thirty years of accounting data (2.11 million rows), every paper voucher and approval stamp eliminated, journal entries fully automated. Field notes from Kengo Kitaura, Director.">
+<meta property="og:image" content="https://osakahoso.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI | Osaka Hoso Co., Ltd.">
+<meta name="twitter:description" content="Inside the rebuild of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in. Thirty years of accounting data (2.11 million rows), every paper voucher and approval stamp eliminated, journal entries fully automated. Field notes from Kengo Kitaura, Director.">
+<meta name="twitter:image" content="https://osakahoso.com/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI",
+  "url": "https://osakahoso.com/en/column/obc-case-study",
+  "datePublished": "2026-06-04T00:00:00+09:00",
+  "dateModified": "2026-06-04T00:00:00+09:00",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Kengo Kitaura",
+    "jobTitle": "Director, Osaka Hoso Co., Ltd.",
+    "url": "https://note.com/kengo_kitaura",
+    "sameAs": [
+      "https://note.com/kengo_kitaura",
+      "https://medium.com/@kengo",
+      "https://ken5.jp/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Osaka Hoso Co., Ltd.",
+    "url": "https://osakahoso.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://osakahoso.com/assets/logo-mark.png"
+    }
+  },
+  "mainEntityOfPage": "https://osakahoso.com/en/column/obc-case-study",
+  "image": "https://osakahoso.com/assets/og-image.jpg",
+  "description": "Inside the rebuild of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in. Thirty years of accounting data (2.11 million rows), every paper voucher and approval stamp eliminated, journal entries fully automated. Field notes from Kengo Kitaura, Director."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://osakahoso.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "COLUMN",
+      "item": "https://osakahoso.com/en/column/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI",
+      "item": "https://osakahoso.com/en/column/obc-case-study"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much data did the OBC AI rebuild actually process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thirty years' worth — roughly 2.11 million rows of journal data — processed in one pass to auto-generate profit-and-loss statements for the last five fiscal years. The variance against the audited statements was 0.01%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Did you really eliminate all the paper vouchers and approval stamps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every paper voucher — purchase orders, transfers, billing, expenses — was removed, and the approval stamps were replaced with electronic approvals. 2,500–3,000 journal entries a month now run on AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What exactly is \"accounting design from the outcome backward\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It means deciding what numbers the executive actually needs to see every month, then designing the consolidation structure backward from there. At OBC, we collapsed 162 accounts into 37 categories, then grouped those into 7. The detail is still there if you want to drill down — we just optimized the resolution at the level the decision is made."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the same approach work for other SMEs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Osaka Hoso took what we proved at OBC and packaged it as a service for mid-market companies. The more paper-heavy, people-dependent, and set-in-its-ways the organization, the bigger the effect."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header solid" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="/en/" aria-label="Osaka Hoso Co., Ltd. — back to top">
+      <span class="brand__name">Osaka Hoso Co., Ltd.<span class="brand__sub">OSAKA HOSO CO., LTD.</span></span>
+      <img src="/assets/logo-mark.png" alt="Osaka Hoso Co., Ltd. symbol mark" loading="lazy" decoding="async" width="356" height="332">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/en/#about">About</a>
+      <div class="nav__group">
+        <a href="/en/ai-bpo" class="nav__top">Business <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/en/ai-bpo" role="menuitem">Business overview</a>
+          <a href="/en/ai-bpo/system" role="menuitem">AI Accounting System</a>
+          <a href="/en/ai-bpo/training" role="menuitem">AI Skills Training</a>
+          <a href="/en/ai-bpo/bpo" role="menuitem">Monthly BPO</a>
+        </div>
+      </div>
+      <a href="/en/#proof">Proof (OBC)</a>
+      <a href="/en/#history">History</a>
+      <a href="/en/story">STORY</a>
+      <a href="/en/column/">COLUMN</a>
+      <a href="/en/#company">Company</a>
+      <a href="/en/#contact" class="nav-cta">Free consult</a>
+      <span class="nav-lang">
+        <a class="lng" href="/column/" hreflang="ja" lang="ja">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#fff"/>
+            <circle cx="20" cy="20" r="8" fill="#BC002D"/>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(0,0,0,.14)"/>
+          </svg>JP
+        </a>
+        <span class="lng__sep" aria-hidden="true"></span>
+        <span class="lng is-active" lang="en" aria-current="true">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <defs><clipPath id="ukEN"><circle cx="20" cy="20" r="19"/></clipPath></defs>
+            <g clip-path="url(#ukEN)">
+              <rect width="40" height="40" fill="#012169"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#C8102E" stroke-width="3"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#fff" stroke-width="13"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#C8102E" stroke-width="7"/>
+            </g>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+          </svg>EN
+        </span>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="story-page" id="pagetop">
+  <div class="wrap">
+
+    <nav class="col-crumb"><a href="/en/column/">← Back to COLUMN</a></nav>
+
+    <header class="col-article-hero reveal in">
+      <p class="eyebrow">Column</p>
+      <h1 class="col-article-title">How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI</h1>
+      <div class="col-article-meta">
+        <span class="col-article-author">Kengo Kitaura<small>（Director, Osaka Hoso Co., Ltd.）</small></span>
+        <time class="col-article-date" datetime="2026-06-04">June 4, 2026</time>
+        <span class="col-article-modified">Last updated: June 4, 2026</span>
+      </div>
+    </header>
+
+    <aside class="col-tldr reveal in" aria-label="Key takeaways">
+      <h2 class="col-tldr__h">Key takeaways</h2>
+      <ul class="col-tldr__list">
+        <li>Radio Osaka, on the air since 1958, was a "car with a perfect maintenance log but no gauges" — three decades of records, none of them in a form that could actually drive business decisions.</li>
+        <li>We consolidated 162 accounts into 37 categories and 7 groups, then let AI process 2.11 million rows of journal data from thirty years — final variance against the audited statements: 0.01%. Paper vouchers and approval stamps were eliminated, and 2,500–3,000 monthly entries are now AI-automated.</li>
+        <li>The key is "upstream design" — humans decide what goes in and what comes out, then AI does the processing. The older and more paper-heavy the organization, the bigger the gain.</li>
+      </ul>
+    </aside>
+
+    <nav class="col-toc reveal in" aria-label="Table of contents">
+      <h2 class="col-toc__h">Contents</h2>
+      <ol class="col-toc__list">
+        <li><a href="#ch1">Walking into a broadcaster founded in 1958</a></li>
+        <li><a href="#ch2">A car with no gauges</a></li>
+        <li><a href="#ch3">The first move: design from the outcome backward</a></li>
+        <li><a href="#ch4">Processing 2.11 million rows with AI</a></li>
+        <li><a href="#ch5">Every paper voucher and approval stamp — eliminated</a></li>
+        <li><a href="#ch6">Building a system where everyone's knowledge connects</a></li>
+        <li><a href="#ch7">Why "old companies" benefit most from AI</a></li>
+        <li><a href="#ch8">We bring this experience to your company</a></li>
+      </ol>
+    </nav>
+
+    <article class="story-article col-article-body">
+<hr />
+<h2 class="story-h2" id="ch1">Walking into a broadcaster founded in 1958</h2>
+<p>Radio Osaka (OBC) is a legacy broadcaster in the Kansai region, on the air since 1958. When Osaka Hoso invested in the station and Yorihiko Kato took the helm as Representative Director and Chairman, I joined the team on the inside.</p>
+<p>The first thing Chairman Kato told me was this:</p>
+<p>"The numbers are solid. But they're not in a state where I can use them to run the business."</p>
+<hr />
+<h2 class="story-h2" id="ch2">A car with no gauges</h2>
+<p>All the accounting data was stored in a proprietary system built by a single employee roughly thirty years ago. Every transaction from 1996 to today — all of it. Built in the Windows 95 era, that system had kept records without a single gap for three decades. As a maintenance logbook, it was flawless.</p>
+<p>But if you think of it as a car, the situation looked like this:</p>
+<p>The maintenance log was perfect. Oil change dates, tire replacement history — all there, thirty years' worth, without a single gap. <strong>But there were no gauges.</strong> No speedometer. No fuel gauge. No engine temperature readout.</p>
+<p>Close the monthly books and a financial statement comes out. But "what to do with these numbers" wasn't intuitive. The records were there, yet nobody could tell where the company was actually heading.</p>
+<p>That was the reality of a broadcaster founded in 1958.</p>
+<hr />
+<h2 class="story-h2" id="ch3">The first move: design from the outcome backward</h2>
+<p>My first step was not "migrate all the data."</p>
+<p><strong>I started by defining what Chairman Kato needs to see each month to make management decisions.</strong></p>
+<p>Then I worked backward from there, reshaping only the numbers that mattered into a usable form. We call this "outcome-first accounting design."</p>
+<p>Specifically, I consolidated 162 chart-of-account items into 37 categories, then grouped those into 7 top-level clusters. Chairman Kato only needs to see seven numbers. "Revenue, costs, profit" — confirmed every month at a glance. Need more detail? Drill into the 37 categories. Need the granular view? The full 162 accounts are still there.</p>
+<p>Showing every number is not management. <strong>Creating a state where you can see what you need, at the granularity you need, whenever you need it</strong> — that is the point.</p>
+<hr />
+<h2 class="story-h2" id="ch4">Processing 2.11 million rows with AI</h2>
+<p>Thirty years of journal entries. 2.11 million rows. We fed them to AI and auto-generated profit-and-loss statements for the past five fiscal years.</p>
+<p>Cross-checked against the actual audited financials, <strong>the deviation was 0.01%.</strong></p>
+<p>That precision wasn't just because AI is smart. It happened because a human designed the upstream structure first — consolidating 162 accounts into 37 categories. <strong>Humans design what goes in; AI processes it.</strong> Reverse that order, and this precision would never have materialized.</p>
+<hr />
+<h2 class="story-h2" id="ch5">Every paper voucher and approval stamp — eliminated</h2>
+<p>At OBC, every transaction was initiated on a paper voucher and passed through multiple approval stamps. Purchase orders, transfers, invoices, expenses — all paper.</p>
+<p>"Write on paper → copy → enter → tally on paper again → re-enter in Excel." That chain of redundant transcription was daily life.</p>
+<p>We <strong>ripped it out entirely.</strong></p>
+<p>AI reads receipts and invoices and generates journal entries automatically. Paper approval stamps were replaced with digital authorization. The paper vouchers themselves were abolished.</p>
+<p>The result: <strong>2,500–3,000 journal entries per month, processed automatically by AI.</strong></p>
+<hr />
+<h2 class="story-h2" id="ch6">Building a system where everyone's knowledge connects</h2>
+<p>Alongside the accounting automation, we built something bigger.</p>
+<p>We organized the company's vast trove of information — financials, equipment data, sales materials, broadcast performance — into a format AI can read, creating <strong>a state where anyone can ask AI a question about the company and get an accurate answer instantly.</strong></p>
+<p>"What's the profit trend over the past five years?" — a five-year P&amp;L comparison appears. "Total cost and schedule for equipment upgrades?" — a breakdown by equipment type and timeline.</p>
+<p>Beyond gauges — a cockpit where the driver says "show me that number" and it appears instantly. That's what's running at OBC today.</p>
+<hr />
+<h2 class="story-h2" id="ch7">Why "old companies" benefit most from AI</h2>
+<p>Working through the OBC transformation confirmed something we now hold as a conviction:</p>
+<p><strong>The more paper-heavy, people-dependent, and set-in-its-ways an organization is, the more dramatically AI can change it.</strong></p>
+<p>Digital-native companies are already optimized — there's less for AI to cut. Paper-and-stamp organizations, on the other hand, are sitting on mountains of redundant transcription, tribal knowledge locked in individuals' heads, and rules unchanged for thirty years. For AI, that's a gold mine.</p>
+<p>But dropping in an AI tool alone changes nothing. <strong>Unless a human designs the upstream structure — what goes in, what comes out — AI spins its wheels.</strong></p>
+<hr />
+<h2 class="story-h2" id="ch8">We bring this experience to your company</h2>
+<p>Osaka Hoso now offers this capability as a service for mid-market companies, built on everything we proved at OBC.</p>
+<p>If any of this sounds like your company, let's talk.</p>
+<p>→ <a href="https://osakahoso.com/en/ai-bpo/system">Learn about our AI Accounting System</a>
+→ <a href="https://osakahoso.com/en/ai-bpo#contact">Talk to us — free consultation</a></p>
+<hr />
+<p><em>This article is based on the firsthand experience of Kengo Kitaura, Director of Osaka Hoso Co., Ltd., in the management reform of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in.</em></p>
+    </article>
+
+    <section class="col-faq" aria-labelledby="faq-h">
+      <h2 class="story-h2" id="faq-h">Frequently asked questions</h2>
+      <div class="col-faq__list">
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>How much data did the OBC AI rebuild actually process?</summary>
+          <div class="col-faq__a"><p>Thirty years' worth — roughly 2.11 million rows of journal data — processed in one pass to auto-generate profit-and-loss statements for the last five fiscal years. The variance against the audited statements was 0.01%.</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>Did you really eliminate all the paper vouchers and approval stamps?</summary>
+          <div class="col-faq__a"><p>Yes. Every paper voucher — purchase orders, transfers, billing, expenses — was removed, and the approval stamps were replaced with electronic approvals. 2,500–3,000 journal entries a month now run on AI.</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>What exactly is "accounting design from the outcome backward"?</summary>
+          <div class="col-faq__a"><p>It means deciding what numbers the executive actually needs to see every month, then designing the consolidation structure backward from there. At OBC, we collapsed 162 accounts into 37 categories, then grouped those into 7. The detail is still there if you want to drill down — we just optimized the resolution at the level the decision is made.</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>Can the same approach work for other SMEs?</summary>
+          <div class="col-faq__a"><p>Yes. Osaka Hoso took what we proved at OBC and packaged it as a service for mid-market companies. The more paper-heavy, people-dependent, and set-in-its-ways the organization, the bigger the effect.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="col-related" aria-labelledby="related-h">
+      <h2 class="story-h2" id="related-h">Related</h2>
+      <div class="col-list col-list--related">
+        <a class="col-card" href="/en/column/ai-last-20-percent">
+          <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
+          <h3 class="col-card__title">What We Learned Automating Accounting with AI: The "Last 20%" Problem</h3>
+          <p class="col-card__excerpt">AI is incredible up to 80%. The trouble starts after that. Field notes from the OBC accounting rebuild — why "upstream design by humans" is non-negotiable.</p>
+          <span class="col-card__more">Read<span class="arr">→</span></span>
+        </a>
+        <a class="col-card" href="/en/column/old-companies-ai">
+          <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
+          <h3 class="col-card__title">Why "Old Companies" Benefit Most from AI — Lessons from Cambodian Villages and an Osaka Broadcaster</h3>
+          <p class="col-card__excerpt">The further from digital you are, the more AI can transform. Lessons from 14 years building agri-fintech in Cambodian villages and rebuilding a 1958-founded broadcaster in Osaka. Both ran on the same structural problem.</p>
+          <span class="col-card__more">Read<span class="arr">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="col-author" aria-label="About the author">
+      <div class="col-author__photo">
+        <img src="/assets/kitaura-web.jpg" alt="Kengo Kitaura" loading="lazy" decoding="async" width="1500" height="1000">
+      </div>
+      <div class="col-author__body">
+        <p class="col-author__role">Author</p>
+        <h3 class="col-author__name">Kengo Kitaura</h3>
+        <p class="col-author__title">Director (Radio Osaka Co., Ltd. — Management &amp; Administration Division)</p>
+        <p class="col-author__bio">Born in Osaka. Moved to the United States right after junior high. After running businesses back in Japan, relocated to Cambodia in 2009. In 2014, founded AGRIBUDDY, an agri-fintech company, and served as CEO — collecting and visualizing operational data from smallholder farmers who had no records or credit history, then connecting them to financial services. Awards include the Nikkei FinTech Conference Grand Prize and the Global Startup Award "Entrepreneur of the Year" (the first for a Cambodian company in ASEAN). Returned to Japan in 2023 and now works on AI-driven automation of accounting and management operations for Japanese companies.</p>
+        <ul class="col-author__links">
+          <li><a href="https://note.com/kengo_kitaura" target="_blank" rel="noopener noreferrer" aria-label="note"><span class="col-author__icon col-author__icon--note">note</span></a></li>
+          <li><a href="https://medium.com/@kengo" target="_blank" rel="noopener noreferrer" aria-label="Medium"><span class="col-author__icon col-author__icon--Medium">Medium</span></a></li>
+          <li><a href="https://ken5.jp/" target="_blank" rel="noopener noreferrer" aria-label="Personal blog"><span class="col-author__icon col-author__icon--blog">blog</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <nav class="col-crumb col-crumb--end"><a href="/en/column/">← Back to COLUMN</a></nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/logo-mark-white.png" alt="Osaka Hoso Co., Ltd.">
+        <span class="name">Osaka Hoso Co., Ltd.</span>
+        <span class="sub">OSAKA HOSO CO., LTD.</span>
+        <p class="footer__addr">Maruichi Steel Center<br>2-5-26 Tsuneyoshi, Konohana-ku<br>Osaka 554-0052, Japan</p>
+      </div>
+      <div class="footer__col">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="/en/#about">About</a></li>
+          <li><a href="/en/ai-bpo">Business (AI accounting &amp; finance BPO)</a></li>
+          <li><a href="/en/ai-bpo/system">AI Accounting System</a></li>
+          <li><a href="/en/ai-bpo/training">AI Skills Training</a></li>
+          <li><a href="/en/ai-bpo/bpo">Monthly BPO</a></li>
+          <li><a href="/en/story">STORY</a></li>
+          <li><a href="/en/column/">COLUMN</a></li>
+          <li><a href="/en/#company">Company</a></li>
+          <li><a href="/en/#contact">Free consult</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Related</h4>
+        <ul>
+          <li><a href="https://www.obc1314.co.jp/" class="ext" target="_blank" rel="noopener">Radio Osaka (OBC)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© Osaka Hoso Co., Ltd.</span>
+      <span class="footer__en">Tradition, in motion. — Since 1945</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/en/main.js?v=20260605encol"></script>
+</body>
+</html>

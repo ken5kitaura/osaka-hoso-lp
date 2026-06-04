@@ -119,6 +119,30 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/" />
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/column/obc-case-study</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/obc-case-study" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/obc-case-study" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/column/ai-last-20-percent</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/ai-last-20-percent" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/ai-last-20-percent" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://osakahoso.com/en/column/old-companies-ai</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/old-companies-ai" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/old-companies-ai" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

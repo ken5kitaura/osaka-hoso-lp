@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What We Learned Automating Accounting with AI: The "Last 20%" Problem | Osaka Hoso Co., Ltd.</title>
+<meta name="description" content="AI is incredible up to 80%. The trouble starts after that. Field notes from the OBC accounting rebuild — why "upstream design by humans" is non-negotiable.">
+<meta name="google-site-verification" content="8eZ4Jat9EozIO_l0O5h0MQ9vKfr-GikleA4jtYgyMEo" />
+<link rel="canonical" href="https://osakahoso.com/en/column/ai-last-20-percent">
+<link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/ai-last-20-percent">
+<link rel="alternate" hreflang="en" href="https://osakahoso.com/en/column/ai-last-20-percent">
+<link rel="alternate" hreflang="x-default" href="https://osakahoso.com/column/ai-last-20-percent">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20260605encol">
+<link rel="stylesheet" href="/story.css?v=20260605encol">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Osaka Hoso Co., Ltd.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:url" content="https://osakahoso.com/en/column/ai-last-20-percent">
+<meta property="og:title" content="What We Learned Automating Accounting with AI: The "Last 20%" Problem | Osaka Hoso Co., Ltd.">
+<meta property="og:description" content="AI is incredible up to 80%. The trouble starts after that. Field notes from the OBC accounting rebuild — why "upstream design by humans" is non-negotiable.">
+<meta property="og:image" content="https://osakahoso.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What We Learned Automating Accounting with AI: The "Last 20%" Problem | Osaka Hoso Co., Ltd.">
+<meta name="twitter:description" content="AI is incredible up to 80%. The trouble starts after that. Field notes from the OBC accounting rebuild — why "upstream design by humans" is non-negotiable.">
+<meta name="twitter:image" content="https://osakahoso.com/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What We Learned Automating Accounting with AI: The \"Last 20%\" Problem",
+  "url": "https://osakahoso.com/en/column/ai-last-20-percent",
+  "datePublished": "2026-06-04T00:00:00+09:00",
+  "dateModified": "2026-06-04T00:00:00+09:00",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Kengo Kitaura",
+    "jobTitle": "Director, Osaka Hoso Co., Ltd.",
+    "url": "https://note.com/kengo_kitaura",
+    "sameAs": [
+      "https://note.com/kengo_kitaura",
+      "https://medium.com/@kengo",
+      "https://ken5.jp/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Osaka Hoso Co., Ltd.",
+    "url": "https://osakahoso.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://osakahoso.com/assets/logo-mark.png"
+    }
+  },
+  "mainEntityOfPage": "https://osakahoso.com/en/column/ai-last-20-percent",
+  "image": "https://osakahoso.com/assets/og-image.jpg",
+  "description": "AI is incredible up to 80%. The trouble starts after that. Field notes from the OBC accounting rebuild — why \"upstream design by humans\" is non-negotiable."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://osakahoso.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "COLUMN",
+      "item": "https://osakahoso.com/en/column/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What We Learned Automating Accounting with AI: The \"Last 20%\" Problem",
+      "item": "https://osakahoso.com/en/column/ai-last-20-percent"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far does AI actually get you when you automate work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roughly 80% of the way, at a pace humans can't match. At OBC, AI finished in hours what would have taken people months — reading 2.11 million rows of thirty-year-old journal data. The trouble starts in the last 20% — edge cases, judgment calls, context-dependent decisions — where AI starts to spin its wheels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"AI inventing problems that don't exist\" actually look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Real example from the OBC journal reconciliation. AI reported an \"¥11,000 discrepancy\" on an invoice from a property management company. We checked the original invoice, the accountant's numbers, and the accounting system. Everything matched. AI had stacked analysis on top of analysis until it was comparing things that shouldn't have been compared — and confidently surfaced a problem that did not exist. The frightening part is that it does this at 100× speed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does AI keep making the same mistake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our working theory: AI has no pain. Humans get yelled at for mistakes. The pain gets recorded; the next time you don't repeat it. That pain is the engine of learning. AI has no pain, so it makes the same mistake as many times as you let it. You can write \"don't do this\" into memory and it'll skim right past it. AI works at 100× speed — and it makes the same mistake at 100× speed too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does \"we deployed an AI tool but nothing changed\" keep happening?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the upstream design is missing. You want to automate invoice processing — but where invoices come from, who reviews them, and how they get approved isn't written down anywhere. The exceptions live in the head of the person who's been doing it for years. Skip the work of turning that tribal knowledge into explicit knowledge, and any AI tool will spin its wheels — guaranteed."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header solid" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="/en/" aria-label="Osaka Hoso Co., Ltd. — back to top">
+      <span class="brand__name">Osaka Hoso Co., Ltd.<span class="brand__sub">OSAKA HOSO CO., LTD.</span></span>
+      <img src="/assets/logo-mark.png" alt="Osaka Hoso Co., Ltd. symbol mark" loading="lazy" decoding="async" width="356" height="332">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/en/#about">About</a>
+      <div class="nav__group">
+        <a href="/en/ai-bpo" class="nav__top">Business <span class="nav__arrow" aria-hidden="true">▼</span></a>
+        <div class="nav__sub" role="menu">
+          <a href="/en/ai-bpo" role="menuitem">Business overview</a>
+          <a href="/en/ai-bpo/system" role="menuitem">AI Accounting System</a>
+          <a href="/en/ai-bpo/training" role="menuitem">AI Skills Training</a>
+          <a href="/en/ai-bpo/bpo" role="menuitem">Monthly BPO</a>
+        </div>
+      </div>
+      <a href="/en/#proof">Proof (OBC)</a>
+      <a href="/en/#history">History</a>
+      <a href="/en/story">STORY</a>
+      <a href="/en/column/">COLUMN</a>
+      <a href="/en/#company">Company</a>
+      <a href="/en/#contact" class="nav-cta">Free consult</a>
+      <span class="nav-lang">
+        <a class="lng" href="/column/" hreflang="ja" lang="ja">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#fff"/>
+            <circle cx="20" cy="20" r="8" fill="#BC002D"/>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(0,0,0,.14)"/>
+          </svg>JP
+        </a>
+        <span class="lng__sep" aria-hidden="true"></span>
+        <span class="lng is-active" lang="en" aria-current="true">
+          <svg class="lng__flag" viewBox="0 0 40 40" aria-hidden="true">
+            <defs><clipPath id="ukEN"><circle cx="20" cy="20" r="19"/></clipPath></defs>
+            <g clip-path="url(#ukEN)">
+              <rect width="40" height="40" fill="#012169"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#fff" stroke-width="8"/>
+              <path d="M0,0 L40,40 M40,0 L0,40" stroke="#C8102E" stroke-width="3"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#fff" stroke-width="13"/>
+              <path d="M20,0 V40 M0,20 H40" stroke="#C8102E" stroke-width="7"/>
+            </g>
+            <circle cx="20" cy="20" r="19" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+          </svg>EN
+        </span>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="story-page" id="pagetop">
+  <div class="wrap">
+
+    <nav class="col-crumb"><a href="/en/column/">← Back to COLUMN</a></nav>
+
+    <header class="col-article-hero reveal in">
+      <p class="eyebrow">Column</p>
+      <h1 class="col-article-title">What We Learned Automating Accounting with AI: The "Last 20%" Problem</h1>
+      <div class="col-article-meta">
+        <span class="col-article-author">Kengo Kitaura<small>（Director, Osaka Hoso Co., Ltd.）</small></span>
+        <time class="col-article-date" datetime="2026-06-04">June 4, 2026</time>
+        <span class="col-article-modified">Last updated: June 4, 2026</span>
+      </div>
+    </header>
+
+    <aside class="col-tldr reveal in" aria-label="Key takeaways">
+      <h2 class="col-tldr__h">Key takeaways</h2>
+      <ul class="col-tldr__list">
+        <li>Thirty years and 2.11 million rows of journal data, plus 2,500-plus AI-automated entries per month — AI gets you to "80% done" at a pace that humans simply can't match.</li>
+        <li>On a journal reconciliation, AI reported an "¥11,000 discrepancy" — but every number actually matched. AI had taken a mountain of analysis and manufactured a problem that did not exist, at 100× speed. And because AI has no pain, it repeats the same mistake again and again.</li>
+        <li>The fix is humans doing the upstream design — on site, deciding what goes in and what comes out. Get that right and AI is unstoppable downstream. Skip it and your AI project will stall at exactly the same "last 20%" every time.</li>
+      </ul>
+    </aside>
+
+    <nav class="col-toc reveal in" aria-label="Table of contents">
+      <h2 class="col-toc__h">Contents</h2>
+      <ol class="col-toc__list">
+        <li><a href="#ch1">AI is incredible up to 80%. The trouble starts after that.</a></li>
+        <li><a href="#ch2">AI invents problems that don't exist</a></li>
+        <li><a href="#ch3">Why AI repeats the same mistakes</a></li>
+        <li><a href="#ch4">That's precisely why humans need to stand upstream</a></li>
+        <li><a href="#ch5">Why "we adopted AI tools but nothing changed" keeps happening</a></li>
+        <li><a href="#ch6">What we learned at OBC</a></li>
+      </ol>
+    </nav>
+
+    <article class="story-article col-article-body">
+<hr />
+<h2 class="story-h2" id="ch1">AI is incredible up to 80%. The trouble starts after that.</h2>
+<p>We've been automating accounting at Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in — for several months now. Reading thirty years of journal data (2.11 million rows), consolidating chart-of-account categories, auto-generating profit-and-loss statements, cross-checking against the legacy system. Work that would have taken humans months — AI finished in hours.</p>
+<p><strong>The first 80% is genuinely impressive. That's not an exaggeration.</strong></p>
+<p>Design the structure, hand over the data, give the instructions — and something remarkably close to the target appears at astonishing speed.</p>
+<p>The trouble starts when you try to nail down the remaining 20%.</p>
+<hr />
+<h2 class="story-h2" id="ch2">AI invents problems that don't exist</h2>
+<p>We were cross-checking tens of thousands of journal entries when AI flagged a discrepancy in an invoice from a property management company.</p>
+<p>"There's an ¥11,000 gap."</p>
+<p>AI analyzed it carefully, presented Option A and Option B, and asked for a decision. As the discussion grew more involved, it became increasingly unclear what we were even talking about.</p>
+<p>I opened the original invoice. Checked the accountant's numbers. Checked the accounting system. <strong>Everything matched.</strong></p>
+<p>When I pushed back — "I have no idea what you're talking about; everything looks right to me" — AI instantly conceded: "You're right, it matches. I was comparing things that shouldn't have been compared. This was entirely fabricated on my end."</p>
+<p>The ability to cross-check tens of thousands of rows is genuinely powerful. It would take a human days. <strong>But in the process, AI sometimes invents a problem that doesn't exist and pours its full effort into solving it.</strong> It takes something a human can see at a glance and buries it under layers of analysis — at 100x speed.</p>
+<hr />
+<h2 class="story-h2" id="ch3">Why AI repeats the same mistakes</h2>
+<p>Fix one thing and something else breaks. Fix that and yet another issue surfaces. Point it out and AI says "I'm sorry" — then does the exact same thing moments later. Write "don't do this" in its memory, and it skips right over it.</p>
+<p>My working theory: <strong>AI has no pain.</strong></p>
+<p>When humans make a mistake, they face consequences. Consequences hurt. "I never want to go through that again" — that feeling gets seared into memory, and the same mistake doesn't happen twice. Pain drives learning.</p>
+<p>AI feels no pain. So it repeats the same mistakes indefinitely. It can work at 100x speed, but it can also make the same error at 100x speed. Frustration doesn't register. What looks like reflection is forgotten a moment later.</p>
+<hr />
+<h2 class="story-h2" id="ch4">That's precisely why humans need to stand upstream</h2>
+<p>Reading this, you might wonder: "So AI doesn't work?"</p>
+<p><strong>Far from it.</strong> The OBC reform wouldn't have been possible without AI. Processing 2.11 million rows, auto-generating 2,500–3,000 journal entries a month — none of that happens without AI.</p>
+<p>But <strong>the design before handing things to AI, and the finishing of the last 20% after AI delivers its output — those are jobs only humans can do.</strong></p>
+<p>AI excels at processing data it's been given, at high speed. AI struggles to judge what data it should be given in the first place. Miss that distinction, and AI spins its wheels.</p>
+<p>Think of a river. Someone stands upstream and decides what flows down. Someone stands downstream and processes what arrives. AI dramatically accelerates downstream work. But it can't do the upstream job.</p>
+<p><strong>What goes in. What comes out. Whether you can step into the field and design that upstream structure — that's what separates success from failure in AI adoption.</strong></p>
+<hr />
+<h2 class="story-h2" id="ch5">Why "we adopted AI tools but nothing changed" keeps happening</h2>
+<p>We hear this from mid-market Japanese companies all the time:</p>
+<p>"We rolled out ChatGPT, but nobody uses it."
+"We did AI training, but it never connected to actual work."
+"We want to automate invoice processing, but our workflows aren't documented."</p>
+<p>Every one of these is <strong>the same problem: missing upstream design.</strong></p>
+<p>You want to automate invoice processing. But who sends invoices, who reviews them, and how approvals work — none of it is written down. It lives in one person's head. "This vendor gets this treatment, that edge case works like this" — exceptions everywhere, documented nowhere, sustained by years of habit.</p>
+<p>To automate that, you first need to <strong>turn implicit knowledge into explicit knowledge.</strong> Nobody wants to do it. It's unglamorous and time-consuming. But skip it, and automation becomes a house of cards.</p>
+<hr />
+<h2 class="story-h2" id="ch6">What we learned at OBC</h2>
+<p>After months of pushing AI to its limits in the field, this is what it comes down to:</p>
+<p><strong>AI is an extraordinary tool. But a tool alone changes nothing.</strong></p>
+<p>To drive change, you first walk into the operation. Understand the workflows. Turn tribal knowledge into documentation. Design what goes in and what comes out. Then implement AI on top of that design. And finish the last 20% by hand.</p>
+<p>Whether you can do that entire sequence — from design through implementation — end to end, from one company. That's the difference between "selling a tool and walking away" and what we do.</p>
+<p>→ <a href="https://osakahoso.com/en/ai-bpo">Learn about Osaka Hoso's AI accounting services</a>
+→ <a href="https://osakahoso.com/en/ai-bpo/training">AI Skills Training — learn to design upstream</a></p>
+<hr />
+<p><em>This article is based on the firsthand experience of Kengo Kitaura, Director of Osaka Hoso Co., Ltd., in the accounting automation project at Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in.</em></p>
+    </article>
+
+    <section class="col-faq" aria-labelledby="faq-h">
+      <h2 class="story-h2" id="faq-h">Frequently asked questions</h2>
+      <div class="col-faq__list">
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>How far does AI actually get you when you automate work?</summary>
+          <div class="col-faq__a"><p>Roughly 80% of the way, at a pace humans can't match. At OBC, AI finished in hours what would have taken people months — reading 2.11 million rows of thirty-year-old journal data. The trouble starts in the last 20% — edge cases, judgment calls, context-dependent decisions — where AI starts to spin its wheels.</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>What does "AI inventing problems that don't exist" actually look like?</summary>
+          <div class="col-faq__a"><p>Real example from the OBC journal reconciliation. AI reported an "¥11,000 discrepancy" on an invoice from a property management company. We checked the original invoice, the accountant's numbers, and the accounting system. Everything matched. AI had stacked analysis on top of analysis until it was comparing things that shouldn't have been compared — and confidently surfaced a problem that did not exist. The frightening part is that it does this at 100× speed.</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>Why does AI keep making the same mistake?</summary>
+          <div class="col-faq__a"><p>Our working theory: AI has no pain. Humans get yelled at for mistakes. The pain gets recorded; the next time you don't repeat it. That pain is the engine of learning. AI has no pain, so it makes the same mistake as many times as you let it. You can write "don't do this" into memory and it'll skim right past it. AI works at 100× speed — and it makes the same mistake at 100× speed too.</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>Why does "we deployed an AI tool but nothing changed" keep happening?</summary>
+          <div class="col-faq__a"><p>Because the upstream design is missing. You want to automate invoice processing — but where invoices come from, who reviews them, and how they get approved isn't written down anywhere. The exceptions live in the head of the person who's been doing it for years. Skip the work of turning that tribal knowledge into explicit knowledge, and any AI tool will spin its wheels — guaranteed.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="col-related" aria-labelledby="related-h">
+      <h2 class="story-h2" id="related-h">Related</h2>
+      <div class="col-list col-list--related">
+        <a class="col-card" href="/en/column/obc-case-study">
+          <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
+          <h3 class="col-card__title">How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI</h3>
+          <p class="col-card__excerpt">Inside the rebuild of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in. Thirty years of accounting data (2.11 million rows), every paper voucher and approval stamp eliminated, journal entries fully automated. Field notes from Kengo Kitaura, Director.</p>
+          <span class="col-card__more">Read<span class="arr">→</span></span>
+        </a>
+        <a class="col-card" href="/en/column/old-companies-ai">
+          <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
+          <h3 class="col-card__title">Why "Old Companies" Benefit Most from AI — Lessons from Cambodian Villages and an Osaka Broadcaster</h3>
+          <p class="col-card__excerpt">The further from digital you are, the more AI can transform. Lessons from 14 years building agri-fintech in Cambodian villages and rebuilding a 1958-founded broadcaster in Osaka. Both ran on the same structural problem.</p>
+          <span class="col-card__more">Read<span class="arr">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="col-author" aria-label="About the author">
+      <div class="col-author__photo">
+        <img src="/assets/kitaura-web.jpg" alt="Kengo Kitaura" loading="lazy" decoding="async" width="1500" height="1000">
+      </div>
+      <div class="col-author__body">
+        <p class="col-author__role">Author</p>
+        <h3 class="col-author__name">Kengo Kitaura</h3>
+        <p class="col-author__title">Director (Radio Osaka Co., Ltd. — Management &amp; Administration Division)</p>
+        <p class="col-author__bio">Born in Osaka. Moved to the United States right after junior high. After running businesses back in Japan, relocated to Cambodia in 2009. In 2014, founded AGRIBUDDY, an agri-fintech company, and served as CEO — collecting and visualizing operational data from smallholder farmers who had no records or credit history, then connecting them to financial services. Awards include the Nikkei FinTech Conference Grand Prize and the Global Startup Award "Entrepreneur of the Year" (the first for a Cambodian company in ASEAN). Returned to Japan in 2023 and now works on AI-driven automation of accounting and management operations for Japanese companies.</p>
+        <ul class="col-author__links">
+          <li><a href="https://note.com/kengo_kitaura" target="_blank" rel="noopener noreferrer" aria-label="note"><span class="col-author__icon col-author__icon--note">note</span></a></li>
+          <li><a href="https://medium.com/@kengo" target="_blank" rel="noopener noreferrer" aria-label="Medium"><span class="col-author__icon col-author__icon--Medium">Medium</span></a></li>
+          <li><a href="https://ken5.jp/" target="_blank" rel="noopener noreferrer" aria-label="Personal blog"><span class="col-author__icon col-author__icon--blog">blog</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <nav class="col-crumb col-crumb--end"><a href="/en/column/">← Back to COLUMN</a></nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/logo-mark-white.png" alt="Osaka Hoso Co., Ltd.">
+        <span class="name">Osaka Hoso Co., Ltd.</span>
+        <span class="sub">OSAKA HOSO CO., LTD.</span>
+        <p class="footer__addr">Maruichi Steel Center<br>2-5-26 Tsuneyoshi, Konohana-ku<br>Osaka 554-0052, Japan</p>
+      </div>
+      <div class="footer__col">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="/en/#about">About</a></li>
+          <li><a href="/en/ai-bpo">Business (AI accounting &amp; finance BPO)</a></li>
+          <li><a href="/en/ai-bpo/system">AI Accounting System</a></li>
+          <li><a href="/en/ai-bpo/training">AI Skills Training</a></li>
+          <li><a href="/en/ai-bpo/bpo">Monthly BPO</a></li>
+          <li><a href="/en/story">STORY</a></li>
+          <li><a href="/en/column/">COLUMN</a></li>
+          <li><a href="/en/#company">Company</a></li>
+          <li><a href="/en/#contact">Free consult</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Related</h4>
+        <ul>
+          <li><a href="https://www.obc1314.co.jp/" class="ext" target="_blank" rel="noopener">Radio Osaka (OBC)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© Osaka Hoso Co., Ltd.</span>
+      <span class="footer__en">Tradition, in motion. — Since 1945</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/en/main.js?v=20260605encol"></script>
+</body>
+</html>

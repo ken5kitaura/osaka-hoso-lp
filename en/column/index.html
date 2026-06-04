@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COLUMN | Osaka Hoso Co., Ltd.</title>
-<meta name="description" content="Field notes from Osaka Hoso. Articles on rebuilding a broadcaster (OBC) with AI, the limits of AI, and why old companies have the most to gain. Currently published in Japanese.">
+<meta name="description" content="Field notes from Osaka Hoso. Rebuilding a 1958 broadcaster (OBC) with AI, the "last 20%" problem of AI, why old companies have the most to gain. Written by Kengo Kitaura, Director.">
 <meta name="google-site-verification" content="8eZ4Jat9EozIO_l0O5h0MQ9vKfr-GikleA4jtYgyMEo" />
 <link rel="canonical" href="https://osakahoso.com/en/column/">
 <link rel="alternate" hreflang="ja" href="https://osakahoso.com/column/">
@@ -14,20 +14,95 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260604colv2">
-<link rel="stylesheet" href="/story.css?v=20260604colv2">
+<link rel="stylesheet" href="/styles.css?v=20260605encol">
+<link rel="stylesheet" href="/story.css?v=20260605encol">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Osaka Hoso Co., Ltd.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ja_JP">
 <meta property="og:url" content="https://osakahoso.com/en/column/">
 <meta property="og:title" content="COLUMN | Osaka Hoso Co., Ltd.">
-<meta property="og:description" content="Field notes from Osaka Hoso — rebuilding a broadcaster with AI. Currently published in Japanese.">
+<meta property="og:description" content="Field notes from Osaka Hoso. Rebuilding a 1958 broadcaster (OBC) with AI, the "last 20%" problem of AI, why old companies have the most to gain. Written by Kengo Kitaura, Director.">
 <meta property="og:image" content="https://osakahoso.com/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="COLUMN | Osaka Hoso Co., Ltd.">
+<meta name="twitter:description" content="Field notes from Osaka Hoso. Rebuilding a 1958 broadcaster (OBC) with AI, the "last 20%" problem of AI, why old companies have the most to gain. Written by Kengo Kitaura, Director.">
 <meta name="twitter:image" content="https://osakahoso.com/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Osaka Hoso COLUMN (English)",
+  "url": "https://osakahoso.com/en/column/",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Osaka Hoso Co., Ltd.",
+    "url": "https://osakahoso.com"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI",
+      "url": "https://osakahoso.com/en/column/obc-case-study",
+      "datePublished": "2026-06-04T00:00:00+09:00",
+      "dateModified": "2026-06-04T00:00:00+09:00",
+      "image": "https://osakahoso.com/assets/og-image.jpg",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Kengo Kitaura",
+        "url": "https://note.com/kengo_kitaura",
+        "sameAs": [
+          "https://note.com/kengo_kitaura",
+          "https://medium.com/@kengo",
+          "https://ken5.jp/"
+        ]
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What We Learned Automating Accounting with AI: The \"Last 20%\" Problem",
+      "url": "https://osakahoso.com/en/column/ai-last-20-percent",
+      "datePublished": "2026-06-04T00:00:00+09:00",
+      "dateModified": "2026-06-04T00:00:00+09:00",
+      "image": "https://osakahoso.com/assets/og-image.jpg",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Kengo Kitaura",
+        "url": "https://note.com/kengo_kitaura",
+        "sameAs": [
+          "https://note.com/kengo_kitaura",
+          "https://medium.com/@kengo",
+          "https://ken5.jp/"
+        ]
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Why \"Old Companies\" Benefit Most from AI — Lessons from Cambodian Villages and an Osaka Broadcaster",
+      "url": "https://osakahoso.com/en/column/old-companies-ai",
+      "datePublished": "2026-06-04T00:00:00+09:00",
+      "dateModified": "2026-06-04T00:00:00+09:00",
+      "image": "https://osakahoso.com/assets/og-image.jpg",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Kengo Kitaura",
+        "url": "https://note.com/kengo_kitaura",
+        "sameAs": [
+          "https://note.com/kengo_kitaura",
+          "https://medium.com/@kengo",
+          "https://ken5.jp/"
+        ]
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -95,33 +170,28 @@
       </div>
     </header>
 
-    <div class="col-en-notice reveal in">
-      <p class="lead">Our column is currently published in <strong>Japanese only</strong>. English translations are planned. Until then, the articles below are available via the Japanese site.</p>
-    </div>
-
     <section class="col-list">
-      <a class="col-card reveal" href="/column/obc-case-study" hreflang="ja" lang="ja">
-        <span class="col-card__lang">JP</span>
+      <a class="col-card reveal" href="/en/column/obc-case-study">
         <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
-        <h2 class="col-card__title">計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。</h2>
-        <p class="col-card__excerpt">How we walked into Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in — and rebuilt it with AI, from 30 years of accounting data (2.11M rows) to eliminating every paper voucher and approval stamp.</p>
-        <span class="col-card__more">Read in Japanese<span class="arr">→</span></span>
+        <h2 class="col-card__title">How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI</h2>
+        <p class="col-card__excerpt">Inside the rebuild of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in. Thirty years of accounting data (2.11 million rows), every paper voucher and approval stamp eliminated, journal entries fully automated. Field notes from Kengo Kitaura, Director.</p>
+        <span class="col-card__more">Read<span class="arr">→</span></span>
       </a>
-      <a class="col-card reveal" href="/column/ai-last-20-percent" hreflang="ja" lang="ja">
-        <span class="col-card__lang">JP</span>
+      <a class="col-card reveal" href="/en/column/ai-last-20-percent">
         <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
-        <h2 class="col-card__title">AIで経理を自動化して分かった、AIの「最後の20%」問題</h2>
-        <p class="col-card__excerpt">AI gets you 80% of the way fast. The remaining 20% is where it falls apart — inventing problems that don't exist, repeating the same mistakes. Why "upstream design by humans" is non-negotiable.</p>
-        <span class="col-card__more">Read in Japanese<span class="arr">→</span></span>
+        <h2 class="col-card__title">What We Learned Automating Accounting with AI: The "Last 20%" Problem</h2>
+        <p class="col-card__excerpt">AI is incredible up to 80%. The trouble starts after that. Field notes from the OBC accounting rebuild — why "upstream design by humans" is non-negotiable.</p>
+        <span class="col-card__more">Read<span class="arr">→</span></span>
       </a>
-      <a class="col-card reveal" href="/column/old-companies-ai" hreflang="ja" lang="ja">
-        <span class="col-card__lang">JP</span>
+      <a class="col-card reveal" href="/en/column/old-companies-ai">
         <time class="col-card__date" datetime="2026-06-04">June 4, 2026</time>
-        <h2 class="col-card__title">なぜ「古い会社」ほどAIで劇的に変わるのか——カンボジアの農村と大阪の放送局で学んだこと</h2>
-        <p class="col-card__excerpt">"We're an old company, AI is not for us" — completely backwards. The further from digital you are, the more AI can transform. Lessons from 14 years in Cambodian villages and an Osaka radio station.</p>
-        <span class="col-card__more">Read in Japanese<span class="arr">→</span></span>
+        <h2 class="col-card__title">Why "Old Companies" Benefit Most from AI — Lessons from Cambodian Villages and an Osaka Broadcaster</h2>
+        <p class="col-card__excerpt">The further from digital you are, the more AI can transform. Lessons from 14 years building agri-fintech in Cambodian villages and rebuilding a 1958-founded broadcaster in Osaka. Both ran on the same structural problem.</p>
+        <span class="col-card__more">Read<span class="arr">→</span></span>
       </a>
     </section>
+
+    <p class="col-note">Articles by Kengo Kitaura, Director of Osaka Hoso Co., Ltd., based on the actual rebuild of Radio Osaka (OBC) with AI.</p>
 
   </div>
 </main>
@@ -140,6 +210,9 @@
         <ul>
           <li><a href="/en/#about">About</a></li>
           <li><a href="/en/ai-bpo">Business (AI accounting &amp; finance BPO)</a></li>
+          <li><a href="/en/ai-bpo/system">AI Accounting System</a></li>
+          <li><a href="/en/ai-bpo/training">AI Skills Training</a></li>
+          <li><a href="/en/ai-bpo/bpo">Monthly BPO</a></li>
           <li><a href="/en/story">STORY</a></li>
           <li><a href="/en/column/">COLUMN</a></li>
           <li><a href="/en/#company">Company</a></li>
@@ -160,6 +233,6 @@
   </div>
 </footer>
 
-<script src="/en/main.js?v=20260604colv2"></script>
+<script src="/en/main.js?v=20260605encol"></script>
 </body>
 </html>
