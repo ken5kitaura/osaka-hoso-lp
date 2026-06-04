@@ -69,6 +69,22 @@
       msg.style.color = color;
       msg.textContent = text;
     };
+    // 非 AJAX 経路（古いJSキャッシュ時のフォールバック）から戻ってきた場合の表示
+    try {
+      var qs = new URLSearchParams(location.search);
+      if (qs.get('sent') === '1') {
+        setMsg('var(--gold)', T.success);
+        qs.delete('sent'); qs.delete('err');
+        var q = qs.toString();
+        history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + '#contact');
+      } else if (qs.get('sent') === '0') {
+        setMsg('var(--orange)', T.serverFail);
+        qs.delete('sent'); qs.delete('err');
+        var q2 = qs.toString();
+        history.replaceState(null, '', location.pathname + (q2 ? '?' + q2 : '') + '#contact');
+      }
+    } catch (_) {}
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var name    = form.querySelector('#f-name');
@@ -89,7 +105,12 @@
       fd.append('source_page', location.pathname + location.search);
       fd.append('data_form', form.dataset.form || '');
 
-      fetch('/contact.php', { method: 'POST', body: fd, credentials: 'same-origin' })
+      fetch('/contact.php', {
+        method: 'POST',
+        body: fd,
+        credentials: 'same-origin',
+        headers: { 'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json' }
+      })
         .then(function (r) { return r.json().then(function (j) { return { status: r.status, body: j }; }); })
         .then(function (res) {
           if (res.status === 200 && res.body && res.body.ok) {

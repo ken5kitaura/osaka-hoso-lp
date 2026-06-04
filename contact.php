@@ -11,8 +11,16 @@ declare(strict_types=1);
 
 mb_language('uni');
 mb_internal_encoding('UTF-8');
-header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
+
+/* AJAX(fetch) か否か。AJAX 以外はリダイレクトで返し、JSON を画面に出さない */
+$isAjax = (
+    (($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'XMLHttpRequest') ||
+    (stripos($_SERVER['HTTP_ACCEPT'] ?? '', 'application/json') !== false)
+);
+if ($isAjax) {
+    header('Content-Type: application/json; charset=utf-8');
+}
 
 /* ---- 設定 ---- */
 $TO         = 'kengo.kitaura@gmail.com';
@@ -21,8 +29,22 @@ $FROM_NAME  = '大阪放送株式会社 サイト問い合わせ';
 $ALLOWED_ORIGINS = ['https://osakahoso.com', 'https://www.osakahoso.com'];
 
 function reply(int $code, array $payload): void {
+    global $isAjax;
     http_response_code($code);
-    echo json_encode($payload, JSON_UNESCAPED_UNICODE);
+    if ($isAjax) {
+        echo json_encode($payload, JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+    // 非 AJAX: 直前ページに戻して結果はクエリで伝える
+    $back = $_SERVER['HTTP_REFERER'] ?? '/';
+    $sep  = (strpos($back, '?') === false) ? '?' : '&';
+    if (!empty($payload['ok'])) {
+        $location = $back . $sep . 'sent=1#contact';
+    } else {
+        $err = preg_replace('/[^a-z0-9_]/i', '', (string)($payload['error'] ?? 'error'));
+        $location = $back . $sep . 'sent=0&err=' . $err . '#contact';
+    }
+    header('Location: ' . $location, true, 303);
     exit;
 }
 
