@@ -169,7 +169,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
 }
 .site-header .wrap{ display:flex; align-items:center; justify-content:space-between; gap:24px; width:100%; }
 .brand{ display:flex; align-items:center; gap:14px; }
-.brand img{ height:42px; width:auto; }
+.brand img{ height:42px !important; width:auto !important; max-width:none !important; }
 .brand__name{ font-family:var(--serif); font-weight:600; font-size:19px; letter-spacing:.14em; color:var(--ink); white-space:nowrap; }
 .brand__sub{ display:block; font-family:var(--eyebrow); font-size:11px; letter-spacing:.34em; color:var(--gold); margin-top:2px; }
 
@@ -526,7 +526,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
    ============================================================ */
 .site-footer{ background:var(--ink-2); color:var(--on-ink-mut); padding-block:clamp(56px,7vw,86px) 40px; border-top:1px solid var(--line-ink); }
 .footer__top{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:clamp(34px,4vw,60px); padding-bottom:clamp(40px,5vw,60px); border-bottom:1px solid var(--line-ink); }
-.footer__brand img{ height:46px; margin-bottom:18px; }
+.footer__brand img{ height:46px !important; width:auto !important; max-width:none !important; margin-bottom:18px; }
 .footer__brand .name{ font-family:var(--serif); font-size:18px; color:var(--on-ink); letter-spacing:.12em; display:block; }
 .footer__brand .sub{ font-family:var(--eyebrow); letter-spacing:.3em; font-size:11px; color:var(--gold); margin-top:6px; display:block; }
 .footer__addr{ font-size:13px; line-height:1.95; margin-top:20px; }
