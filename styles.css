@@ -287,7 +287,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
   background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:.5;
 }
 .proof__split{ display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:clamp(40px,5vw,60px) 0; }
-.proof__split .ph{ min-height:340px; }
+.proof__split .ph{ aspect-ratio:4/3; min-height:0; }
 
 /* 右「現在」＝紙の帳票に対する“データで埋まった画面”（自作UI・写真不使用） */
 .datascreen{ display:block; padding:0; background:#0c1420; border:1px solid rgba(176,141,87,.34); overflow:hidden; }
@@ -471,7 +471,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .reps__intro p{ font-family:var(--serif); font-size:clamp(20px,2.6vw,30px); line-height:1.85; color:var(--ink); letter-spacing:.04em; text-wrap:balance; }
 .reps{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(36px,5vw,72px); }
 .rep{ display:flex; flex-direction:column; }
-.rep__portrait{ min-height:380px; margin-bottom:30px; }
+.rep__portrait{ aspect-ratio:4/3; min-height:0; margin-bottom:30px; }
 .rep__role{ font-family:var(--eyebrow); letter-spacing:.3em; text-transform:uppercase; font-size:13px; color:var(--orange); margin-bottom:1em; display:flex; align-items:center; gap:.7em; }
 .rep__role::before{ content:""; width:26px; height:1px; background:var(--gold); }
 .rep__name{ font-family:var(--serif); font-size:clamp(23px,2.6vw,30px); color:var(--ink); letter-spacing:.05em; margin-bottom:.2em; }
@@ -698,4 +698,24 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .nav__more-menu > .nav__group .nav__arrow{ display:none; }
 @media (max-width:1200px){
   .nav__more-wrap{ display:none !important; }
+}
+
+/* ============================================================
+   写真コンテナの「縦伸び」対策
+   モバイル幅で min-height だけ指定された写真枠が縦長になり、
+   横長写真が cover で意図せず拡大表示される現象を防止
+   ============================================================ */
+@media (max-width:560px){
+  /* Proof セクションの 2列 ⇒ 1列、各写真は横長維持 */
+  .proof__split{ grid-template-columns:1fr; gap:14px; }
+  .proof__split .ph{ aspect-ratio:16/10; }
+
+  /* 代表者ポートレート: モバイルでは更に横長寄せ */
+  .rep__portrait{ aspect-ratio:4/3; }
+
+  /* hero はビューポート 100svh 固定だとモバイルで縦長になりすぎる */
+  .hero{ min-height:auto; height:clamp(560px,80svh,820px); }
+
+  /* タイムラインのサムネ・ph 全般の最低高さも緩める */
+  .ph{ min-height:0; }
 }

@@ -161,7 +161,7 @@
 .why__item h3{ color:#fff; font-size:clamp(19px,2.2vw,24px); letter-spacing:.05em; margin-bottom:.6em; }
 .why__item p{ color:var(--on-ink); font-size:14.5px; line-height:2.05; opacity:.94; }
 .why__photo{ margin-top:clamp(40px,5vw,60px); }
-.why__photo .ph{ min-height:clamp(240px,34vw,420px); }
+.why__photo .ph{ aspect-ratio:4/3; min-height:0; }
 .why__link{ text-align:center; margin-top:clamp(34px,4vw,48px); }
 .why__link a{ font-size:14px; color:var(--on-ink-mut); border-bottom:1px solid var(--line-ink); padding-bottom:3px;
   letter-spacing:.06em; transition:.4s; }

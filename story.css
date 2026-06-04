@@ -51,7 +51,7 @@
 
 /* 歴史写真＝セピア（資料）＋通し番号キャプション */
 .story-fig{ margin:clamp(40px,5vw,64px) 0; }
-.story-fig .ph{ min-height:clamp(260px,42vw,460px); }
+.story-fig .ph{ aspect-ratio:16/10; min-height:0; }
 .story-fig figcaption{ font-family:var(--mono); font-size:11px; letter-spacing:.16em; color:var(--text-mut);
   margin-top:.9em; text-align:right; }
 .story-fig--todo .ph{ display:flex; align-items:center; justify-content:center; }
