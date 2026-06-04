@@ -471,23 +471,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .reps__intro p{ font-family:var(--serif); font-size:clamp(20px,2.6vw,30px); line-height:1.85; color:var(--ink); letter-spacing:.04em; text-wrap:balance; }
 .reps{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(36px,5vw,72px); }
 .rep{ display:flex; flex-direction:column; }
-/* 代表者ポートレートは画像本来の比率で表示（cover でクロップしない）
-   素材ごとに比率がバラバラ（kato 2.09:1 / kitaura 1.5:1）なので
-   コンテナ側で比率を固定しない。グローバルな .ph.has-photo > img の
-   絶対配置/cover を !important で上書き */
-.rep__portrait{
-  display:block; position:relative;
-  margin-bottom:30px; padding:0;
-  background:none; border:0; overflow:hidden; border-radius:2px;
-  aspect-ratio:auto; min-height:0; height:auto;
-}
-.rep__portrait > picture,
-.rep__portrait > picture > img,
-.rep__portrait > img{
-  position:static !important; inset:auto !important;
-  width:100% !important; height:auto !important;
-  display:block !important; object-fit:initial !important;
-}
+.rep__portrait{ margin-bottom:30px; }
 .rep__role{ font-family:var(--eyebrow); letter-spacing:.3em; text-transform:uppercase; font-size:13px; color:var(--orange); margin-bottom:1em; display:flex; align-items:center; gap:.7em; }
 .rep__role::before{ content:""; width:26px; height:1px; background:var(--gold); }
 .rep__name{ font-family:var(--serif); font-size:clamp(23px,2.6vw,30px); color:var(--ink); letter-spacing:.05em; margin-bottom:.2em; }
@@ -734,4 +718,53 @@ section[id]{ scroll-margin-top:var(--header-h); }
 
   /* タイムラインのサムネ・ph 全般の最低高さも緩める */
   .ph{ min-height:0; }
+}
+
+/* ============================================================
+   .ph.has-photo 内の写真は「画像本来の比率」で表示する
+   コンテナ側の min-height / aspect-ratio による枠強制を全部上書き。
+   picture/img 両対応。これで全頁・全写真が変形なく表示される。
+   個別 aspect-ratio が必要な場合は別途 .ph.has-photo--cover などで
+   オプトイン形式にする（現状は不使用）。
+   ============================================================ */
+.ph.has-photo{
+  display:block !important;
+  aspect-ratio:auto !important;
+  min-height:0 !important;
+  height:auto !important;
+  padding:0 !important;
+  background:none !important;
+  position:relative;
+  overflow:hidden;
+}
+.ph.has-photo > picture,
+.ph.has-photo > picture > img,
+.ph.has-photo > img{
+  position:static !important;
+  inset:auto !important;
+  top:auto !important; left:auto !important; right:auto !important; bottom:auto !important;
+  width:100% !important;
+  height:auto !important;
+  display:block !important;
+  object-fit:initial !important;
+}
+
+/* 写真コンテナの min-height (枠強制) を解除 */
+.about__photo,
+.story__photo{ min-height:0 !important; }
+
+/* ============================================================
+   例外: タイムラインのサムネ (.tl__thumb) は 54x40 固定サイズなので cover
+   ============================================================ */
+.tl__thumb.ph.has-photo{
+  width:54px !important; height:40px !important;
+  aspect-ratio:auto !important; min-height:0 !important;
+}
+.tl__thumb.ph.has-photo > picture,
+.tl__thumb.ph.has-photo > picture > img,
+.tl__thumb.ph.has-photo > img{
+  position:absolute !important;
+  inset:0 !important; top:0 !important; left:0 !important; right:0 !important; bottom:0 !important;
+  width:100% !important; height:100% !important;
+  object-fit:cover !important;
 }
