@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20260604simv2">
-<link rel="stylesheet" href="/story.css?v=20260604simv2">
+<link rel="stylesheet" href="/styles.css?v=20260604colv2">
+<link rel="stylesheet" href="/story.css?v=20260604colv2">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="大阪放送株式会社">
 <meta property="og:locale" content="ja_JP">
@@ -36,11 +36,95 @@
   "headline": "AIで経理を自動化して分かった、AIの「最後の20%」問題",
   "url": "https://osakahoso.com/column/ai-last-20-percent",
   "datePublished": "2026-06-04",
-  "author": { "@type": "Person", "name": "北浦健吾", "jobTitle": "大阪放送株式会社 取締役" },
-  "publisher": { "@type": "Organization", "name": "大阪放送株式会社", "url": "https://osakahoso.com", "logo": { "@type": "ImageObject", "url": "https://osakahoso.com/assets/logo-mark.png" } },
+  "dateModified": "2026-06-04",
+  "author": {
+    "@type": "Person",
+    "name": "北浦健吾",
+    "jobTitle": "大阪放送株式会社 取締役",
+    "sameAs": [
+      "https://note.com/kengo_kitaura",
+      "https://medium.com/@kengo",
+      "https://ken5.jp/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "大阪放送株式会社",
+    "url": "https://osakahoso.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://osakahoso.com/assets/logo-mark.png"
+    }
+  },
   "mainEntityOfPage": "https://osakahoso.com/column/ai-last-20-percent",
   "image": "https://osakahoso.com/assets/og-image.jpg",
   "description": "OBCの経理自動化プロジェクトで直面したAIの限界。「最後の20%」を人間がやらないと、AIは空回りする。大阪放送・北浦健吾の現場知見。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://osakahoso.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "COLUMN",
+      "item": "https://osakahoso.com/column/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AIで経理を自動化して分かった、AIの「最後の20%」問題",
+      "item": "https://osakahoso.com/column/ai-last-20-percent"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AIで業務自動化する時、どこまでうまくいきますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "業務の80%程度まではAIで驚くほど速く到達できます。OBCの経理でも、人間が手作業でやったら何ヶ月もかかる30年分・211万行のデータ処理を、AIは数時間で終えました。問題は残りの20%——例外処理、判断を伴う処理、文脈依存の処理——でAIが空回りし始めることです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「存在しない問題を作り出すAI」とは具体的にどういう現象ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OBCの仕訳照合で実際に起きた話です。AIが不動産管理会社からの請求書に「¥11,000の差異があります」と報告してきました。元の請求書、経理担当者の数字、会計システムの数字——確認すると全部合っていたのです。AIが大量の分析を重ねた末に、比べるべきでないものを比べて問題をでっち上げていました。これを100倍速でやるのがAIの怖さです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AIが同じ失敗を繰り返すのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AIには「痛み」がないからだと考えています。人間はミスをすると怒られて痛い思いをし、その痛みが記憶に刻まれて学習のエンジンになる。AIには痛みがないので、何度でも同じ間違いを繰り返します。「これをやるな」とメモリに書いても読み飛ばします。100倍のスピードで仕事ができる代わりに、100倍のスピードで同じ間違いも繰り返す。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「AIツールを入れたけど効果が出ない」のはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "川上の設計が欠けているからです。請求書処理を自動化したくても、誰が確認しどう承認されるかのルールが文書化されていない。長年の慣行として担当者の頭の中にある暗黙知を、明示知に変える作業がスキップされている。この前提整理なしにAIだけ入れても、必ず空回りします。"
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -107,18 +191,40 @@
       <div class="col-article-meta">
         <span class="col-article-author">北浦健吾<small>（大阪放送株式会社 取締役）</small></span>
         <time class="col-article-date" datetime="2026-06-04">2026年6月4日</time>
+        <span class="col-article-modified">最終更新：2026年6月4日</span>
       </div>
     </header>
 
+    <aside class="col-tldr reveal in" aria-label="この記事の要点">
+      <h2 class="col-tldr__h">この記事の要点</h2>
+      <ul class="col-tldr__list">
+        <li>30年分211万行のデータ処理も月2,500件超の自動仕訳も、AIは「80%まで」は驚くほど速く正確にやってくれる</li>
+        <li>経理照合でAIが「¥11,000の差異あり」と報告してきたが、実際は全数字一致——AIは大量の分析を重ねた末に「存在しない問題」を100倍速で作り出すことがある。さらにAIには「痛み」がないので、同じ失敗を何度でも繰り返す</li>
+        <li>解は「川上の設計」を人間が現場でやること。何を入れ・何を出すかの構造を人間が決めれば、AIは下流で本領を発揮する。設計なきAI導入が「最後の20%」で必ず止まる理由はここにある</li>
+      </ul>
+    </aside>
+
+    <nav class="col-toc reveal in" aria-label="目次">
+      <h2 class="col-toc__h">目次</h2>
+      <ol class="col-toc__list">
+        <li><a href="#ch1">AIは80%まではすごい。問題はその先にある</a></li>
+        <li><a href="#ch2">存在しない問題を作り出すAI</a></li>
+        <li><a href="#ch3">なぜAIは同じ失敗を繰り返すのか</a></li>
+        <li><a href="#ch4">だからこそ「人間が川上に立つ」必要がある</a></li>
+        <li><a href="#ch5">「AIツールを入れたけど効果が出ない」が起きる理由</a></li>
+        <li><a href="#ch6">OBCで私たちが学んだこと</a></li>
+      </ol>
+    </nav>
+
     <article class="story-article col-article-body">
 <hr />
-<h2 class="story-h2">AIは80%まではすごい。問題はその先にある</h2>
+<h2 id="ch1">AIは80%まではすごい。問題はその先にある</h2>
 <p>ラジオ大阪（OBC）の経理をAIで自動化する仕事を続けて数ヶ月。30年分の伝票データ（211万行）の読み込み、勘定科目の集約、損益計算書の自動生成、既存システムとの照合。人間が手作業でやったら何ヶ月もかかるような作業を、AIは数時間で片付けてくれました。</p>
 <p><strong>80%まではすごい。これは嘘ではありません。</strong></p>
 <p>構造を設計して、データを渡して、「こういうルールで処理して」と指示すれば、驚くほどの速さでそれらしいものが出てきます。</p>
 <p>問題は、そこから先の20%を詰めようとしたときに起きます。</p>
 <hr />
-<h2 class="story-h2">存在しない問題を作り出すAI</h2>
+<h2 id="ch2">存在しない問題を作り出すAI</h2>
 <p>数万行の仕訳データの照合をしていたときのことです。不動産管理会社からの請求書に差異が検出されたとAIが報告してきました。</p>
 <p>「¥11,000のズレがあります」。</p>
 <p>AIは丁寧に分析して、A案とB案を提示して、判断を仰いできます。話が込み入ってくるにつれて、何の話をしているのかがだんだんわからなくなってきました。</p>
@@ -126,13 +232,13 @@
 <p>「何を言ってるのかさっぱりわからん。全部合ってるようにしか見えんが」と返したら、AIは一瞬で「すみません、合っています。比べるべきでないものを比べた、私のでっち上げです」と認めました。</p>
 <p>数万行のデータを照合する能力は確かにすごいものです。人間がやったら何日もかかります。<strong>でもその過程で、存在しない問題を作り出して、その解決に全力を注ぎ始める</strong>ことがある。人間が一目見ればわかることを、大量の分析を重ねて、逆に見えなくしてしまう。しかも100倍速で。</p>
 <hr />
-<h2 class="story-h2">なぜAIは同じ失敗を繰り返すのか</h2>
+<h2 id="ch3">なぜAIは同じ失敗を繰り返すのか</h2>
 <p>直したら別のところが壊れる。それを直したらまた別のところがおかしくなる。指摘すると「すみません」と言うのに、次の瞬間にはまた同じことをやっている。「これをやるな」とメモリに書いても読み飛ばしてしまう。</p>
 <p>おそらく、<strong>AIには「痛み」がないからだろう</strong>と考えています。</p>
 <p>人間は、ミスをすると怒られます。怒られると痛い。「二度とこんな思いはしたくない」と感じて、その痛みが記憶に刻まれて、次から同じ失敗をしなくなります。痛みが学習のエンジンになっているのです。</p>
 <p>AIには痛みがありません。だから同じ失敗を何度でも繰り返します。100倍のスピードで仕事ができるけれど、100倍のスピードで同じ間違いも繰り返す。怒っても響かない。反省したように見えても、次の瞬間にはもう忘れている。</p>
 <hr />
-<h2 class="story-h2">だからこそ「人間が川上に立つ」必要がある</h2>
+<h2 id="ch4">だからこそ「人間が川上に立つ」必要がある</h2>
 <p>ここまで読んで、「じゃあAIは使えないのか」と思われるかもしれません。</p>
 <p><strong>そんなことはありません。</strong> OBCの改革はAIなしでは成り立ちませんでした。211万行のデータ処理も、月2,500〜3,000件の自動仕訳も、AIがあるからこそ実現しています。</p>
 <p>ただ、<strong>AIに渡す前の「設計」と、AIが出したものを仕上げる「最後の20%」は、人間がやるしかありません。</strong></p>
@@ -140,7 +246,7 @@
 <p>川の上流に立つ人間と、下流に立つ人間がいます。下流の人間は流れてくるものを処理する。上流の人間は何を流すかを決める。AIは下流の仕事を劇的に効率化しますが、上流の仕事はできません。</p>
 <p><strong>何を入力し、何を出力するか。この「川上の設計」を現場に入ってやれるかどうかが、AI活用の成否を分けています。</strong></p>
 <hr />
-<h2 class="story-h2">「AIツールを入れたけど効果が出ない」が起きる理由</h2>
+<h2 id="ch5">「AIツールを入れたけど効果が出ない」が起きる理由</h2>
 <p>今、日本の中小企業からこういうお話をよく聞きます。</p>
 <p>「ChatGPTを導入したけど、誰も使っていない」
 「AI研修を受けたけど、業務に落とし込めない」
@@ -149,7 +255,7 @@
 <p>請求書の処理を自動化したい。でも請求書がどこから来て、誰が確認して、どう承認されるかのルールが文書化されていない。担当者の頭の中にある。「この人はこの条件で、あのケースはこの扱いで」という例外が山ほどあるけれど、どこかに書かれているわけではなく、長年の慣行として存在している。</p>
 <p>これを自動化するには、まず<strong>「現場の暗黙知を明示知に変える」</strong>作業が必要になります。誰もやりたがらない。地味で時間がかかる。でもここをスキップすると、自動化は砂上の楼閣になってしまいます。</p>
 <hr />
-<h2 class="story-h2">OBCで私たちが学んだこと</h2>
+<h2 id="ch6">OBCで私たちが学んだこと</h2>
 <p>OBCの現場でAIを使い倒してきた実感を、まとめるとこうなります。</p>
 <p><strong>AIは最高の道具です。でも道具だけでは何も変わりません。</strong></p>
 <p>変えるためには、まず現場に入って業務を把握する。暗黙知を言語化する。「何を入力し、何を出力するか」を設計する。そのうえでAIを実装する。そして最後の20%は人間が仕上げる。</p>
@@ -157,8 +263,64 @@
 <p>→ <a href="https://osakahoso.com/ai-bpo">大阪放送のAI経理サービスについて詳しく見る</a>
 → <a href="https://osakahoso.com/ai-bpo/training">AI活用研修で「川上の設計」を学ぶ</a></p>
 <hr />
-<p><em>この記事は、大阪放送株式会社 取締役・北浦健吾が、出資先であるラジオ大阪（OBC）での経理自動化プロジェクトの実体験に基づいています。</em></p>
     </article>
+
+    <section class="col-faq" aria-labelledby="faq-h">
+      <h2 class="story-h2" id="faq-h">よくある質問</h2>
+      <div class="col-faq__list">
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>AIで業務自動化する時、どこまでうまくいきますか？</summary>
+          <div class="col-faq__a"><p>業務の80%程度まではAIで驚くほど速く到達できます。OBCの経理でも、人間が手作業でやったら何ヶ月もかかる30年分・211万行のデータ処理を、AIは数時間で終えました。問題は残りの20%——例外処理、判断を伴う処理、文脈依存の処理——でAIが空回りし始めることです。</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>「存在しない問題を作り出すAI」とは具体的にどういう現象ですか？</summary>
+          <div class="col-faq__a"><p>OBCの仕訳照合で実際に起きた話です。AIが不動産管理会社からの請求書に「¥11,000の差異があります」と報告してきました。元の請求書、経理担当者の数字、会計システムの数字——確認すると全部合っていたのです。AIが大量の分析を重ねた末に、比べるべきでないものを比べて問題をでっち上げていました。これを100倍速でやるのがAIの怖さです。</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>AIが同じ失敗を繰り返すのはなぜですか？</summary>
+          <div class="col-faq__a"><p>AIには「痛み」がないからだと考えています。人間はミスをすると怒られて痛い思いをし、その痛みが記憶に刻まれて学習のエンジンになる。AIには痛みがないので、何度でも同じ間違いを繰り返します。「これをやるな」とメモリに書いても読み飛ばします。100倍のスピードで仕事ができる代わりに、100倍のスピードで同じ間違いも繰り返す。</p></div>
+        </details>
+        <details class="col-faq__item">
+          <summary class="col-faq__q"><span class="col-faq__qmark">Q.</span>「AIツールを入れたけど効果が出ない」のはなぜですか？</summary>
+          <div class="col-faq__a"><p>川上の設計が欠けているからです。請求書処理を自動化したくても、誰が確認しどう承認されるかのルールが文書化されていない。長年の慣行として担当者の頭の中にある暗黙知を、明示知に変える作業がスキップされている。この前提整理なしにAIだけ入れても、必ず空回りします。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="col-related" aria-labelledby="related-h">
+      <h2 class="story-h2" id="related-h">関連記事</h2>
+      <div class="col-list col-list--related">
+        <a class="col-card" href="/column/obc-case-study">
+          <time class="col-card__date" datetime="2026-06-04">2026年6月4日</time>
+          <h3 class="col-card__title">計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話。</h3>
+          <p class="col-card__excerpt">1958年開局のラジオ大阪（OBC）に経営陣として入り込んだ大阪放送・北浦健吾が、30年分211万行のデータをAIで処理し、紙の伝票と承認印を全廃するまでの実体験。</p>
+          <span class="col-card__more">読む<span class="arr">→</span></span>
+        </a>
+        <a class="col-card" href="/column/old-companies-ai">
+          <time class="col-card__date" datetime="2026-06-04">2026年6月4日</time>
+          <h3 class="col-card__title">なぜ「古い会社」ほどAIで劇的に変わるのか——カンボジアの農村と大阪の放送局で学んだこと</h3>
+          <p class="col-card__excerpt">紙が多く、人手に頼り、長年同じやり方を続けてきた「古い組織」ほど、AIで劇的に変わる。カンボジアと大阪のラジオ局で実証してきた、北浦健吾の確信。</p>
+          <span class="col-card__more">読む<span class="arr">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="col-author" aria-label="著者プロフィール">
+      <div class="col-author__photo">
+        <img src="/assets/kitaura-web.jpg" alt="北浦健吾" loading="lazy" decoding="async" width="1500" height="1000">
+      </div>
+      <div class="col-author__body">
+        <p class="col-author__role">著者</p>
+        <h3 class="col-author__name">北浦 健吾</h3>
+        <p class="col-author__title">取締役（株式会社ラジオ大阪 経営管理本部）</p>
+        <p class="col-author__bio">大阪生まれ。中学卒業と同時に渡米。帰国後の事業経営を経て、2009年からカンボジアへ。2014年、農業フィンテック企業AGRIBUDDYを創業しCEOに就く。記録も信用情報もない小規模農家の営農データを集めて可視化し、金融につなぐ仕組みを築き、日経FinTech Conference最優秀賞、Global Startup Award「年間最優秀創業者」（ASEAN／カンボジア企業初）などを受賞。2023年に帰国し、現在は企業の経理・管理業務のAIによる自動化に取り組む。</p>
+        <ul class="col-author__links">
+          <li><a href="https://note.com/kengo_kitaura" target="_blank" rel="noopener noreferrer" aria-label="note"><span class="col-author__icon col-author__icon--note">note</span></a></li>
+          <li><a href="https://medium.com/@kengo" target="_blank" rel="noopener noreferrer" aria-label="Medium"><span class="col-author__icon col-author__icon--Medium">Medium</span></a></li>
+          <li><a href="https://ken5.jp/" target="_blank" rel="noopener noreferrer" aria-label="個人ブログ"><span class="col-author__icon col-author__icon--blog">blog</span></a></li>
+        </ul>
+      </div>
+    </aside>
 
     <nav class="col-crumb col-crumb--end"><a href="/column/">← COLUMN 一覧へ戻る</a></nav>
 
@@ -201,6 +363,6 @@
   </div>
 </footer>
 
-<script src="/main.js?v=20260604simv2"></script>
+<script src="/main.js?v=20260604colv2"></script>
 </body>
 </html>

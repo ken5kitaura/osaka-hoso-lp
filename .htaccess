@@ -3,6 +3,10 @@ Options -MultiViews
 DirectorySlash Off
 RewriteEngine On
 
+# 0) www. あり → www. 無し に 301 リダイレクト（canonical 統一）
+RewriteCond %{HTTP_HOST} ^www\.osakahoso\.com$ [NC]
+RewriteRule ^(.*)$ https://osakahoso.com/$1 [R=301,L]
+
 # 1a) /xxx/index.html や /index.html はディレクトリrootへ301
 RewriteCond %{THE_REQUEST} \s/+((?:.+?/)?)index\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
