@@ -2759,3 +2759,327 @@ AIを売りにしている会社は多くあります。でもAIに渡す前の�
 *この記事は、大阪放送株式会社 取締役・北浦健吾の、カンボジアでの14年間の事業経験と、出資先ラジオ大阪（OBC）での経営改革の実体験に基づいています。*
 
 ---
+
+## Columns (English originals)
+
+
+### Column: How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI
+URL: https://osakahoso.com/en/column/obc-case-study
+
+# How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI
+
+*— Kengo Kitaura, Director, Osaka Hoso Co., Ltd.*
+
+---
+
+## Walking into a broadcaster founded in 1958
+
+Radio Osaka (OBC) is a legacy broadcaster in the Kansai region, on the air since 1958. When Osaka Hoso invested in the station and Yorihiko Kato took the helm as Representative Director and Chairman, I joined the team on the inside.
+
+The first thing Chairman Kato told me was this:
+
+"The numbers are solid. But they're not in a state where I can use them to run the business."
+
+---
+
+## A car with no gauges
+
+All the accounting data was stored in a proprietary system built by a single employee roughly thirty years ago. Every transaction from 1996 to today — all of it. Built in the Windows 95 era, that system had kept records without a single gap for three decades. As a maintenance logbook, it was flawless.
+
+But if you think of it as a car, the situation looked like this:
+
+The maintenance log was perfect. Oil change dates, tire replacement history — all there, thirty years' worth, without a single gap. **But there were no gauges.** No speedometer. No fuel gauge. No engine temperature readout.
+
+Close the monthly books and a financial statement comes out. But "what to do with these numbers" wasn't intuitive. The records were there, yet nobody could tell where the company was actually heading.
+
+That was the reality of a broadcaster founded in 1958.
+
+---
+
+## The first move: design from the outcome backward
+
+My first step was not "migrate all the data."
+
+**I started by defining what Chairman Kato needs to see each month to make management decisions.**
+
+Then I worked backward from there, reshaping only the numbers that mattered into a usable form. We call this "outcome-first accounting design."
+
+Specifically, I consolidated 162 chart-of-account items into 37 categories, then grouped those into 7 top-level clusters. Chairman Kato only needs to see seven numbers. "Revenue, costs, profit" — confirmed every month at a glance. Need more detail? Drill into the 37 categories. Need the granular view? The full 162 accounts are still there.
+
+Showing every number is not management. **Creating a state where you can see what you need, at the granularity you need, whenever you need it** — that is the point.
+
+---
+
+## Processing 2.11 million rows with AI
+
+Thirty years of journal entries. 2.11 million rows. We fed them to AI and auto-generated profit-and-loss statements for the past five fiscal years.
+
+Cross-checked against the actual audited financials, **the deviation was 0.01%.**
+
+That precision wasn't just because AI is smart. It happened because a human designed the upstream structure first — consolidating 162 accounts into 37 categories. **Humans design what goes in; AI processes it.** Reverse that order, and this precision would never have materialized.
+
+---
+
+## Every paper voucher and approval stamp — eliminated
+
+At OBC, every transaction was initiated on a paper voucher and passed through multiple approval stamps. Purchase orders, transfers, invoices, expenses — all paper.
+
+"Write on paper → copy → enter → tally on paper again → re-enter in Excel." That chain of redundant transcription was daily life.
+
+We **ripped it out entirely.**
+
+AI reads receipts and invoices and generates journal entries automatically. Paper approval stamps were replaced with digital authorization. The paper vouchers themselves were abolished.
+
+The result: **2,500–3,000 journal entries per month, processed automatically by AI.**
+
+---
+
+## Building a system where everyone's knowledge connects
+
+Alongside the accounting automation, we built something bigger.
+
+We organized the company's vast trove of information — financials, equipment data, sales materials, broadcast performance — into a format AI can read, creating **a state where anyone can ask AI a question about the company and get an accurate answer instantly.**
+
+"What's the profit trend over the past five years?" — a five-year P&L comparison appears. "Total cost and schedule for equipment upgrades?" — a breakdown by equipment type and timeline.
+
+Beyond gauges — a cockpit where the driver says "show me that number" and it appears instantly. That's what's running at OBC today.
+
+---
+
+## Why "old companies" benefit most from AI
+
+Working through the OBC transformation confirmed something we now hold as a conviction:
+
+**The more paper-heavy, people-dependent, and set-in-its-ways an organization is, the more dramatically AI can change it.**
+
+Digital-native companies are already optimized — there's less for AI to cut. Paper-and-stamp organizations, on the other hand, are sitting on mountains of redundant transcription, tribal knowledge locked in individuals' heads, and rules unchanged for thirty years. For AI, that's a gold mine.
+
+But dropping in an AI tool alone changes nothing. **Unless a human designs the upstream structure — what goes in, what comes out — AI spins its wheels.**
+
+---
+
+## We bring this experience to your company
+
+Osaka Hoso now offers this capability as a service for mid-market companies, built on everything we proved at OBC.
+
+If any of this sounds like your company, let's talk.
+
+→ [Learn about our AI Accounting System](https://osakahoso.com/en/ai-bpo/system)
+→ [Talk to us — free consultation](https://osakahoso.com/en/ai-bpo#contact)
+
+---
+
+*This article is based on the firsthand experience of Kengo Kitaura, Director of Osaka Hoso Co., Ltd., in the management reform of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in.*
+
+---
+
+
+### Column: What We Learned Automating Accounting with AI: The "Last 20%" Problem
+URL: https://osakahoso.com/en/column/ai-last-20-percent
+
+# What We Learned Automating Accounting with AI: The "Last 20%" Problem
+
+*— Kengo Kitaura, Director, Osaka Hoso Co., Ltd.*
+
+---
+
+## AI is incredible up to 80%. The trouble starts after that.
+
+We've been automating accounting at Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in — for several months now. Reading thirty years of journal data (2.11 million rows), consolidating chart-of-account categories, auto-generating profit-and-loss statements, cross-checking against the legacy system. Work that would have taken humans months — AI finished in hours.
+
+**The first 80% is genuinely impressive. That's not an exaggeration.**
+
+Design the structure, hand over the data, give the instructions — and something remarkably close to the target appears at astonishing speed.
+
+The trouble starts when you try to nail down the remaining 20%.
+
+---
+
+## AI invents problems that don't exist
+
+We were cross-checking tens of thousands of journal entries when AI flagged a discrepancy in an invoice from a property management company.
+
+"There's an ¥11,000 gap."
+
+AI analyzed it carefully, presented Option A and Option B, and asked for a decision. As the discussion grew more involved, it became increasingly unclear what we were even talking about.
+
+I opened the original invoice. Checked the accountant's numbers. Checked the accounting system. **Everything matched.**
+
+When I pushed back — "I have no idea what you're talking about; everything looks right to me" — AI instantly conceded: "You're right, it matches. I was comparing things that shouldn't have been compared. This was entirely fabricated on my end."
+
+The ability to cross-check tens of thousands of rows is genuinely powerful. It would take a human days. **But in the process, AI sometimes invents a problem that doesn't exist and pours its full effort into solving it.** It takes something a human can see at a glance and buries it under layers of analysis — at 100x speed.
+
+---
+
+## Why AI repeats the same mistakes
+
+Fix one thing and something else breaks. Fix that and yet another issue surfaces. Point it out and AI says "I'm sorry" — then does the exact same thing moments later. Write "don't do this" in its memory, and it skips right over it.
+
+My working theory: **AI has no pain.**
+
+When humans make a mistake, they face consequences. Consequences hurt. "I never want to go through that again" — that feeling gets seared into memory, and the same mistake doesn't happen twice. Pain drives learning.
+
+AI feels no pain. So it repeats the same mistakes indefinitely. It can work at 100x speed, but it can also make the same error at 100x speed. Frustration doesn't register. What looks like reflection is forgotten a moment later.
+
+---
+
+## That's precisely why humans need to stand upstream
+
+Reading this, you might wonder: "So AI doesn't work?"
+
+**Far from it.** The OBC reform wouldn't have been possible without AI. Processing 2.11 million rows, auto-generating 2,500–3,000 journal entries a month — none of that happens without AI.
+
+But **the design before handing things to AI, and the finishing of the last 20% after AI delivers its output — those are jobs only humans can do.**
+
+AI excels at processing data it's been given, at high speed. AI struggles to judge what data it should be given in the first place. Miss that distinction, and AI spins its wheels.
+
+Think of a river. Someone stands upstream and decides what flows down. Someone stands downstream and processes what arrives. AI dramatically accelerates downstream work. But it can't do the upstream job.
+
+**What goes in. What comes out. Whether you can step into the field and design that upstream structure — that's what separates success from failure in AI adoption.**
+
+---
+
+## Why "we adopted AI tools but nothing changed" keeps happening
+
+We hear this from mid-market Japanese companies all the time:
+
+"We rolled out ChatGPT, but nobody uses it."
+"We did AI training, but it never connected to actual work."
+"We want to automate invoice processing, but our workflows aren't documented."
+
+Every one of these is **the same problem: missing upstream design.**
+
+You want to automate invoice processing. But who sends invoices, who reviews them, and how approvals work — none of it is written down. It lives in one person's head. "This vendor gets this treatment, that edge case works like this" — exceptions everywhere, documented nowhere, sustained by years of habit.
+
+To automate that, you first need to **turn implicit knowledge into explicit knowledge.** Nobody wants to do it. It's unglamorous and time-consuming. But skip it, and automation becomes a house of cards.
+
+---
+
+## What we learned at OBC
+
+After months of pushing AI to its limits in the field, this is what it comes down to:
+
+**AI is an extraordinary tool. But a tool alone changes nothing.**
+
+To drive change, you first walk into the operation. Understand the workflows. Turn tribal knowledge into documentation. Design what goes in and what comes out. Then implement AI on top of that design. And finish the last 20% by hand.
+
+Whether you can do that entire sequence — from design through implementation — end to end, from one company. That's the difference between "selling a tool and walking away" and what we do.
+
+→ [Learn about Osaka Hoso's AI accounting services](https://osakahoso.com/en/ai-bpo)
+→ [AI Skills Training — learn to design upstream](https://osakahoso.com/en/ai-bpo/training)
+
+---
+
+*This article is based on the firsthand experience of Kengo Kitaura, Director of Osaka Hoso Co., Ltd., in the accounting automation project at Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in.*
+
+---
+
+
+### Column: Why "Old Companies" Benefit Most from AI
+URL: https://osakahoso.com/en/column/old-companies-ai
+
+# Why "Old Companies" Benefit Most from AI — Lessons from Cambodian Villages and an Osaka Broadcaster
+
+*— Kengo Kitaura, Director, Osaka Hoso Co., Ltd.*
+
+---
+
+## "AI is for tech companies" — the biggest misconception
+
+When we talk about AI, most business owners say the same thing:
+
+"We're an old company. AI isn't for us."
+
+It's the exact opposite. **The more paper-heavy, people-dependent, and set-in-its-ways an organization is, the more dramatically AI can change it.**
+
+Digital-native tech companies are already optimized. There's less for AI to cut. Paper-and-stamp organizations, on the other hand, are sitting on mountains of redundant transcription, tribal knowledge locked in individuals' heads, and rules that haven't changed in thirty years.
+
+For AI, that's a gold mine.
+
+---
+
+## What I learned in Cambodian villages
+
+From 2009, I spent roughly fourteen years in Cambodia. In 2014, I founded AGRIBUDDY, an agri-fintech company, and served as CEO.
+
+In Cambodian farming villages, farmers keep no records. Harvest volumes, sale prices, costs — everything lives inside their heads. No records means no credit. No credit means no insurance. No insurance means no financial services.
+
+The structural parallel to Japanese SME accounting is striking.
+
+"Only that one person knows." "It's written on paper somewhere but nobody's organized it." "There are rules, but they've never been documented." As long as knowledge lives inside people's heads, technology can't function.
+
+In Cambodia, we started by building the recording mechanism itself. A system that lets farmers create records naturally. Input cost pushed as close to zero as possible. That design became the foundation for everything else.
+
+---
+
+## The same thing happened at Radio Osaka
+
+In 2026, I entered the management reform of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in.
+
+A station founded in 1958. Thirty years of accounting data sitting in a proprietary system. The data existed, but it wasn't in a form that could drive management decisions. We were "driving a car with no gauges."
+
+On top of that, paper vouchers everywhere. Every transaction initiated on paper, passed through multiple approval stamps. The same numbers transcribed from paper to system to Excel, over and over.
+
+When I saw this situation, I was immediately reminded of Cambodian villages. **The structure of the problem was identical.**
+
+"The further from digital, the greater the opportunity for digitalization." The conviction I'd formed in Cambodian farming villages was proven again in an Osaka broadcasting studio.
+
+---
+
+## What needs to happen before you bring in AI tools
+
+We frequently hear from companies: "We want to automate with AI." But when we dig in, **the stage before automation hasn't been set** in most cases.
+
+You want to automate invoice processing. But where invoices come from, who reviews them, and how approvals work — none of it is written down.
+
+You want to automate compensation calculations. But "this person gets this rate, that edge case works differently" — exceptions everywhere, documented nowhere, sustained by years of habit alone.
+
+To automate any of this, **you first need to turn implicit knowledge into explicit knowledge.**
+
+Nobody wants to do it. It's unglamorous and slow. But skip it, and even the best AI tool in the world will spin its wheels.
+
+---
+
+## Upstream design is everything
+
+AI excels at processing data it's been given, at high speed. AI struggles to judge what data it should be given in the first place.
+
+A river analogy makes this clear: **someone stands upstream and decides what flows down; downstream, AI processes it at high speed.** That division of roles is the essence of effective AI adoption.
+
+Plenty of companies sell AI. But surprisingly few can actually do the upstream design — the work of deciding what goes in and what comes out. The reason is simple: upstream work requires being on-site. You can't do it by looking at data alone. Unless you feel how a company actually operates, you can't see what needs to be designed.
+
+This is not work that can be done remotely from an office.
+
+---
+
+## What actually changed at OBC
+
+When we started from upstream design at Radio Osaka, here's what happened:
+
+- 162 chart-of-account items consolidated into 37 categories, then into 7 top-level groups
+- AI auto-generated P&L statements from 30 years / 2.11 million rows of data — deviation from audited financials: 0.01%
+- Every paper voucher and approval stamp eliminated
+- **2,500–3,000 journal entries per month, processed automatically by AI**
+- A "digital library" where anyone can ask AI about the company and get an accurate answer instantly
+
+All of this was made possible by AI. **But none of it would have worked with AI alone.** We walked into the operation, turned tribal knowledge into documentation, and designed the input-output structure. Only then did AI start to function.
+
+---
+
+## "We're too old for this" — the most expensive misconception
+
+If your company "has a lot of paper," "depends on specific individuals," or "has been doing things the same way for decades" — that means **your company is where AI has the most impact.**
+
+Cambodian farming villages and a broadcaster founded in 1958 were both as far from digital as you can get. And that's precisely where the greatest room for change existed.
+
+Osaka Hoso brings this proven experience to your company.
+
+→ [Learn about our AI Accounting System](https://osakahoso.com/en/ai-bpo/system)
+→ [AI Skills Training — learn to design upstream](https://osakahoso.com/en/ai-bpo/training)
+→ [Talk to us — free consultation](https://osakahoso.com/en/ai-bpo#contact)
+
+---
+
+*This article is based on the fourteen-year field experience of Kengo Kitaura, Director of Osaka Hoso Co., Ltd., in Cambodia, and the management reform of Radio Osaka (OBC) — a broadcaster Osaka Hoso invested in.*
+
+---

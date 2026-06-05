@@ -41,10 +41,18 @@ We walked into Radio Osaka (OBC) — a broadcaster we invested in, on the air si
 - Our Story: https://osakahoso.com/story
 - Radio Osaka (OBC): https://www.obc1314.co.jp/
 
-## コラム / Insights
+## コラム / Insights (JP)
 
 Field notes from Kengo Kitaura (Director), based on the actual rebuild of Radio Osaka (OBC) with AI.
 
 - [計器類のない車を走らせていた放送局を、AIで丸ごと作り替えた話](https://osakahoso.com/column/obc-case-study): 1958年開局のラジオ大阪に経営陣として入り込み、30年分211万行のデータをAIで処理して紙の伝票を全廃するまでの現場記録。誤差0.01%。
 - [AIで経理を自動化して分かった、AIの「最後の20%」問題](https://osakahoso.com/column/ai-last-20-percent): AIは80%まで驚くほど速いが、残り20%で「存在しない問題」を作り出す。同じ失敗を100倍速で繰り返す。鍵は「川上の設計」を人間がやること。
 - [なぜ「古い会社」ほどAIで劇的に変わるのか](https://osakahoso.com/column/old-companies-ai): カンボジアの農村と昭和33年創業の放送局——課題の構造は同じ。デジタルから最も遠い現場こそ、AIで最も大きく変わる。
+
+## Columns / Insights (EN)
+
+Field notes by Kengo Kitaura (Director, Osaka Hoso Co., Ltd.), based on the actual rebuild of Radio Osaka (OBC) with AI.
+
+- [How We Rebuilt a 1958 Broadcaster's Entire Accounting System with AI](https://osakahoso.com/en/column/obc-case-study): Inside the rebuild of Radio Osaka (OBC), a broadcaster we invested in. Thirty years and 2.11 million rows of journal data processed by AI with 0.01% variance, every paper voucher and approval stamp eliminated.
+- [What We Learned Automating Accounting with AI: The "Last 20%" Problem](https://osakahoso.com/en/column/ai-last-20-percent): AI is incredible up to 80%. The last 20% is where it invents problems that don't exist and repeats the same mistake at 100x speed. Why upstream design by humans is non-negotiable.
+- [Why "Old Companies" Benefit Most from AI](https://osakahoso.com/en/column/old-companies-ai): Cambodian farming villages and a broadcaster founded in 1958 — structurally the same problem. The further from digital the operation is, the bigger the room for AI to change it.
