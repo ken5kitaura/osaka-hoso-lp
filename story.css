@@ -137,10 +137,13 @@
 .col-en-notice .lead{ margin:0; font-size:15.5px; line-height:1.85; color:var(--text); max-width:none; }
 
 /* 個別記事ヘッダー */
-.col-crumb{ margin:clamp(20px,3vw,40px) 0 0; }
-.col-crumb a{ font-family:var(--mono); font-size:12.5px; letter-spacing:.08em; color:var(--text-mut); }
+/* 記事冒頭の戻るリンクは fixed ヘッダー(var(--header-h))の下に来るよう余白を確保 */
+.col-crumb{ margin:calc(var(--header-h) + clamp(20px,3vw,32px)) 0 0; position:relative; z-index:1; }
+.col-crumb a{ font-family:var(--mono); font-size:12.5px; letter-spacing:.08em; color:var(--text-mut);
+  display:inline-block; padding:.5em .1em; }
 .col-crumb a:hover{ color:var(--orange); }
-.col-crumb--end{ text-align:center; margin:clamp(60px,8vw,100px) 0 clamp(40px,5vw,60px); }
+/* 記事末尾の戻るリンクはヘッダーから離れているので余白オーバーライド不要 */
+.col-crumb--end{ text-align:center; margin:clamp(60px,8vw,100px) 0 clamp(40px,5vw,60px); padding:0; }
 .col-article-hero{ margin:clamp(24px,3vw,40px) 0 clamp(40px,5vw,64px); padding-bottom:clamp(24px,3vw,40px); border-bottom:1px solid var(--line); }
 .col-article-hero .eyebrow{ margin-bottom:1.2em; }
 .col-article-title{
