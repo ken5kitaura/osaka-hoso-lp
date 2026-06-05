@@ -31,10 +31,10 @@
 Bing は sitemap が timed out で通らないため、**IndexNow 直接通知** に切り替え:
 
 - **API キーファイル**: `https://osakahoso.com/{KEY}.txt` (Phase 1 で配置済み)
-- **キー本体**: `~/painkiller/clients/radio-osaka/secrets/indexnow-key.txt` (ローカル保管)
+- **キー本体**: `~/painkiller/osakahoso/secrets/indexnow-key.txt` (ローカル保管)
 - **運用スクリプト**:
-  - 単発 / 任意URL: `~/painkiller/clients/radio-osaka/tools/indexnow_ping.sh URL [URL...]`
-  - sitemap一括: `~/painkiller/clients/radio-osaka/tools/indexnow_ping_all.sh`
+  - 単発 / 任意URL: `~/painkiller/osakahoso/tools/indexnow_ping.sh URL [URL...]`
+  - sitemap一括: `~/painkiller/osakahoso/tools/indexnow_ping_all.sh`
 
 ### IndexNow 運用ルール
 | タイミング | やる事 |
