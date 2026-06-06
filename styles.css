@@ -185,6 +185,23 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:0; cursor:pointer; padding:8px; }
 .nav-toggle span{ width:26px; height:1.5px; background:var(--ink); transition:.35s; }
 
+/* ===== 透過ヘッダーの可読性 =====
+   HERO上（非solid）では背景画像が明暗どちらでも文字が読めるよう、
+   ヘッダー上部だけに下へ消える暗幕を敷き、文字を白にする。
+   スクロールで solid 化すると従来の「淡色背景＋濃色文字」に戻る。
+   ≤1200px はヘッダーが既に淡色固定（ハンバーガー）なので対象外。 */
+@media (min-width:1201px){
+  .site-header:not(.solid)::before{
+    content:""; position:absolute; inset:0 0 auto 0; height:calc(var(--header-h) + 28px);
+    z-index:-1; pointer-events:none;
+    background:linear-gradient(180deg, rgba(11,18,30,.58) 0%, rgba(11,18,30,.32) 55%, rgba(11,18,30,0) 100%);
+  }
+  .site-header:not(.solid) .nav{ color:#fff; }
+  .site-header:not(.solid) .brand__name{ color:#fff; }
+  .site-header:not(.solid) .nav a:not(.nav-cta){ color:#fff; }
+  .site-header:not(.solid) .nav__top{ color:#fff; }
+}
+
 /* ============================================================
    HERO  ②
    ============================================================ */
