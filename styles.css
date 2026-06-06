@@ -198,7 +198,8 @@ section[id]{ scroll-margin-top:var(--header-h); }
   }
   .site-header:not(.solid) .nav{ color:#fff; }
   .site-header:not(.solid) .brand__name{ color:#fff; }
-  .site-header:not(.solid) .nav a:not(.nav-cta){ color:#fff; }
+  /* 直下のトップレベル項目だけ白に。白ポップオーバー（.nav__sub）は除外 */
+  .site-header:not(.solid) .nav > a:not(.nav-cta){ color:#fff; }
   .site-header:not(.solid) .nav__top{ color:#fff; }
 }
 
