@@ -3,6 +3,10 @@ Options -MultiViews
 DirectorySlash Off
 RewriteEngine On
 
+# HTTPS Redirect (added 2026-06-08)
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # 0) www. あり → www. 無し に 301 リダイレクト（canonical 統一）
 RewriteCond %{HTTP_HOST} ^www\.osakahoso\.com$ [NC]
 RewriteRule ^(.*)$ https://osakahoso.com/$1 [R=301,L]
