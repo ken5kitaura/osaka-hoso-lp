@@ -65,7 +65,7 @@
 | AGRIBUDDY | AGRIBUDDY |
 | 信用 | trust（80年の信用 = eighty years of trust） |
 | 加藤順彦（代表取締役・ラジオ大阪会長兼務） | Yorihiko Kato |
-| 北浦健吾（取締役・ラジオ大阪経営管理部） | Kengo Kitaura |
+| 北浦健吾（取締役・ラジオ大阪取締役 管理本部長） | Kengo Kitaura |
 | 加藤源太郎（創業者） | Gentaro Kato（known as Katsumi） |
 | 加藤勝弘（2代目社長） | Katsuhiro Kato |
 | 加藤昌孝（3代目社長） | Masataka Kato |

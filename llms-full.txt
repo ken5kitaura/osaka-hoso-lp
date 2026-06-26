@@ -215,7 +215,7 @@ Message
 
 #### 北浦 健吾
 
-取締役（株式会社ラジオ大阪 経営管理部）
+取締役（株式会社ラジオ大阪 取締役 管理本部長）
 
 大阪生まれ。中学卒業と同時に渡米。帰国後の事業経営を経て、2009年からカンボジアへ。2014年、農業フィンテック企業AGRIBUDDYを創業しCEOに就く。記録も信用情報もない小規模農家の営農データを集めて可視化し、金融につなぐ仕組みを築き、日経FinTech Conference最優秀賞、Global Startup Award『年間最優秀創業者』（ASEAN／カンボジア企業初）などを受賞。2023年に帰国し、現在は企業の経理・管理業務のAIによる自動化に取り組む。
 
@@ -1381,7 +1381,7 @@ Yorihiko Kato's columns and articles: machikado-creative.jp ↗
 
 #### Kengo Kitaura
 
-Director (Corporate Management Division, Radio Osaka)
+Director (Director and Head of Corporate Management, Radio Osaka Co., Ltd.)
 
 Born in Osaka. Left for the U.S. right after middle school. After returning to Japan and running businesses, he moved to Cambodia in 2009. In 2014, he founded AGRIBUDDY, an agri-fintech company, and served as CEO. He built a system to collect and visualize farming data from smallholder farmers who had no records and no credit history, connecting them to financial services. Awards include Grand Prize at the Nikkei FinTech Conference and Global Startup Award "Founder of the Year" (the first ASEAN/Cambodian company to win). He returned to Japan in 2023 and now works on automating corporate accounting and back-office operations with AI.
 

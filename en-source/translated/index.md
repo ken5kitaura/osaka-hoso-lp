@@ -160,7 +160,7 @@ Yorihiko Kato's columns and articles: machikado-creative.jp ↗
 
 #### Kengo Kitaura
 
-Director (Corporate Management Division, Radio Osaka)
+Director (Director and Head of Corporate Management, Radio Osaka Co., Ltd.)
 
 Born in Osaka. Left for the U.S. right after middle school. After returning to Japan and running businesses, he moved to Cambodia in 2009. In 2014, he founded AGRIBUDDY, an agri-fintech company, and served as CEO. He built a system to collect and visualize farming data from smallholder farmers who had no records and no credit history, connecting them to financial services. Awards include Grand Prize at the Nikkei FinTech Conference and Global Startup Award "Founder of the Year" (the first ASEAN/Cambodian company to win). He returned to Japan in 2023 and now works on automating corporate accounting and back-office operations with AI.
 
