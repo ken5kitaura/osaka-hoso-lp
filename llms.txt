@@ -1,18 +1,24 @@
 # Osaka Hoso Co., Ltd. (大阪放送株式会社)
 
-> Founded in 1945 as a steel company in Osaka, Japan. Now an AI/DX transformation company.
+> Founded in 1945 as a steel company in Osaka, Japan, and passed down through four generations. Our mission: to connect and carry Osaka's long-standing businesses into the next era.
 
 ## What we do
 
-Osaka Hoso transforms mid-market companies' back-office operations using AI. Our three services:
+Osaka is full of businesses that have quietly kept trading for decades. We help them keep going in three ways:
+
+- **Tell** — With Radio Osaka, we share these companies' stories through programs, video, social media and books.
+- **Support** — We replace people-dependent accounting and management with AI-driven systems, so owners can steer by the numbers. Tax filing stays with their own tax accountant; we handle everything before it.
+- **Succeed** — When an owner has no successor but wants the company to live on, we take it over and keep it an Osaka company: same name, same people, same business relationships.
+
+Our "Support" services:
 
 1. **AI Accounting System** — Replace people-dependent accounting with an AI-powered system, end to end. Eligible for Japan's Digital / AI Adoption Subsidy (50%, up to ¥4.5 million).
 2. **AI Skills Training** — Hands-on corporate training for ChatGPT, Claude, and Gemini. 2 days, 11 hours. Up to 75% subsidized for SMEs via Japan's Human Resources Development Subsidy.
 3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement. From ¥250,000/month.
 
-## Our proof
+## Our first case
 
-We walked into Radio Osaka (OBC) — a broadcaster we invested in, on the air since 1958 — and rebuilt it with AI:
+To keep Osaka's local broadcaster alive, we invested in Radio Osaka (OBC), on the air since 1958, and started with its numbers — turning accounting built for tax filing into accounting built for management:
 - 2,500–3,000 journal entries per month, processed automatically by AI
 - Every paper voucher and approval stamp eliminated
 - AI announcer (Benten Obi) and AI broadcast summary (Daily Radio Osaka) deployed
