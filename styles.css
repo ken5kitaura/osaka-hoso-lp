@@ -855,3 +855,21 @@ section[id]{ scroll-margin-top:var(--header-h); }
 .page-cta p{ color:var(--on-ink); max-width:34em; margin:0 auto 2em; line-height:2.1; }
 @media (max-width:860px){ .step-list{ grid-template-columns:repeat(2,minmax(0,1fr)); } .pillar-links{ grid-template-columns:1fr; } }
 @media (max-width:560px){ .media-list li{ grid-template-columns:1fr; gap:.4em; } .step-list{ grid-template-columns:1fr; } .hero--page{ height:auto; min-height:auto; } .hero--page .hero__inner{ padding-bottom:56px; } .hero--page .scroll-cue{ display:none; } }
+
+/* 2026-10 media */
+.photo-band{ margin:0; position:relative; height:clamp(220px,38vw,460px); overflow:hidden; background:var(--ink); }
+.photo-band img{ width:100%; height:100%; object-fit:cover; display:block; }
+.photo-band figcaption{ position:absolute; left:var(--gut); bottom:14px; font-size:12px; letter-spacing:.06em; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.6); }
+.pillar-links a.has-img{ padding:0 0 1.6em; overflow:hidden; }
+.pillar-links a.has-img img{ width:100%; aspect-ratio:3/2; object-fit:cover; display:block; margin-bottom:1.2em; }
+.pillar-links a.has-img b,.pillar-links a.has-img span,.pillar-links a.has-img em{ padding-inline:1.4em; }
+.listen{ display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:clamp(22px,3.4vw,48px); align-items:center; }
+.listen__media{ position:relative; aspect-ratio:16/9; background:#000; }
+.listen__media iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+.listen h3{ font-family:"Noto Serif JP",serif; font-size:clamp(20px,2.2vw,26px); color:#fff; margin:0 0 .6em; }
+.listen p{ color:var(--on-ink); line-height:2.05; margin:0 0 1em; }
+.split-photo{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(22px,3.4vw,48px); align-items:center; }
+.split-photo figure{ margin:0; }
+.split-photo img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
+.split-photo figcaption{ font-size:12px; color:var(--text-mut); margin-top:.6em; }
+@media (max-width:860px){ .listen,.split-photo{ grid-template-columns:1fr; } }
