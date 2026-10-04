@@ -162,4 +162,7 @@
   <url><loc>https://osakahoso.com/business</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://osakahoso.com/tsutaeru</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://osakahoso.com/hikitsugu</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://osakahoso.com/en/business</loc><xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/business" /><xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/business" /><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://osakahoso.com/en/tsutaeru</loc><xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/tsutaeru" /><xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/tsutaeru" /><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://osakahoso.com/en/hikitsugu</loc><xhtml:link rel="alternate" hreflang="ja" href="https://osakahoso.com/hikitsugu" /><xhtml:link rel="alternate" hreflang="en" href="https://osakahoso.com/en/hikitsugu" /><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
