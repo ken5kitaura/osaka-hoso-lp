@@ -379,7 +379,7 @@ section[id]{ scroll-margin-top:var(--header-h); }
   width:100%;
   min-width:0;            /* グリッド列が画像の実寸512pxに伸びるのを防ぐ */
   min-height:0;           /* .ph の min-height:200px を解除 */
-  aspect-ratio:512 / 211; /* バナーの比率で高さを決める */
+  aspect-ratio:640 / 400; /* バナーの比率で高さを決める */
   border:0;               /* .ph の 1px ボーダーを解除 */
   border-radius:3px;
   overflow:hidden;
