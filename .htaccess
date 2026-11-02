@@ -42,7 +42,7 @@ AddDefaultCharset UTF-8
 </IfModule>
 
 # 会社案内の動画は同じファイル名で差し替えるため、保存は1時間だけ
-<FilesMatch "^company-profile\.mp4$">
+<FilesMatch "^company-profile(-en)?\.mp4$">
   <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 hour"
