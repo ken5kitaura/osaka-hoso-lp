@@ -15,7 +15,7 @@ Osaka Hoso transforms mid-market companies' back-office operations using AI. Our
 
 1. **AI Accounting System** — Replace people-dependent accounting with an AI-powered system, end to end. Eligible for Japan's Digital / AI Adoption Subsidy (50%, up to ¥4.5 million).
 2. **AI Skills Training** — Hands-on corporate training for ChatGPT, Claude, and Gemini. 2 days, 11 hours. Up to 75% subsidized for SMEs via Japan's Human Resources Development Subsidy.
-3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement. From ¥250,000/month.
+3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement.
 
 ## Our proof
 
@@ -431,7 +431,7 @@ FAQ
 
 #### Q. 料金はいくらですか？
 
-事業内容によって異なります。AI経理システム導入は補助金適用で実質250万円〜、月額BPO運用は25万円/月〜、AI研修は助成金適用で1人あたり実質約9万円〜。詳しくは各事業ページをご覧ください。
+会社の規模と内容を伺ってからご提案します。システム導入はデジタル化・AI導入補助金、AI研修は人材開発支援助成金の対象です。
 
 #### Q. 補助金・助成金は使えますか？
 
@@ -543,25 +543,7 @@ Impact
 
 年 約1,690万円
 
-システム導入の初期費用（補助後 実質250万円〜）は、この削減額の約1.8ヶ月分で回収できる計算です。
-
 ※会社が実際に負担する額で算出：給与に社会保険の会社負担（給与の約15%）を含む。採用コストは中途採用の平均（1人あたり約80万円）と全国の離職率（一般労働者 約11.5%／厚労省2024）をもとに控えめに概算。これに加え、交通費・福利厚生、採用にかかる現場の工数、空席中の業務停滞、退職のたびのリスクも不要になります。
-
-
-### [section #sim] 補助金で、実質いくら？
-- **eyebrow**: Subsidy
-
-Subsidy
-
-このシステム導入は、デジタル化・AI導入補助金（通常枠）の対象です。補助率は原則1/2、上限450万円。
-
-デジタル化・AI導入補助金（通常枠／補助率 1/2、最低賃金近傍は 2/3・上限450万円）を適用した場合の試算です。
-
-¥2,500,000
-
-※試算です。対象経費として認められる範囲・審査結果により変動します。補助金は交付決定後の契約・後払いが原則で、採択されて初めて支給されます。申請は大阪放送がサポートします。
-
-**[ボタン]** この内容で無料相談する→
 
 
 ### [section #proof] 自分たちで、実証した。
@@ -582,14 +564,6 @@ Proof
 Why us
 
 市場の経理サービスは「作業代行」か「コンサル」のどちらかしかやりません。大阪放送は、仕組みの設計・日々の運用・経営判断材料の提供を1社で統合します。
-
-
-### [section #price] 料金
-- **eyebrow**: Pricing
-
-Pricing
-
-※補助率1/2・上限450万円を適用した場合の実質負担（目安）。対象経費の範囲・審査により変動します。導入後の運用は「月額BPO運用」で継続支援します。
 
 
 ### [section #faq] よくある質問
@@ -830,30 +804,6 @@ Deliverables
 自社のAI利用ルールの雛形。セキュリティ・著作権・データ取扱いを網羅した実用的なドキュメント。社内のAI利用の「共通ルール」になります。
 
 
-### [section #sim] 助成金で、実質いくら？
-- **eyebrow**: Subsidy
-
-Subsidy
-
-この研修は、人材開発支援助成金（事業展開等リスキリング支援コース）の対象です。中小企業は経費助成 最大75%、加えて賃金助成も。
-
-人材開発支援助成金（リスキリング支援コース）を適用した場合の試算です。11名以上は別途お見積りします。
-
-¥445,000
-
-※試算です。実際の支給額は審査により異なります。助成金は後払い（費用を先に全額お支払い、研修完了後に支給）。研修開始の1ヶ月前までに労働局へ計画届の提出が必要です。対象は雇用保険適用事業所の従業員（事業主・役員は対象外）。申請はサポートします。
-
-**[ボタン]** この内容で無料相談する→
-
-
-### [section #price] 料金1名・税込
-- **eyebrow**: Pricing
-
-Pricing
-
-※助成金適用後は中小企業・5名受講の場合の試算。11名以上は別途お見積もり。
-
-
 ### [section #faq] よくある質問
 - **eyebrow**: FAQ
 
@@ -1015,14 +965,6 @@ Why us
 ### [section #relation]
 
 このBPOは、「AI経理システム導入」で作り替えた仕組みの上で回すのが最も効果的です。まず仕組みを入れ替え、その運用を任せる——という流れが王道です。
-
-
-### [section #price] 料金補助対象外・通常料金
-- **eyebrow**: Pricing
-
-Pricing
-
-月額BPOは継続的な運用サービスのため、補助金（ツール導入の補助）の対象外です。価格は会社の規模で決まります。導入（システム導入）には補助金が使えます。
 
 
 ### [section #faq] よくある質問
@@ -1601,7 +1543,7 @@ Yes. Paper is fine. AI reads, digitizes, and journals them. You don't need to ch
 
 #### Q. How much does it cost?
 
-It depends on the service. AI Accounting System starts at approximately ¥2.5 million after subsidies. Monthly BPO starts at ¥250,000/month. AI Training works out to roughly ¥89,000 per person after subsidies. See each service page for details.
+We propose the cost after hearing about the size and scope of your company. The AI Accounting System is eligible for the Digital / AI Adoption Subsidy, and AI Training for the Human Resources Development Subsidy.
 
 #### Q. Can I use government subsidies?
 
@@ -1727,25 +1669,7 @@ This isn't about replacing "one accountant." Consider a setup with three account
 
 About ¥16.9 million saved per year
 
-The initial system cost (approximately ¥2.5 million after subsidy) pays for itself in roughly 1.8 months of savings.
-
 *Calculated on actual company cost: salary plus employer-side social insurance (approx. 15% of salary). Recruitment cost based on mid-career hiring average (approx. ¥800,000 per hire) and national separation rate (approx. 11.5%, MHLW 2024), conservatively estimated. Additional savings not quantified here: transportation, benefits, management time spent on recruiting, business disruption during vacancies, and repeated turnover risk.*
-
-
-### [section #sim] After subsidies, what's the real cost?
-- **eyebrow**: Subsidy
-
-Subsidy
-
-This system implementation is eligible for the Digital / AI Adoption Subsidy (standard track). Subsidy rate: 50% (up to ¥4.5 million).
-
-Estimate based on the Digital / AI Adoption Subsidy (standard track / 50% rate; 2/3 for near-minimum-wage businesses, capped at ¥4.5 million).
-
-¥2,500,000
-
-*This is an estimate. Eligible expenses and amounts vary by application review. Subsidies are disbursed after approval, on a reimbursement basis — payment is only made after acceptance. Osaka Hoso supports the application process.*
-
-**[button]** Talk to us about this →
 
 
 ### [section #proof] We proved it on ourselves.
@@ -1774,14 +1698,6 @@ Most accounting services on the market do either "task outsourcing" or "consulti
 | Daily operations | △ | ◎ | ✕ | ◎ |
 | Financial analysis / CFO function | ✕ | ✕ | △ | ◎ |
 | Scope of responsibility | Tasks only | Operations | Design only | Design → Ops → Decisions |
-
-
-### [section #price] Pricing
-- **eyebrow**: Pricing
-
-Pricing
-
-*After subsidy (50%, up to ¥4.5 million). Actual eligible expenses and amounts vary by review. Post-implementation operations continue through our Monthly BPO service.*
 
 
 ### [section #faq] FAQ
@@ -2033,38 +1949,6 @@ AI use cases identified in the workshop, organized by department and priority �
 A template for your company's AI usage rules. Covers security, copyright, and data handling — a practical document that becomes your organization's shared rulebook for AI.
 
 
-### [section #sim] After subsidies, what's the real cost?
-- **eyebrow**: Subsidy
-
-Subsidy
-
-This training is eligible for the Human Resources Development Subsidy (Business Reskilling Course). SMEs receive up to 75% expense subsidy, plus wage subsidy on top.
-
-Estimate based on the Human Resources Development Subsidy (Reskilling Course). Custom quotes for groups of 11 or more.
-
-¥445,000
-
-*This is an estimate. Actual amounts vary by review. The subsidy is disbursed after training completion, on a reimbursement basis (full payment upfront, subsidy paid after). A training plan must be submitted to the Labor Bureau at least one month before the start date. Eligible participants are employees covered by employment insurance (business owners and officers are excluded). We support the application.*
-
-**[button]** Talk to us about this →
-
-
-### [section #price] Pricing — per person, tax included
-- **eyebrow**: Pricing
-
-Pricing
-
-| | In-person | Online |
-|---|---|---|
-| Training hours | 11h (2 days) | 11h (6 sessions) |
-| Format | In-person (instructor dispatched) | Zoom live |
-| Price per person | ¥400,000 | ¥380,000 |
-| 6–10 participants | ¥360,000/person | ¥340,000/person |
-| After subsidy | Approx. ¥89,000/person | Approx. ¥85,000/person |
-
-*After-subsidy estimates assume SME, 5 participants. Custom quotes for 11+.*
-
-
 ### [section #faq] FAQ
 - **eyebrow**: FAQ
 
@@ -2237,14 +2121,6 @@ This BPO is most effective when running on the system built through our AI Accou
 ### [section #relation]
 
 This BPO is most effective when running on the system built through our AI Accounting System service. The standard path: replace the system first, then hand over the operations.
-
-
-### [section #price] Pricing — not subsidy-eligible; standard rates
-- **eyebrow**: Pricing
-
-Pricing
-
-Monthly BPO is an ongoing operations service, so it's not eligible for tool-implementation subsidies. Pricing is based on company size. The initial system implementation (separate service) is subsidy-eligible.
 
 
 ### [section #faq] FAQ

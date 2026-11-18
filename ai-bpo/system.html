@@ -23,8 +23,7 @@
   "serviceType": "AI経理システム導入",
   "provider": { "@type": "Organization", "name": "大阪放送株式会社", "url": "https://osakahoso.com" },
   "areaServed": "JP",
-  "description": "請求書や銀行の明細といった元の資料から、AIで帳簿と経営の数字を作る仕組みの導入。デジタル化・AI導入補助金（通常枠・補助率1/2・上限450万円）対象。",
-  "priceRange": "¥2,500,000〜（補助金適用後）"
+  "description": "請求書や銀行の明細といった元の資料から、AIで帳簿と経営の数字を作る仕組みの導入。デジタル化・AI導入補助金（通常枠・補助率1/2・上限450万円）対象。"
 }
 </script>
 <script type="application/ld+json">
@@ -132,7 +131,7 @@
       <p class="hero__sub reveal" data-d="2">請求書や銀行の明細といった元の資料から、AIで帳簿と経営の数字を作る仕組みを組み立てます。担当者の経験と判断に頼っていた処理を仕組みに移し、経営者が会社の今をいつでも確かめられるようにします。</p>
       <div class="hero__cta reveal" data-d="3">
         <a href="#contact" class="btn btn--orange">相談する<span class="arr">→</span></a>
-        <a href="#sim" class="btn btn--ghost-light">補助金を使った費用を見る</a>
+        <a href="#sim" class="btn btn--ghost-light">補助金について見る</a>
       </div>
     </div>
   </div>
@@ -223,39 +222,12 @@
   <div class="wrap">
     <div class="section__head center reveal">
       <p class="eyebrow center">Subsidy</p>
-      <h2>補助金を使うと、いくらか。</h2>
+      <h2>補助金を使って、導入できます。</h2>
       <p class="lead center">このシステム導入は、<b>デジタル化・AI導入補助金（通常枠）</b>の対象です。補助率は原則1/2、上限450万円。</p>
     </div>
-    <div class="sim sim--single reveal" data-d="1">
-      <div class="sim__head"><span>Simulator A ／ システム導入</span>条件を選ぶと、補助後の実質負担がわかります。</div>
-      <div class="sim__body">
-        <div class="sim__panel is-active" id="sim1">
-          <div class="sim__inputs">
-            <div class="sim__field">
-              <label for="sim1-scale">構築の規模</label>
-              <select id="sim1-scale" class="sim__select">
-                <option value="500">標準（500万円〜）</option>
-                <option value="800">大規模（800万円〜）</option>
-              </select>
-            </div>
-            <div class="sim__field sim__field--check">
-              <label class="sim__check"><input type="checkbox" id="sim1-lowwage"> 最低賃金近傍の事業者（補助率2/3）</label>
-            </div>
-            <p class="sim__hint">デジタル化・AI導入補助金（通常枠／補助率 1/2、最低賃金近傍は 2/3・上限450万円）を適用した場合の試算です。</p>
-          </div>
-          <div class="sim__result" aria-live="polite">
-            <span class="sim__result-lbl">補助後の実質負担（目安）</span>
-            <p class="sim__amt"><span class="sim__yen">¥</span><span class="sim__num" id="sim1-net">2,500,000</span></p>
-            <div class="sim__breakdown">
-              <div><span>対象経費</span><b id="sim1-gross">¥5,000,000</b></div>
-              <div><span>補助額</span><b class="minus" id="sim1-grant">− ¥2,500,000</b></div>
-              <div><span>実質補助率</span><b id="sim1-rate">50%</b></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="sim__disclaimer">※試算です。対象経費として認められる範囲・審査結果により変動します。補助金は交付決定後の契約・後払いが原則で、採択されて初めて支給されます。申請は大阪放送がサポートします。</p>
-      <div class="sim__cta"><a href="#contact" class="btn btn--orange">この条件で相談する<span class="arr">→</span></a></div>
+    <div class="reveal" data-d="1">
+      <p class="lead center">費用は、会社の規模と仕組みの範囲を伺ってからご提案します。補助金は交付が決まってからの契約・後払いが原則で、採択されて初めて支給されます。申請は大阪放送がお手伝いします。</p>
+      <div class="sim__cta"><a href="#contact" class="btn btn--orange">相談する<span class="arr">→</span></a></div>
     </div>
   </div>
 </section>
@@ -315,21 +287,6 @@
 <!-- 料金 -->
 <section class="section section--paper2" id="price">
   <div class="wrap">
-    <div class="section__head center reveal">
-      <p class="eyebrow center">Pricing</p>
-      <h2>料金</h2>
-    </div>
-    <div class="dprice reveal" data-d="1">
-      <div class="dprice__row">
-        <span class="dprice__plan">標準構築</span>
-        <span class="dprice__val">500<small>万円〜</small>　→　<span class="net">実質 250万円〜</span></span>
-      </div>
-      <div class="dprice__row">
-        <span class="dprice__plan">大規模構築</span>
-        <span class="dprice__val">800<small>万円〜</small>　→　<span class="net">実質 400万円〜</span></span>
-      </div>
-      <p class="dprice__note">※補助率1/2・上限450万円を適用した場合の実質負担（目安）。対象経費の範囲・審査により変動します。導入後の運用は「毎月を引き受ける」で続けてお手伝いします。</p>
-    </div>
     <div class="related reveal">
       <a href="/ai-bpo/bpo">導入したあとの運用：毎月を引き受ける<span class="arr">→</span></a>
       <a href="/ai-bpo/training">使う人のために：人を育てる<span class="arr">→</span></a>
@@ -482,6 +439,6 @@
 </a>
 
 <script src="../main.js?v=20260606trans2"></script>
-<script src="../ai-bpo.js?v=20260606trans2"></script>
+<script src="../ai-bpo.js?v=20261118"></script>
 </body>
 </html>

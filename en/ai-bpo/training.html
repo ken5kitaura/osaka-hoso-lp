@@ -41,13 +41,7 @@
   },
   "timeRequired": "PT11H",
   "numberOfCredits": "11",
-  "occupationalCredentialAwarded": "Company AI Adoption Plan and AI Usage Guideline",
-  "offers": {
-    "@type": "Offer",
-    "price": "400000",
-    "priceCurrency": "JPY",
-    "availability": "https://schema.org/InStock"
-  }
+  "occupationalCredentialAwarded": "Company AI Adoption Plan and AI Usage Guideline"
 }
 </script>
 <script type="application/ld+json">
@@ -318,60 +312,22 @@
   <div class="wrap">
     <div class="section__head center reveal">
       <p class="eyebrow center">Subsidy</p>
-      <h2>What it costs with the subsidy.</h2>
+      <h2>The subsidy covers most of the cost.</h2>
       <p class="lead center">This training is eligible for the <b>Human Resources Development Subsidy (Business Reskilling Course).</b> SMEs receive up to 75% expense subsidy, plus wage subsidy on top.</p>
     </div>
-    <div class="sim sim--single reveal" data-d="1">
-      <div class="sim__head"><span>Simulator B ／ AI Training</span>Choose your scenario to see the effective net cost after subsidy.</div>
-      <div class="sim__body">
-        <div class="sim__panel is-active" id="sim2">
-          <div class="sim__inputs">
-            <div class="sim__field">
-              <label for="sim2-size">Company size</label>
-              <select id="sim2-size" class="sim__select">
-                <option value="sme">SME</option>
-                <option value="large">Large enterprise</option>
-              </select>
-            </div>
-            <div class="sim__field">
-              <label for="sim2-mode">Format</label>
-              <select id="sim2-mode" class="sim__select">
-                <option value="onsite">In-person</option>
-                <option value="online">Online</option>
-              </select>
-            </div>
-            <div class="sim__field">
-              <label for="sim2-count">Number of attendees</label>
-              <input type="number" id="sim2-count" class="sim__select" min="1" value="5" inputmode="numeric">
-            </div>
-            <p class="sim__hint">Estimate based on the Human Resources Development Subsidy (Reskilling Course). Custom quotes for groups of 11 or more.</p>
-          </div>
-          <div class="sim__result" aria-live="polite">
-            <span class="sim__result-lbl">Effective net cost after subsidy (total, estimate)</span>
-            <p class="sim__amt"><span class="sim__yen" id="sim2-yen">¥</span><span class="sim__num" id="sim2-net">445,000</span></p>
-            <div class="sim__breakdown">
-              <div><span>Training cost (total)</span><b id="sim2-gross">¥2,000,000</b></div>
-              <div><span>Expense subsidy</span><b class="minus" id="sim2-grant-exp">− ¥1,500,000</b></div>
-              <div><span>Wage subsidy<small style="display:block;font-size:9.5px;color:var(--text-mut);letter-spacing:.02em;margin-top:.2em;">11h × ¥1,000 × headcount</small></span><b class="minus" id="sim2-grant-wage">− ¥55,000</b></div>
-              <div><span>Total subsidy</span><b class="minus" id="sim2-grant-sum">− ¥1,555,000</b></div>
-              <div><span>Per-attendee net cost</span><b id="sim2-per">¥89,000 / person</b></div>
-              <div><span>Effective subsidy rate</span><b id="sim2-rate">77.8%</b></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="sim__disclaimer">*Estimate. Actual amounts vary by review. The subsidy is disbursed after training completion, on a reimbursement basis (full payment upfront, subsidy paid after). A training plan must be submitted to the Labor Bureau at least one month before the start date. Eligible participants are employees covered by employment insurance (business owners and officers are excluded). We support the application.</p>
-      <div class="sim__cta"><a href="#contact" class="btn btn--orange">Talk to us about this<span class="arr">→</span></a></div>
+    <div class="reveal" data-d="1">
+      <p class="lead center">The subsidy is paid afterwards: you pay the training cost first, and it is paid once the training is complete. A training plan must be filed with the Labour Bureau at least one month before the training starts, and it covers employees enrolled in employment insurance (not owners or directors). We help with the application.</p>
+      <div class="sim__cta"><a href="#contact" class="btn btn--orange">Talk to us<span class="arr">→</span></a></div>
     </div>
   </div>
 </section>
 
-<!-- Pricing -->
+<!-- Format -->
 <section class="section" id="price">
   <div class="wrap">
     <div class="section__head center reveal">
-      <p class="eyebrow center">Pricing</p>
-      <h2>Pricing<span style="display:block;font-size:.42em;color:var(--text-mut);letter-spacing:.04em;margin-top:.8em;font-family:var(--sans)">Per person, tax included</span></h2>
+      <p class="eyebrow center">Format</p>
+      <h2>How it runs</h2>
     </div>
     <table class="ptable reveal" data-d="1">
       <thead>
@@ -380,12 +336,8 @@
       <tbody>
         <tr><th scope="row">Training hours</th><td>11h (2 days)</td><td>11h (6 sessions)</td></tr>
         <tr><th scope="row">Format</th><td>In-person (instructor dispatched)</td><td>Zoom live</td></tr>
-        <tr><th scope="row">Price per person</th><td>¥400,000</td><td>¥380,000</td></tr>
-        <tr><th scope="row">6–10 participants</th><td>¥360,000 / person</td><td>¥340,000 / person</td></tr>
-        <tr class="ptable__net"><th scope="row">After subsidy</th><td>~ ¥89,000 / person</td><td>~ ¥85,000 / person</td></tr>
       </tbody>
     </table>
-    <p class="ptable__note reveal">*After-subsidy estimates assume SME, 5 participants. Custom quotes for 11+.</p>
   </div>
 </section>
 
@@ -538,6 +490,6 @@
 </a>
 
 <script src="/en/main.js?v=20260606trans2"></script>
-<script src="/en/ai-bpo.js?v=20260606trans2"></script>
+<script src="/en/ai-bpo.js?v=20261118"></script>
 </body>
 </html>

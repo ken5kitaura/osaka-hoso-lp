@@ -14,7 +14,7 @@ Our "Support" services:
 
 1. **AI Accounting System** — Replace people-dependent accounting with an AI-powered system, end to end. Eligible for Japan's Digital / AI Adoption Subsidy (50%, up to ¥4.5 million).
 2. **AI Skills Training** — Hands-on corporate training for ChatGPT, Claude, and Gemini. 2 days, 11 hours. Up to 75% subsidized for SMEs via Japan's Human Resources Development Subsidy.
-3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement. From ¥250,000/month.
+3. **Monthly Accounting BPO** — Ongoing monthly operations with CFO-level engagement.
 
 ## Our first case
 
